@@ -24,12 +24,12 @@
 
         <!-- Produk Dropdown (Active Section) -->
         <div class="relative group py-space-sm">
-          <button class="flex items-center gap-1 border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text transition-colors focus:outline-none"
-                  type="button">
+          <a href="../Produk.html" class="flex items-center gap-1 border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text transition-colors focus:outline-none">
             Produk
             <span class="material-symbols-outlined text-[18px]">expand_more</span>
-          </button>
-          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
+          </a>
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border z-50">
+            
             <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="supavent.html">Supavent</a>
             <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="turbo-beam.html">Turbo Beam</a>
             <a class="block px-space-md py-space-xs font-body-md text-body-md text-pure-white bg-primary-container font-semibold" href="hurricane.html">Hurricane</a>
@@ -420,9 +420,9 @@
   <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
     <!-- Footer Video Background -->
     <div class="absolute inset-0 z-0">
-      <video autoplay muted loop playsinline class="w-full h-full object-cover"
+      <video webkit-playsinline preload="auto" autoplay muted loop playsinline class="w-full h-full object-cover"
              poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
-        <source src="https://videos.pexels.com/video-files/11773014/11773014-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        <source src="https://videos.pexels.com/video-files/11773014/11773014-hd_1280_720_30fps.mp4" type="video/mp4">
       </video>
       <div class="absolute inset-0 bg-[rgb(15,76,129)]/[0.52]"></div>
     </div>
@@ -453,6 +453,9 @@
             </li>
             <li class="h-auto">
               <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Tentang Kami.html">Tentang Kami</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Produk.html">Produk</a>
             </li>
             <li class="h-auto">
               <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Proyek.html">Proyek</a>
@@ -521,4 +524,33 @@
 
     </div>
   </footer>
+
+  <!-- Universal Video Autoplay Enforcer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var videos = document.querySelectorAll('video');
+      videos.forEach(function (video) {
+        video.muted = true;
+        video.defaultMuted = true;
+        video.setAttribute('playsinline', '');
+        video.setAttribute('webkit-playsinline', '');
+        var promise = video.play();
+        if (promise !== undefined) {
+          promise.catch(function () {
+            // Autoplay blocked by device/browser policy (e.g. Low Power Mode)
+            var startPlay = function () {
+              video.play();
+              window.removeEventListener('touchstart', startPlay);
+              window.removeEventListener('scroll', startPlay);
+              window.removeEventListener('click', startPlay);
+            };
+            window.addEventListener('touchstart', startPlay, { once: true, passive: true });
+            window.addEventListener('scroll', startPlay, { once: true, passive: true });
+            window.addEventListener('click', startPlay, { once: true, passive: true });
+          });
+        }
+      });
+    });
+  </script>
+
 </body></html>
