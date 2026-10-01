@@ -9,131 +9,92 @@
   <!-- Google Fonts: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Google Material Symbols -->
-  
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script id="tailwind-config">
+  <script>
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
-          "colors": {
-            "on-background": "#131d24",
-            "surface-container-high": "#dfe9f4",
-            "surface-container-low": "#ebf5ff",
-            "sea-foam": "#C1CDDA",
-            "surface-bright": "#f6f9ff",
-            "whatsapp-green": "#008060",
-            "on-primary-fixed-variant": "#274871",
-            "primary-fixed": "#d4e3ff",
-            "pure-white": "#FFFFFF",
-            "surface-container": "#e5effa",
-            "surface-tint": "#40608a",
-            "tertiary-container": "#002a51",
-            "outline-variant": "#c3c6cf",
-            "ocean-deep": "#15364B",
-            "secondary-container": "#8eb3ff",
-            "on-surface": "#131d24",
-            "surface-variant": "#dae4ef",
-            "on-tertiary-fixed-variant": "#004883",
-            "on-tertiary-fixed": "#001c39",
-            "secondary-fixed": "#d8e2ff",
-            "background": "#f6f9ff",
-            "ocean-mist": "#4B6B7E",
-            "inverse-surface": "#28313a",
-            "on-secondary-fixed-variant": "#17458a",
-            "secondary-fixed-dim": "#adc6ff",
-            "card-start-navy": "#0A2247",
-            "primary-container": "#002a52",
-            "ink": "#071532",
+          colors: {
             "primary": "#00152f",
-            "on-surface-variant": "#43474e",
-            "inverse-on-surface": "#e8f2fd",
-            "error-container": "#ffdad6",
-            "inverse-primary": "#a9c8f9",
-            "on-error-container": "#93000a",
-            "on-tertiary-container": "#4c93e6",
-            "on-tertiary": "#ffffff",
-            "ocean-teal": "#27475C",
-            "secondary": "#355da3",
+            "primary-container": "#002a52",
             "on-primary": "#ffffff",
+            "primary-fixed": "#d4e3ff",
+            "secondary": "#355da3",
+            "secondary-container": "#8eb3ff",
+            "tertiary-container": "#002a51",
+            "ink": "#071532",
+            "card-start-navy": "#0A2247",
             "card-border": "#0F3976",
-            "on-secondary-fixed": "#001a41",
-            "tertiary": "#00152e",
-            "on-primary-fixed": "#001c3a",
-            "surface-dim": "#d1dbe6",
-            "surface-container-lowest": "#ffffff",
-            "tertiary-fixed-dim": "#a4c9ff",
-            "error": "#ba1a1a",
-            "primary-fixed-dim": "#a9c8f9",
-            "on-secondary": "#ffffff",
-            "on-error": "#ffffff",
-            "on-primary-container": "#7392c0",
-            "on-secondary-container": "#154388",
+            "pure-white": "#FFFFFF",
+            "sea-foam": "#C1CDDA",
             "surface": "#f6f9ff",
-            "tertiary-fixed": "#d4e3ff",
+            "surface-bright": "#f6f9ff",
+            "surface-container": "#e5effa",
+            "surface-container-low": "#ebf5ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#dfe9f4",
+            "surface-container-highest": "#dae4ef",
             "outline": "#73777f",
-            "surface-container-highest": "#dae4ef"
+            "outline-variant": "#c3c6cf",
+            "on-surface": "#131d24",
+            "on-surface-variant": "#43474e",
+            "ocean-mist": "#4B6B7E",
+            "whatsapp-green": "#008060"
           },
-          "borderRadius": {
+          borderRadius: {
             "DEFAULT": "0.25rem",
             "lg": "0.5rem",
             "xl": "0.75rem",
+            "2xl": "1rem",
             "full": "9999px"
           },
-          "spacing": {
-            "space-lg": "1.5rem",
-            "space-3xl": "5rem",
-            "space-2xl": "3rem",
+          spacing: {
             "space-xs": "0.25rem",
-            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
             "space-md": "1rem",
-            "margin-mobile": "1.25rem",
+            "space-lg": "1.5rem",
             "space-xl": "2.5rem",
+            "space-2xl": "3rem",
+            "space-3xl": "5rem",
             "gutter": "2rem",
-            "margin": "2rem",
-            "space-sm": "0.5rem"
+            "gutter-mobile": "1rem"
           },
-          "fontFamily": {
-            "eyebrow-mobile": ["Inter", "sans-serif"],
-            "display-hero-mobile": ["Inter", "sans-serif"],
+          fontFamily: {
             "headline-lg": ["Inter", "sans-serif"],
+            "headline-md": ["Inter", "sans-serif"],
             "display-hero": ["Inter", "sans-serif"],
             "body-hero": ["Inter", "sans-serif"],
             "body-lg": ["Inter", "sans-serif"],
-            "spec-value": ["Inter", "sans-serif"],
-            "headline-md": ["Inter", "sans-serif"],
-            "eyebrow": ["Inter", "sans-serif"],
-            "button-text": ["Inter", "sans-serif"],
             "body-md": ["Inter", "sans-serif"],
-            "headline-lg-mobile": ["Inter", "sans-serif"],
+            "button-text": ["Inter", "sans-serif"],
+            "eyebrow": ["Inter", "sans-serif"],
             "spec-label": ["Inter", "sans-serif"],
-            "headline-md-mobile": ["Inter", "sans-serif"]
+            "spec-value": ["Inter", "sans-serif"]
           },
-          "fontSize": {
+          fontSize: {
+            "eyebrow": ["14px", { "lineHeight": "20px", "letterSpacing": "0.12em", "fontWeight": "600" }],
             "eyebrow-mobile": ["12px", { "lineHeight": "18px", "letterSpacing": "0.12em", "fontWeight": "600" }],
-            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-            "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "display-hero-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "700" }],
             "body-hero": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
             "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
-            "spec-value": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
-            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "700" }],
-            "eyebrow": ["14px", { "lineHeight": "20px", "letterSpacing": "0.12em", "fontWeight": "600" }],
-            "button-text": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }],
             "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
-            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "button-text": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }],
             "spec-label": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
-            "headline-md-mobile": ["18px", { "lineHeight": "26px", "letterSpacing": "0.02em", "fontWeight": "700" }]
+            "spec-value": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }]
           }
-        },
-      },
-    }
+        }
+      }
+    };
   </script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
   <style>
     .hero-video-bg {
       position: absolute;
@@ -169,56 +130,58 @@
 <body class="bg-surface font-body-md text-on-surface antialiased">
 
   <!-- ========================================== -->
-  <!-- HEADER / NAVIGATION                        -->
+  <!-- HEADER / NAVIGATION (Exact Match to Site)  -->
   <!-- ========================================== -->
   <header class="fixed top-0 left-0 w-full z-50 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
     <div class="h-20 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
 
-      <!-- Logo -->
+      <!-- Brand Logo Text -->
       <div class="flex items-center gap-space-sm">
-        <span class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase">VENTIMAX SOLUTIONS</span>
+        <a href="Beranda.html" class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase hover:opacity-90 transition-opacity">
+          VENTIMAX SOLUTIONS
+        </a>
       </div>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex items-center gap-space-lg"
-           data-active-classes="border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text">
-        <a
-           class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+      <nav class="hidden lg:flex items-center gap-space-lg">
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="beranda" href="Beranda.html">Beranda</a>
         <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="tentang-kami" href="Tentang Kami.html">Tentang Kami</a>
 
         <!-- Produk Dropdown -->
         <div class="relative group py-space-sm">
-          <button class="flex items-center gap-1 font-body-md text-body-md text-sea-foam group-hover:text-pure-white transition-colors focus:outline-none"
-                  type="button">
+          <a href="Produk.html"
+             class="flex items-center gap-1 font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors focus:outline-none">
             Produk
             <span class="material-symbols-outlined text-[18px]">expand_more</span>
-          </button>
-          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+          </a>
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border z-50">
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-supavent" href="Produk/supavent.html">Supavent</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-turbo-beam" href="Produk/turbo-beam.html">Turbo Beam</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-hurricane" href="Produk/hurricane.html">Hurricane</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-venticool" href="Produk/venticool.html">Venticool</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-ventigrille" href="Produk/ventigrille.html">Ventigrille</a>
           </div>
         </div>
 
-        <a aria-current="page" class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
+        <!-- Proyek (Active Page) -->
+        <a aria-current="page"
+           class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
            data-path="proyek" href="Proyek.html">Proyek</a>
+
+        <!-- Kontak -->
         <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="kontak" href="Kontak.html">Kontak</a>
       </nav>
 
-      <!-- Right Controls -->
+      <!-- Right Controls: Language Switcher (No Avatar Icon) -->
       <div class="flex items-center gap-space-md">
-
-        <!-- Language Switcher -->
         <div class="relative group py-space-xs">
           <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-tertiary-container text-on-primary font-spec-label text-spec-label hover:bg-card-start-navy transition-colors focus:outline-none"
                   type="button">
@@ -233,14 +196,14 @@
               <span>Indonesia</span>
             </a>
             <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
-               href="/en">
+               href="/en/proyek">
               <span class="material-symbols-outlined text-[16px]">language</span>
               <span>English</span>
             </a>
           </div>
         </div>
-
       </div>
+
     </div>
   </header>
 
@@ -692,14 +655,14 @@
   </a>
 
   <!-- ========================================== -->
-  <!-- FOOTER — with Video Background             -->
+  <!-- FOOTER (Exact Match to Beranda with Video) -->
   <!-- ========================================== -->
   <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
     <!-- Footer Video Background -->
     <div class="absolute inset-0 z-0">
-      <video autoplay muted loop playsinline class="w-full h-full object-cover"
+      <video webkit-playsinline preload="auto" autoplay muted loop playsinline class="w-full h-full object-cover"
              poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
-        <source src="https://videos.pexels.com/video-files/11773014/11773014-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        <source src="https://videos.pexels.com/video-files/11773014/11773014-hd_1280_720_30fps.mp4" type="video/mp4">
       </video>
       <div class="absolute inset-0 bg-[rgb(15,76,129)]/[0.52]"></div>
     </div>
@@ -732,7 +695,10 @@
               <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Tentang Kami.html">Tentang Kami</a>
             </li>
             <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Proyek.html">Proyek</a>
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk.html">Produk</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-pure-white font-bold transition-colors" href="Proyek.html">Proyek</a>
             </li>
             <li class="h-auto">
               <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Kontak.html">Kontak</a>
@@ -791,7 +757,7 @@
 
       </div>
 
-      <!-- Copyright — matched from original website -->
+      <!-- Copyright -->
       <div class="pt-space-lg border-t border-pure-white/15 text-center font-body-md text-body-md text-sea-foam">
         <p>© 2026. Venti Max Solutions - Melayani pengadaan dan pemasangan sistem sirkulasi udara di seluruh Indonesia.</p>
       </div>
@@ -837,6 +803,35 @@
             ventigrilleSec.style.display = "block";
           }
         });
+      });
+    });
+  </script>
+
+
+  <!-- Universal Video Autoplay Enforcer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var videos = document.querySelectorAll('video');
+      videos.forEach(function (video) {
+        video.muted = true;
+        video.defaultMuted = true;
+        video.setAttribute('playsinline', '');
+        video.setAttribute('webkit-playsinline', '');
+        var promise = video.play();
+        if (promise !== undefined) {
+          promise.catch(function () {
+            // Autoplay blocked by device/browser policy (e.g. Low Power Mode)
+            var startPlay = function () {
+              video.play();
+              window.removeEventListener('touchstart', startPlay);
+              window.removeEventListener('scroll', startPlay);
+              window.removeEventListener('click', startPlay);
+            };
+            window.addEventListener('touchstart', startPlay, { once: true, passive: true });
+            window.addEventListener('scroll', startPlay, { once: true, passive: true });
+            window.addEventListener('click', startPlay, { once: true, passive: true });
+          });
+        }
       });
     });
   </script>

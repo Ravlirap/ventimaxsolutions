@@ -6,11 +6,7 @@
   <meta content="web_standard" name="shell-type">
   <meta name="description" content="Kontak Ventimax Solutions - Hubungi tim ahli kami untuk konsultasi sistem sirkulasi udara dan insulasi termal bangunan Anda.">
   <title>Kontak Kami | Ventimax Solutions</title>
-  
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
   <style>
     @layer base {
@@ -27,7 +23,7 @@
       darkMode: "class",
       theme: {
         extend: {
-          "colors": {
+          colors: {
             "on-background": "#131d24",
             "surface-container-high": "#dfe9f4",
             "surface-container-low": "#ebf5ff",
@@ -85,13 +81,13 @@
             "outline": "#73777f",
             "surface-container-highest": "#dae4ef"
           },
-          "borderRadius": {
+          borderRadius: {
             "DEFAULT": "0.25rem",
             "lg": "0.5rem",
             "xl": "0.75rem",
             "full": "9999px"
           },
-          "spacing": {
+          spacing: {
             "space-lg": "1.5rem",
             "space-3xl": "5rem",
             "space-2xl": "3rem",
@@ -104,7 +100,7 @@
             "margin": "2rem",
             "space-sm": "0.5rem"
           },
-          "fontFamily": {
+          fontFamily: {
             "eyebrow-mobile": ["Inter", "sans-serif"],
             "display-hero-mobile": ["Inter", "sans-serif"],
             "headline-lg": ["Inter", "sans-serif"],
@@ -120,7 +116,7 @@
             "spec-label": ["Inter", "sans-serif"],
             "headline-md-mobile": ["Inter", "sans-serif"]
           },
-          "fontSize": {
+          fontSize: {
             "eyebrow-mobile": ["12px", { "lineHeight": "18px", "letterSpacing": "0.12em", "fontWeight": "600" }],
             "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
             "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
@@ -136,14 +132,10 @@
             "spec-label": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
             "headline-md-mobile": ["18px", { "lineHeight": "26px", "letterSpacing": "0.02em", "fontWeight": "700" }]
           }
-        },
-      },
-    }
+        }
+      }
+    };
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
   <style>
     .hero-video-bg {
       position: absolute;
@@ -178,49 +170,49 @@
 <body class="bg-surface font-body-md text-on-surface antialiased">
 
   <!-- ========================================== -->
-  <!-- HEADER / NAVIGATION                        -->
+  <!-- HEADER / NAVIGATION (Exact Match to Beranda)-->
   <!-- ========================================== -->
   <header class="fixed top-0 left-0 w-full z-50 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
     <div class="h-20 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
 
       <!-- Logo -->
-      <div class="flex items-center gap-space-sm">
+      <a href="Beranda.html" class="flex items-center gap-space-sm">
         <span class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase">VENTIMAX SOLUTIONS</span>
-      </div>
+      </a>
 
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex items-center gap-space-lg"
            data-active-classes="border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text">
-        <a
-           class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="beranda" href="Beranda.html">Beranda</a>
         <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="tentang-kami" href="Tentang Kami.html">Tentang Kami</a>
 
         <!-- Produk Dropdown -->
         <div class="relative group py-space-sm">
-          <button class="flex items-center gap-1 font-body-md text-body-md text-sea-foam group-hover:text-pure-white transition-colors focus:outline-none"
-                  type="button">
+          <a href="Produk.html"
+             class="flex items-center gap-1 font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors focus:outline-none">
             Produk
             <span class="material-symbols-outlined text-[18px]">expand_more</span>
-          </button>
-          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+          </a>
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border z-50">
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-supavent" href="Produk/supavent.html">Supavent</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-turbo-beam" href="Produk/turbo-beam.html">Turbo Beam</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-hurricane" href="Produk/hurricane.html">Hurricane</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-venticool" href="Produk/venticool.html">Venticool</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
                data-path="produk-ventigrille" href="Produk/ventigrille.html">Ventigrille</a>
           </div>
         </div>
 
         <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="proyek" href="Proyek.html">Proyek</a>
-        <a aria-current="page" class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
+        <a aria-current="page"
+           class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
            data-path="kontak" href="Kontak.html">Kontak</a>
       </nav>
 
@@ -263,9 +255,9 @@
       <section class="relative w-full -mt-20 overflow-hidden min-h-screen flex items-center justify-center">
         <!-- Background Video Awan Bergerak -->
         <div class="absolute inset-0 z-0">
-          <video autoplay muted loop playsinline class="w-full h-full object-cover"
+          <video webkit-playsinline preload="auto" autoplay muted loop playsinline class="w-full h-full object-cover"
                  poster="https://images.pexels.com/videos/3515758/free-video-3515758.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
-            <source src="https://videos.pexels.com/video-files/3515758/3515758-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            <source src="https://videos.pexels.com/video-files/3515758/3515758-hd_1280_720_25fps.mp4" type="video/mp4">
           </video>
           <!-- Soft Sky Tint Overlay -->
           <div class="absolute inset-0 bg-sky-950/15"></div>
@@ -675,14 +667,14 @@
   </a>
 
   <!-- ========================================== -->
-  <!-- FOOTER — with Video Background             -->
+  <!-- FOOTER (Exact Match to Beranda with Video) -->
   <!-- ========================================== -->
   <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
     <!-- Footer Video Background -->
     <div class="absolute inset-0 z-0">
-      <video autoplay muted loop playsinline class="w-full h-full object-cover"
-             poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
-        <source src="https://videos.pexels.com/video-files/11773014/11773014-uhd_2560_1440_30fps.mp4" type="video/mp4">
+      <video webkit-playsinline preload="auto" autoplay muted loop playsinline class="w-full h-full object-cover"
+             poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=630&amp;w=1200">
+        <source src="https://videos.pexels.com/video-files/11773014/11773014-hd_1280_720_30fps.mp4" type="video/mp4">
       </video>
       <div class="absolute inset-0 bg-[rgb(15,76,129)]/[0.52]"></div>
     </div>
@@ -713,6 +705,9 @@
             </li>
             <li class="h-auto">
               <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Tentang Kami.html">Tentang Kami</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk.html">Produk</a>
             </li>
             <li class="h-auto">
               <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Proyek.html">Proyek</a>
@@ -781,6 +776,35 @@
 
     </div>
   </footer>
+
+
+  <!-- Universal Video Autoplay Enforcer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var videos = document.querySelectorAll('video');
+      videos.forEach(function (video) {
+        video.muted = true;
+        video.defaultMuted = true;
+        video.setAttribute('playsinline', '');
+        video.setAttribute('webkit-playsinline', '');
+        var promise = video.play();
+        if (promise !== undefined) {
+          promise.catch(function () {
+            // Autoplay blocked by device/browser policy (e.g. Low Power Mode)
+            var startPlay = function () {
+              video.play();
+              window.removeEventListener('touchstart', startPlay);
+              window.removeEventListener('scroll', startPlay);
+              window.removeEventListener('click', startPlay);
+            };
+            window.addEventListener('touchstart', startPlay, { once: true, passive: true });
+            window.addEventListener('scroll', startPlay, { once: true, passive: true });
+            window.addEventListener('click', startPlay, { once: true, passive: true });
+          });
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
