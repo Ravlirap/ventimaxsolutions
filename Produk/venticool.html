@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>PT Venti Max Solutions</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#001a41","tertiary-fixed":"#d4e3ff","on-tertiary-fixed":"#001c39","on-tertiary-fixed-variant":"#004883","secondary":"#355da3","background":"#f6f9ff","surface-dim":"#d1dbe6","primary-container":"#002a52","ocean-teal":"#27475C","sea-foam":"#C1CDDA","card-start-navy":"#0A2247","on-primary":"#ffffff","on-error-container":"#93000a","on-tertiary-container":"#4c93e6","error-container":"#ffdad6","primary-fixed":"#d4e3ff","surface-tint":"#40608a","whatsapp-green":"#008060","primary-fixed-dim":"#a9c8f9","secondary-fixed":"#d8e2ff","on-tertiary":"#ffffff","card-border":"#0F3976","secondary-fixed-dim":"#adc6ff","on-secondary":"#ffffff","inverse-on-surface":"#e8f2fd","on-surface-variant":"#43474e","tertiary-container":"#002a51","ocean-mist":"#4B6B7E","tertiary":"#00152e","on-primary-fixed-variant":"#274871","surface-variant":"#dae4ef","secondary-container":"#8eb3ff","on-surface":"#131d24","surface-container":"#e5effa","outline-variant":"#c3c6cf","surface-container-highest":"#dae4ef","on-error":"#ffffff","pure-white":"#FFFFFF","surface":"#f6f9ff","tertiary-fixed-dim":"#a4c9ff","on-background":"#131d24","outline":"#73777f","on-secondary-container":"#154388","inverse-surface":"#28313a","error":"#ba1a1a","ocean-deep":"#15364B","on-primary-fixed":"#001c3a","surface-bright":"#f6f9ff","on-secondary-fixed-variant":"#17458a","ink":"#071532","surface-container-low":"#ebf5ff","surface-container-high":"#dfe9f4","inverse-primary":"#a9c8f9","primary":"#00152f","surface-container-lowest":"#ffffff","on-primary-container":"#7392c0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-sm":"0.5rem","gutter":"2rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","margin-mobile":"1.25rem","space-2xl":"3rem","margin":"2rem","space-3xl":"5rem"},"fontFamily":{"headline-lg":["Inter"],"body-md":["Inter"],"eyebrow-mobile":["Inter"],"headline-md-mobile":["Inter"],"display-hero":["Inter"],"spec-value":["Inter"],"display-hero-mobile":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"spec-label":["Inter"],"eyebrow":["Inter"],"body-hero":["Inter"],"button-text":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"eyebrow-mobile":["12px",{"lineHeight":"18px","letterSpacing":"0.12em","fontWeight":"600"}],"headline-md-mobile":["18px",{"lineHeight":"26px","letterSpacing":"0.02em","fontWeight":"700"}],"display-hero":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"700"}],"spec-value":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"spec-label":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"eyebrow":["14px",{"lineHeight":"20px","letterSpacing":"0.12em","fontWeight":"600"}],"body-hero":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"button-text":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased">  <!-- ========================================== -->
+  <!-- HEADER / NAVIGATION                        -->
+  <!-- ========================================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-20 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-space-sm">
+        <a href="../Beranda.html" class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase hover:opacity-90 transition-opacity">
+          VENTIMAX SOLUTIONS
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-space-lg">
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="beranda" href="../Beranda.html">Beranda</a>
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="tentang-kami" href="../Tentang Kami.html">Tentang Kami</a>
+
+        <!-- Produk Dropdown (Active Section) -->
+        <div class="relative group py-space-sm">
+          <button class="flex items-center gap-1 border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text transition-colors focus:outline-none"
+                  type="button">
+            Produk
+            <span class="material-symbols-outlined text-[18px]">expand_more</span>
+          </button>
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="supavent.html">Supavent</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="turbo-beam.html">Turbo Beam</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="hurricane.html">Hurricane</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-pure-white bg-primary-container font-semibold" href="venticool.html">Venticool</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="ventigrille.html">Ventigrille</a>
+          </div>
+        </div>
+
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="proyek" href="../Proyek.html">Proyek</a>
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="kontak" href="../Kontak.html">Kontak</a>
+      </nav>
+
+      <!-- Right Controls: Language Switcher (No Avatar Icon) -->
+      <div class="flex items-center gap-space-md">
+        <div class="relative group py-space-xs">
+          <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-tertiary-container text-on-primary font-spec-label text-spec-label hover:bg-card-start-navy transition-colors focus:outline-none"
+                  type="button">
+            <span class="material-symbols-outlined text-[18px]">flag</span>
+            <span>ID</span>
+            <span class="material-symbols-outlined text-[16px]">expand_more</span>
+          </button>
+          <div class="absolute right-0 top-full hidden group-hover:block w-32 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
+            <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               href="#">
+              <span class="material-symbols-outlined text-[16px]">flag</span>
+              <span>Indonesia</span>
+            </a>
+            <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               href="../en">
+              <span class="material-symbols-outlined text-[16px]">language</span>
+              <span>English</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Hero / Product Narrative Section -->
+<section class="relative w-full bg-primary-container text-pure-white overflow-hidden py-space-3xl">
+<!-- Atmospheric Ambient Gradient Grid -->
+<div class="absolute inset-0 bg-gradient-to-br from-ink via-primary-container to-card-start-navy opacity-95 pointer-events-none"></div>
+<div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-secondary opacity-20 blur-3xl pointer-events-none"></div>
+<div class="relative max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Left: Copywriting & Key Specs -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Architectural Eyebrow -->
+<div class="flex items-center gap-3">
+<span class="w-6 h-[2px] bg-secondary-container"></span>
+<span class="font-eyebrow text-eyebrow uppercase text-primary-fixed-dim tracking-[0.15em]">INSULASI ATAP BERBAHAN ALUMINIUM FOIL</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg lg:text-display-hero text-pure-white leading-tight font-bold tracking-tight">
+            Mengapa VentiCool
+          </h1>
+<div class="flex flex-col gap-space-md text-sea-foam font-body-lg text-body-lg leading-relaxed">
+<p>
+              Dirancang untuk kenyamanan, perlindungan, dan daya tahan. Isolasi aluminium foil berkualitas tinggi kami memberikan penghalang panas yang efektif sekaligus menawarkan beragam pilihan fleksibel yang sesuai dengan kebutuhan proyek dan anggaran Anda.
+            </p>
+<p>
+              Material pilihan kami memiliki sifat tahan api untuk memberikan perlindungan ekstra dan ketenangan pikiran. Nikmati solusi menyeluruh yang mencakup pemasangan profesional serta garansi 10 tahun.
+            </p>
+</div>
+<!-- Key Metrics Badge Strip -->
+<div class="grid grid-cols-3 gap-4 pt-2">
+<div class="bg-card-start-navy/80 p-4 rounded-xl flex flex-col">
+<span class="font-display-hero-mobile text-display-hero-mobile font-bold text-pure-white">>97%</span>
+<span class="font-spec-value text-sea-foam text-xs mt-1">Tingkat Reflektivitas Panas Radiasi</span>
+</div>
+<div class="bg-card-start-navy/80 p-4 rounded-xl flex flex-col">
+<span class="font-display-hero-mobile text-display-hero-mobile font-bold text-pure-white">100%</span>
+<span class="font-spec-value text-sea-foam text-xs mt-1">Kemurnian Aluminium Foil Murni</span>
+</div>
+<div class="bg-card-start-navy/80 p-4 rounded-xl flex flex-col">
+<span class="font-display-hero-mobile text-display-hero-mobile font-bold text-secondary-container">10 Thn</span>
+<span class="font-spec-value text-sea-foam text-xs mt-1">Garansi Menyeluruh Resmi</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-2">
+<a class="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text px-8 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all" data-path="kontak" href="../Kontak.html">
+<span>Konsultasi Proyek</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2 text-sea-foam font-spec-value text-spec-value pl-2">
+<span class="material-symbols-outlined text-whatsapp-green text-[20px]">verified</span>
+<span>Layanan Sertifikasi & Tim Berpengalaman</span>
+</div>
+</div>
+</div>
+<!-- Right: Engineered Visual Mosaic -->
+<div class="lg:col-span-5 relative flex flex-col gap-4">
+<!-- Warehouse Installation Primary Cut -->
+<div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+<img alt="VentiCool Pemasangan di Atap Gudang" class="w-full h-80 object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/venticool-pemasangan-mGLlDOy1egFx7bBV.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent flex flex-col justify-end p-6">
+<span class="font-spec-label text-pure-white text-xs uppercase tracking-wider bg-card-start-navy/90 backdrop-blur px-2.5 py-1 rounded w-fit mb-2">Instalasi Lapangan</span>
+<p class="font-body-md text-pure-white text-sm">Pemasangan presisi oleh tim teknisi berseragam nasional di atap bentang lebar.</p>
+</div>
+</div>
+<!-- Secondary Inset: 3D Foil Structure -->
+<div class="relative -mt-8 ml-8 rounded-xl overflow-hidden bg-card-start-navy shadow-2xl p-2 z-10">
+<div class="relative h-44 rounded-lg overflow-hidden">
+<img alt="Diagram Potongan Foil 3D VentiCool" class="w-full h-full object-cover" src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/venti-cool-ORXNDzm4fqBic1kD.jpg"/>
+<div class="absolute top-2 right-2 bg-primary/80 backdrop-blur px-2 py-1 rounded text-[11px] font-spec-label text-pure-white flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">layers</span>
+                Lapisan Multi-Barrier
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3 Pillars of Superiority Section -->
+<section class="w-full bg-background py-space-3xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
+<div class="flex items-center gap-3 mb-2">
+<span class="w-6 h-[2px] bg-secondary"></span>
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.15em]">KEUNGGULAN & SPESIFIKASI</span>
+<span class="w-6 h-[2px] bg-secondary"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Proteksi Termal Maksimal</h2>
+<p class="font-body-md text-on-surface-variant mt-2">Diformulasikan secara khusus untuk iklim tropis Indonesia dengan performa isolasi teruji dan standar konstruksi industri.</p>
+</div>
+<!-- 3 Core Pillars Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[32px]">format_image_left</span>
+</div>
+<div>
+<span class="text-xs font-spec-label uppercase tracking-widest text-secondary font-bold">Pilar 01</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">100% Aluminium Murni</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Aluminium foil berkualitas tinggi 100%. Tersedia beragam pilihan insulasi yang dapat disesuaikan dengan anggaran dan kebutuhan Anda. Dilengkapi dengan garansi menyeluruh selama 10 tahun.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-lg p-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<span class="font-spec-label text-xs text-on-surface font-semibold">Garansi Penuh 10 Tahun</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[32px]">local_fire_department</span>
+</div>
+<div>
+<span class="text-xs font-spec-label uppercase tracking-widest text-secondary font-bold">Pilar 02</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">Penghambat Api Efektif</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Memiliki sifat tahan api atau penghambat api (material yang memperlambat atau menghentikan penyebaran api, atau mengurangi intensitas penyebarannya). *Termasuk layanan pemasangan.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-lg p-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">engineering</span>
+<span class="font-spec-label text-xs text-on-surface font-semibold">Instalasi Tim Bersertifikat</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[32px]">wb_sunny</span>
+</div>
+<div>
+<span class="text-xs font-spec-label uppercase tracking-widest text-secondary font-bold">Pilar 03</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">Reflektivitas Panas >97%</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Dengan tingkat reflektivitas lebih dari 97%, kami menawarkan solusi terbaik untuk menjaga suhu ruangan tetap stabil sepanjang tahun. Lindungi rumah Anda dari panas yang menyengat dan cuaca ekstrem dengan Isolasi Atap VentiCool.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-lg p-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">device_thermostat</span>
+<span class="font-spec-label text-xs text-on-surface font-semibold">Stabilisasi Termal 24 Jam</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Layer Architecture & Structural Exploded View -->
+<section class="w-full bg-card-start-navy text-pure-white py-space-3xl relative overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Visual Cut of Layer Composition -->
+<div class="lg:col-span-6 relative">
+<div class="rounded-2xl overflow-hidden shadow-2xl bg-ink">
+<img alt="Diagram Struktur Lapisan Atap dengan Insulasi VentiCool" class="w-full h-auto object-cover" src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/venti-cool-ORXNDzm4fqBic1kD.jpg"/>
+</div>
+<div class="absolute -bottom-4 -left-4 bg-primary-container p-4 rounded-xl shadow-xl max-w-xs">
+<div class="flex items-center gap-2 text-pure-white font-spec-label text-sm">
+<span class="material-symbols-outlined text-secondary-container">layers</span>
+<span>Anatomi Multi-Lapis</span>
+</div>
+<p class="text-xs text-sea-foam mt-1">Aluminium Foil Murni + Foam Core Insulasi + Lem Anti-Delaminasi Presisi Tinggi.</p>
+</div>
+</div>
+<!-- Layer Breakdown Specifications -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="flex items-center gap-3">
+<span class="w-6 h-[2px] bg-secondary-container"></span>
+<span class="font-eyebrow text-eyebrow uppercase text-primary-fixed-dim tracking-[0.15em]">STRUKTUR MATERIAL</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-pure-white">Diagram Struktur Lapisan Atap</h2>
+<p class="font-body-md text-sea-foam leading-relaxed">
+            Lapisan VentiCool bekerja memantulkan radiasi termal dari sinar matahari langsung sebelum menembus rangka dan plafon bangunan, mereduksi suhu ruang hingga 5°C - 10°C secara alami.
+          </p>
+<div class="flex flex-col gap-3 mt-2">
+<!-- Spec Point 1 -->
+<div class="bg-primary/60 p-4 rounded-xl flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center shrink-0 text-pure-white font-bold text-xs">
+                01
+              </div>
+<div class="flex flex-col">
+<span class="font-spec-label text-pure-white">Permukaan Pantul Reflektif Murni</span>
+<span class="font-spec-value text-sea-foam text-xs">Menolak gelombang radiasi ultraviolet dan inframerah matahari hingga >97%.</span>
+</div>
+</div>
+<!-- Spec Point 2 -->
+<div class="bg-primary/60 p-4 rounded-xl flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center shrink-0 text-pure-white font-bold text-xs">
+                02
+              </div>
+<div class="flex flex-col">
+<span class="font-spec-label text-pure-white">Inti Penghambat Panas & Api (Fire Retardant)</span>
+<span class="font-spec-value text-sea-foam text-xs">Menghalangi perambatan konduksi termal serta tidak memicu atau memperbesar rambatan kobaran api.</span>
+</div>
+</div>
+<!-- Spec Point 3 -->
+<div class="bg-primary/60 p-4 rounded-xl flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center shrink-0 text-pure-white font-bold text-xs">
+                03
+              </div>
+<div class="flex flex-col">
+<span class="font-spec-label text-pure-white">Lapisan Penguat Polimer Anti Robek</span>
+<span class="font-spec-value text-sea-foam text-xs">Daya regang tinggi yang mempermudah proses pemasangan pada atap pabrik, gudang, maupun rumah tinggal.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Variants & Roll Gallery Section -->
+<section class="w-full bg-surface-container-low py-space-3xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-space-2xl">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<span class="w-6 h-[2px] bg-secondary"></span>
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.15em]">GALERI PRODUK RESMI</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Varian Gulungan VentiCool</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl">
+            Tersedia dalam berbagai format ketebalan dan densitas gulungan roll untuk kebutuhan residensial, pergudangan modern, hingga fasilitas manufaktur berat.
+          </p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest px-4 py-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="font-spec-label text-xs text-on-surface font-semibold">Produk Asli & Teruji Laboratorium</span>
+</div>
+</div>
+<!-- 4-Column Product Roll Gallery -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product 1: IMAGE_88 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+<div class="relative bg-surface-container overflow-hidden h-72">
+<img alt="VentiCool Roll Type 3" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/venti-cool-3-37fMkNegrNQYDscj.jpg"/>
+<div class="absolute top-3 left-3 bg-primary-container text-pure-white text-[11px] font-spec-label px-2.5 py-1 rounded">
+              Seri Standar Industri
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-2 flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">VentiCool Roll 3</h3>
+<p class="font-body-md text-xs text-on-surface-variant mt-1">Roll aluminium insulasi tahan panas dengan kerapatan tinggi untuk atap baja ringan dan genteng.</p>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<span class="font-spec-label text-xs text-secondary font-bold">100% Aluminium</span>
+<a class="text-xs font-semibold text-secondary hover:underline flex items-center gap-1" data-path="kontak" href="../Kontak.html">
+                Spesifikasi <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Product 2: IMAGE_90 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+<div class="relative bg-surface-container overflow-hidden h-72">
+<img alt="VentiCool Tipe Roll 1" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=1024,fit=crop/uQWpCx6RhwPSfkUj/venticool1-cJuxPQHIx6FHTQFp.jpeg"/>
+<div class="absolute top-3 left-3 bg-secondary text-pure-white text-[11px] font-spec-label px-2.5 py-1 rounded">
+              Pilihan Favorit Proyek
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-2 flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">VentiCool Roll 1</h3>
+<p class="font-body-md text-xs text-on-surface-variant mt-1">Isolasi single/double layer dengan proteksi termal fleksibel untuk hunian dan ruko komersial.</p>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<span class="font-spec-label text-xs text-secondary font-bold">Garansi 10 Thn</span>
+<a class="text-xs font-semibold text-secondary hover:underline flex items-center gap-1" data-path="kontak" href="../Kontak.html">
+                Spesifikasi <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Product 3: IMAGE_92 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+<div class="relative bg-surface-container overflow-hidden h-72">
+<img alt="Max Insulation VentiCool" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/max-insulation-4oDTBko3CaAxWeir.jpg"/>
+<div class="absolute top-3 left-3 bg-ocean-teal text-pure-white text-[11px] font-spec-label px-2.5 py-1 rounded">
+              Heavy Duty
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-2 flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Max Insulation</h3>
+<p class="font-body-md text-xs text-on-surface-variant mt-1">Performa tahan panas ekstrem yang dirancang bagi gudang logistik, pabrik pengolahan, dan hanggar.</p>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<span class="font-spec-label text-xs text-secondary font-bold">Refleksi >97%</span>
+<a class="text-xs font-semibold text-secondary hover:underline flex items-center gap-1" data-path="kontak" href="../Kontak.html">
+                Spesifikasi <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Product 4: IMAGE_93 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+<div class="relative bg-surface-container overflow-hidden h-72">
+<img alt="VentiCool Roll Premium" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/venti-cool-ORXNDzm4fqBic1kD.jpg"/>
+<div class="absolute top-3 left-3 bg-ink text-pure-white text-[11px] font-spec-label px-2.5 py-1 rounded">
+              Fire Retardant
+            </div>
+</div>
+<div class="p-space-md flex flex-col gap-2 flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">VentiCool Premium</h3>
+<p class="font-body-md text-xs text-on-surface-variant mt-1">Diformulasikan dengan aditif penghambat api bersertifikasi untuk perlindungan maksimal aset bangunan.</p>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<span class="font-spec-label text-xs text-secondary font-bold">Tahan Api</span>
+<a class="text-xs font-semibold text-secondary hover:underline flex items-center gap-1" data-path="kontak" href="../Kontak.html">
+                Spesifikasi <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Installation & Workmanship Section -->
+<section class="w-full bg-pure-white py-space-3xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-primary-container text-pure-white rounded-3xl p-8 lg:p-12 shadow-xl relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+<!-- Text Content -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<span class="font-eyebrow text-xs uppercase tracking-widest text-primary-fixed-dim font-bold">INSTALASI PROFESIONAL</span>
+<h2 class="font-headline-lg text-headline-lg font-bold leading-tight">
+              Pemasangan Terpadu Bersama Tim Teknisi Berpengalaman
+            </h2>
+<p class="font-body-lg text-sea-foam leading-relaxed">
+              Material pilihan kami memiliki sifat tahan api untuk memberikan perlindungan ekstra dan ketenangan pikiran. Nikmati solusi menyeluruh yang mencakup pemasangan profesional serta garansi 10 tahun.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+<span class="font-spec-label text-sm text-pure-white">SOP Keamanan Bekerja di Ketinggian</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+<span class="font-spec-label text-sm text-pure-white">Garansi Instalasi & Material 10 Tahun</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+<span class="font-spec-label text-sm text-pure-white">Teknisi Resmi Seragam Nasional</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+<span class="font-spec-label text-sm text-pure-white">Cakupan Seluruh Indonesia</span>
+</div>
+</div>
+</div>
+<!-- Technician Image with Badge -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-2xl overflow-hidden shadow-2xl">
+<img alt="Teknisi Pemasangan Atap VentiCool" class="w-full h-72 object-cover object-top" src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/venticool-pemasangan-mGLlDOy1egFx7bBV.jpg"/>
+</div>
+<div class="absolute -bottom-3 -right-3 bg-secondary text-pure-white px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">flag</span>
+<span class="font-spec-label text-xs font-bold uppercase tracking-wider">Layanan Resmi Nasional</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Thermal ROI Estimator & Consultation CTA Banner -->
+<section class="w-full bg-background py-space-3xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-gradient-to-r from-card-start-navy to-primary-container text-pure-white rounded-3xl p-8 lg:p-14 shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-80 h-80 rounded-full bg-secondary-container opacity-10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+<div class="flex flex-col gap-space-sm max-w-2xl">
+<span class="font-eyebrow text-eyebrow uppercase text-primary-fixed-dim tracking-[0.12em]">KONSULTASI TEKNIS & PENAWARAN HARGA</span>
+<h2 class="font-headline-lg text-headline-lg font-bold leading-tight text-pure-white">
+              Konsultasikan Kebutuhan Insulasi Bangunan Anda
+            </h2>
+<p class="font-body-lg text-sea-foam leading-relaxed">
+              Dapatkan perhitungan kebutuhan termal dan penawaran terbaik. Tim ahli PT Venti Max Solutions siap membantu analisis beban panas atap pabrik, ruko, atau residensial Anda.
+            </p>
+<div class="flex items-center gap-6 mt-4 text-xs font-spec-value text-primary-fixed-dim">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">pin_drop</span> Jabodetabek, Bali & Seluruh Indonesia</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">call</span> 0811-1001-6996</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 shrink-0">
+<a class="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all" data-path="kontak" href="../Kontak.html">
+<span>Konsultasi Sekarang</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 bg-whatsapp-green hover:bg-whatsapp-green/90 text-pure-white font-button-text text-button-text px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all" href="https://wa.me/6281110016996" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>WhatsApp Cepat</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main>  <!-- WhatsApp Floating Button -->
+  <a aria-label="WhatsApp Ventimax Solutions" 
+     class="fixed bottom-6 right-6 z-[999] w-14 h-14 rounded-full bg-whatsapp-green flex items-center justify-center text-pure-white shadow-[0_8px_24px_rgba(0,128,96,0.35)] hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-whatsapp-green" 
+     href="https://wa.me/6281110016996" 
+     rel="noopener noreferrer" 
+     target="_blank">
+    <span class="material-symbols-outlined text-[30px]">chat</span>
+  </a>
+
+  <!-- ========================================== -->
+  <!-- FOOTER (Exact Match to Beranda with Video) -->
+  <!-- ========================================== -->
+  <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
+    <!-- Footer Video Background -->
+    <div class="absolute inset-0 z-0">
+      <video autoplay muted loop playsinline class="w-full h-full object-cover"
+             poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
+        <source src="https://videos.pexels.com/video-files/11773014/11773014-uhd_2560_1440_30fps.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-[rgb(15,76,129)]/[0.52]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl">
+
+        <!-- Footer Col 1: Brand -->
+        <div class="space-y-space-md">
+          <div class="flex items-center gap-space-sm">
+            <span class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase">VENTIMAX SOLUTIONS</span>
+          </div>
+          <p class="font-body-md text-body-md text-sea-foam leading-relaxed">
+            Sirkulasi udara optimal selama 24 jam tanpa biaya listrik dan dilengkapi dengan insulasi termal bergaransi hingga 15 tahun.
+          </p>
+          <div class="pt-space-xs">
+            <p class="font-spec-label text-spec-label text-primary-fixed uppercase tracking-wider mb-1">Cakupan Layanan</p>
+            <p class="font-body-md text-body-md text-pure-white">Jabodetabek, Bali &amp; Seluruh Indonesia</p>
+          </div>
+        </div>
+
+        <!-- Footer Col 2: Navigation -->
+        <div class="space-y-space-md">
+          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Navigasi Halaman</h4>
+          <ul class="space-y-space-sm">
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Beranda.html">Beranda</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Tentang Kami.html">Tentang Kami</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Proyek.html">Proyek</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 3: Kategori Produk -->
+        <div class="space-y-space-md">
+          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Kategori Produk</h4>
+          <ul class="space-y-space-sm">
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="supavent.html">Supavent</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="turbo-beam.html">Turbo Beam</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="hurricane.html">Hurricane</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="venticool.html">Venticool</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="ventigrille.html">Ventigrille</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 4: Contact -->
+        <div class="space-y-space-md">
+          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Info Kontak</h4>
+          <div class="space-y-space-sm text-sea-foam font-body-md text-body-md">
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">call</span>
+              <span>Telepon Kantor: <a href="tel:+6281110016996" class="hover:text-pure-white transition-colors">0811-1001-6996</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">mail</span>
+              <span>Email: <a href="mailto:hq@ventimaxsolutions.co.id" class="hover:text-pure-white transition-colors">hq@ventimaxsolutions.co.id</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">photo_camera</span>
+              <span>Instagram: <a href="https://www.instagram.com/ventimaxsolutionsofficial/" target="_blank" rel="noopener noreferrer" class="hover:text-pure-white transition-colors">@ventimaxsolutionsofficial</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">globe</span>
+              <span>Website: <a href="https://www.ventimaxsolutions.co.id" class="hover:text-pure-white transition-colors">www.ventimaxsolutions.co.id</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">location_on</span>
+              <span>Summarecon Serpong, Ruko Golden 8, Jl. Boulevard Raya Gading Serpong No.18 Blok D, Pakulonan Barat, Kec. Kelapa Dua, Kab. Tangerang, Banten 15818</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-space-lg border-t border-pure-white/15 text-center font-body-md text-body-md text-sea-foam">
+        <p>© 2026. Venti Max Solutions - Melayani pengadaan dan pemasangan sistem sirkulasi udara di seluruh Indonesia.</p>
+      </div>
+
+    </div>
+  </footer>
+</body></html>

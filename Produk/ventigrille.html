@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>PT Venti Max Solutions</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#001a41","tertiary-fixed":"#d4e3ff","on-tertiary-fixed":"#001c39","on-tertiary-fixed-variant":"#004883","secondary":"#355da3","background":"#f6f9ff","surface-dim":"#d1dbe6","primary-container":"#002a52","ocean-teal":"#27475C","sea-foam":"#C1CDDA","card-start-navy":"#0A2247","on-primary":"#ffffff","on-error-container":"#93000a","on-tertiary-container":"#4c93e6","error-container":"#ffdad6","primary-fixed":"#d4e3ff","surface-tint":"#40608a","whatsapp-green":"#008060","primary-fixed-dim":"#a9c8f9","secondary-fixed":"#d8e2ff","on-tertiary":"#ffffff","card-border":"#0F3976","secondary-fixed-dim":"#adc6ff","on-secondary":"#ffffff","inverse-on-surface":"#e8f2fd","on-surface-variant":"#43474e","tertiary-container":"#002a51","ocean-mist":"#4B6B7E","tertiary":"#00152e","on-primary-fixed-variant":"#274871","surface-variant":"#dae4ef","secondary-container":"#8eb3ff","on-surface":"#131d24","surface-container":"#e5effa","outline-variant":"#c3c6cf","surface-container-highest":"#dae4ef","on-error":"#ffffff","pure-white":"#FFFFFF","surface":"#f6f9ff","tertiary-fixed-dim":"#a4c9ff","on-background":"#131d24","outline":"#73777f","on-secondary-container":"#154388","inverse-surface":"#28313a","error":"#ba1a1a","ocean-deep":"#15364B","on-primary-fixed":"#001c3a","surface-bright":"#f6f9ff","on-secondary-fixed-variant":"#17458a","ink":"#071532","surface-container-low":"#ebf5ff","surface-container-high":"#dfe9f4","inverse-primary":"#a9c8f9","primary":"#00152f","surface-container-lowest":"#ffffff","on-primary-container":"#7392c0"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-sm":"0.5rem","gutter":"2rem","space-md":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","margin-mobile":"1.25rem","space-2xl":"3rem","margin":"2rem","space-3xl":"5rem"},"fontFamily":{"headline-lg":["Inter"],"body-md":["Inter"],"eyebrow-mobile":["Inter"],"headline-md-mobile":["Inter"],"display-hero":["Inter"],"spec-value":["Inter"],"display-hero-mobile":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Inter"],"spec-label":["Inter"],"eyebrow":["Inter"],"body-hero":["Inter"],"button-text":["Inter"],"headline-md":["Inter"]},"fontSize":{"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"eyebrow-mobile":["12px",{"lineHeight":"18px","letterSpacing":"0.12em","fontWeight":"600"}],"headline-md-mobile":["18px",{"lineHeight":"26px","letterSpacing":"0.02em","fontWeight":"700"}],"display-hero":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"700"}],"spec-value":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"spec-label":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"eyebrow":["14px",{"lineHeight":"20px","letterSpacing":"0.12em","fontWeight":"600"}],"body-hero":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"button-text":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased">  <!-- ========================================== -->
+  <!-- HEADER / NAVIGATION                        -->
+  <!-- ========================================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-20 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-space-sm">
+        <a href="../Beranda.html" class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase hover:opacity-90 transition-opacity">
+          VENTIMAX SOLUTIONS
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-space-lg">
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="beranda" href="../Beranda.html">Beranda</a>
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="tentang-kami" href="../Tentang Kami.html">Tentang Kami</a>
+
+        <!-- Produk Dropdown (Active Section) -->
+        <div class="relative group py-space-sm">
+          <button class="flex items-center gap-1 border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text transition-colors focus:outline-none"
+                  type="button">
+            Produk
+            <span class="material-symbols-outlined text-[18px]">expand_more</span>
+          </button>
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="supavent.html">Supavent</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="turbo-beam.html">Turbo Beam</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="hurricane.html">Hurricane</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="venticool.html">Venticool</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-pure-white bg-primary-container font-semibold" href="ventigrille.html">Ventigrille</a>
+          </div>
+        </div>
+
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="proyek" href="../Proyek.html">Proyek</a>
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="kontak" href="../Kontak.html">Kontak</a>
+      </nav>
+
+      <!-- Right Controls: Language Switcher (No Avatar Icon) -->
+      <div class="flex items-center gap-space-md">
+        <div class="relative group py-space-xs">
+          <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-tertiary-container text-on-primary font-spec-label text-spec-label hover:bg-card-start-navy transition-colors focus:outline-none"
+                  type="button">
+            <span class="material-symbols-outlined text-[18px]">flag</span>
+            <span>ID</span>
+            <span class="material-symbols-outlined text-[16px]">expand_more</span>
+          </button>
+          <div class="absolute right-0 top-full hidden group-hover:block w-32 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
+            <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               href="#">
+              <span class="material-symbols-outlined text-[16px]">flag</span>
+              <span>Indonesia</span>
+            </a>
+            <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               href="../en">
+              <span class="material-symbols-outlined text-[16px]">language</span>
+              <span>English</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative bg-ink text-pure-white overflow-hidden py-space-3xl">
+<div class="absolute inset-0 opacity-15 pointer-events-none">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="48" id="grid-pattern" patternunits="userSpaceOnUse" width="48">
+<path d="M 48 0 L 0 0 0 48" fill="none" stroke="#C1CDDA" stroke-width="0.75"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Text Column -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center gap-3">
+<span class="w-6 h-[2px] bg-secondary-container inline-block"></span>
+<span class="font-eyebrow text-eyebrow text-secondary-fixed-dim uppercase tracking-[0.12em]">KISI VENTILASI ARSITEKTURAL PLAFON & DINDING</span>
+</div>
+<h1 class="font-display-hero text-headline-lg lg:text-display-hero font-bold tracking-tight text-pure-white leading-tight">
+            Tingkatkan sirkulasi udara dan estetika interior rumah Anda dengan Ventigrille.
+          </h1>
+<p class="font-body-hero text-body-lg lg:text-body-hero text-sea-foam max-w-2xl leading-relaxed">
+            Ventigrille adalah solusi ventilasi premium yang dirancang untuk memadukan sirkulasi udara berkinerja tinggi secara sempurna dengan tampilan arsitektural yang elegan, menjadikannya peningkatan terbaik bagi hunian modern.
+          </p>
+<!-- Quick Spec Chips & CTA -->
+<div class="pt-space-sm flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center gap-2 bg-secondary text-pure-white px-6 py-3 rounded-lg font-button-text text-button-text hover:bg-secondary/90 transition-all shadow-md" href="https://wa.me/6281110016996?text=Halo%20VentiMax,%20saya%20tertarik%20konsultasi%20produk%20VentiGrille" rel="noopener noreferrer" target="_blank">
+<span>Konsultasi VentiGrille</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<div class="flex items-center gap-2 px-4 py-3 rounded-lg bg-card-start-navy/70 text-sea-foam text-spec-label font-spec-label">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">air</span>
+<span>Flush-Mount Arsitektural</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-3 rounded-lg bg-card-start-navy/70 text-sea-foam text-spec-label font-spec-label">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">volume_off</span>
+<span>Operasi Senyap</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Composition -->
+<div class="lg:col-span-5 relative mt-6 lg:mt-0">
+<div class="relative rounded-xl overflow-hidden shadow-2xl bg-card-start-navy">
+<img alt="Instalasi VentiGrille di langit-langit hunian mewah" class="w-full h-[320px] lg:h-[380px] object-cover" src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/ventigrille-ceiling-BMNmfqbpflpxZQ0N.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 p-4 rounded-lg bg-ink/75 backdrop-blur-sm">
+<span class="text-secondary-fixed-dim font-eyebrow text-xs uppercase tracking-wider block mb-1">Aplikasi Plafon Mewah</span>
+<p class="text-pure-white font-spec-label text-sm">Menyatu rata dengan gypsum langit-langit interior hunian</p>
+</div>
+</div>
+<!-- Floating Tall Mockup Card Overlay -->
+<div class="hidden sm:block absolute -bottom-10 -left-10 w-44 lg:w-48 rounded-xl overflow-hidden shadow-2xl bg-card-start-navy/95 p-2">
+<div class="relative w-full h-56 rounded-lg overflow-hidden bg-primary-container">
+<img alt="VentiGrille Arsitektural Detail" class="w-full h-full object-cover" src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/venti-grille-plafon-dSz7y9hvenMaIVjO.jpg"/>
+</div>
+<div class="p-2 text-center">
+<span class="text-[11px] font-spec-label text-secondary-fixed tracking-wide uppercase">Precision Louver</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HIGHLIGHT BANNER: CRAFTSMANSHIP & LASER MARK -->
+<section class="bg-surface-container-low py-space-xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-pure-white rounded-xl shadow-md overflow-hidden">
+<div class="lg:col-span-5 h-[280px] lg:h-[340px]">
+<img alt="Close up detail finishing matte black dan laser brand mark Ventigrille" class="w-full h-full object-cover" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/final-edited-vent-grille-black-1tm8BMlbav2ItnvN.jpeg"/>
+</div>
+<div class="lg:col-span-7 p-6 lg:p-10 flex flex-col gap-space-sm justify-center">
+<div class="flex items-center gap-2">
+<span class="w-5 h-[2px] bg-secondary inline-block"></span>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]">Engineering Craftsmanship</span>
+</div>
+<h2 class="font-headline-lg text-headline-md lg:text-headline-lg font-bold text-on-surface">
+            Finishing Matte Klasik & Presisi Laser Mark
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Setiap unit kisi ventilasi Ventigrille diproduksi dengan toleransi presisi tingkat tinggi. Dilapisi dengan proses pelapisan elektrostatik tahan pudar dan dilengkapi penandaan identitas resmi, menjamin orisinalitas serta daya tahan estetika pada interior jangka panjang.
+          </p>
+<div class="flex flex-wrap items-center gap-6 pt-2 text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-spec-label text-spec-label">Standar Arsitektur Modern</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">cleaning_services</span>
+<span class="font-spec-label text-spec-label">Anti-Karat & Mudah Dibersihkan</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRODUK VENTIGRILLE: 4 VARIAN RESMI -->
+<section class="bg-surface py-space-3xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-space-xs items-center">
+<div class="flex items-center gap-2 justify-center">
+<span class="w-6 h-[2px] bg-secondary inline-block"></span>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]">Koleksi Katalog</span>
+<span class="w-6 h-[2px] bg-secondary inline-block"></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+          Produk Ventigrille
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pilihan kisi-kisi ventilasi bergaris tegas dalam dimensi bujur sangkar dan persegi panjang untuk memenuhi fleksibilitas denah plafon maupun dinding.
+        </p>
+</div>
+<!-- 4-Card Grid Responsive -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Variant 1 -->
+<div class="bg-pure-white rounded-xl shadow-md overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-200">
+<div class="relative h-60 bg-surface-container overflow-hidden">
+<img alt="VentiGrille Kotak Hitam 30 cm x 30 cm" class="w-full h-full object-cover" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/final-edited-black-ventigrille-TN5DCJC6o5ajDDEC.jpeg"/>
+<span class="absolute top-3 left-3 bg-ink/90 text-pure-white text-[11px] font-spec-label uppercase tracking-wider px-2.5 py-1 rounded">Matte Black</span>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<span class="font-eyebrow text-eyebrow-mobile text-secondary uppercase tracking-widest block mb-1">Tipe Kotak</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">VentiGrille Kotak Hitam</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Kisi ventilasi simetris berbalut warna hitam matte elegan untuk aksen interior kontemporer.</p>
+</div>
+<div class="pt-4 bg-surface-container-low rounded-lg p-3 flex items-center justify-between">
+<span class="font-spec-label text-spec-label text-on-surface">Dimensi Resmi:</span>
+<span class="font-spec-value text-spec-value text-secondary font-semibold">30 cm × 30 cm</span>
+</div>
+</div>
+</div>
+<!-- Variant 2 -->
+<div class="bg-pure-white rounded-xl shadow-md overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-200">
+<div class="relative h-60 bg-surface-container overflow-hidden">
+<img alt="VentiGrille Kotak Putih 30 cm x 30 cm" class="w-full h-full object-cover" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/ventigrille-final-edited1-ePosJ3EaGFC7cxnt.jpeg"/>
+<span class="absolute top-3 left-3 bg-secondary text-pure-white text-[11px] font-spec-label uppercase tracking-wider px-2.5 py-1 rounded">Pure White</span>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<span class="font-eyebrow text-eyebrow-mobile text-secondary uppercase tracking-widest block mb-1">Tipe Kotak</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">VentiGrille Kotak Putih</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Pilihan warna putih bersih yang berpadu mulus (seamless blend) dengan permukaan plafon gypsum.</p>
+</div>
+<div class="pt-4 bg-surface-container-low rounded-lg p-3 flex items-center justify-between">
+<span class="font-spec-label text-spec-label text-on-surface">Dimensi Resmi:</span>
+<span class="font-spec-value text-spec-value text-secondary font-semibold">30 cm × 30 cm</span>
+</div>
+</div>
+</div>
+<!-- Variant 3 -->
+<div class="bg-pure-white rounded-xl shadow-md overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-200">
+<div class="relative h-60 bg-surface-container overflow-hidden">
+<img alt="VentiGrille Persegi Panjang 15 cm x 40 cm" class="w-full h-full object-cover" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/ventigrille-final-edited3-LqePWFBQ4NGOJrfs.jpeg"/>
+<span class="absolute top-3 left-3 bg-ink/90 text-pure-white text-[11px] font-spec-label uppercase tracking-wider px-2.5 py-1 rounded">Linear Wide</span>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<span class="font-eyebrow text-eyebrow-mobile text-secondary uppercase tracking-widest block mb-1">Tipe Persegi</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">VentiGrille Persegi Panjang</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Bentuk memanjang yang ideal ditempatkan di atas pintu, lorong sempit, atau drop-ceiling modern.</p>
+</div>
+<div class="pt-4 bg-surface-container-low rounded-lg p-3 flex items-center justify-between">
+<span class="font-spec-label text-spec-label text-on-surface">Dimensi Resmi:</span>
+<span class="font-spec-value text-spec-value text-secondary font-semibold">15 cm × 40 cm</span>
+</div>
+</div>
+</div>
+<!-- Variant 4 -->
+<div class="bg-pure-white rounded-xl shadow-md overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-200">
+<div class="relative h-60 bg-surface-container overflow-hidden">
+<img alt="VentiGrille Persegi Pendek 15 cm x 30 cm" class="w-full h-full object-cover" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/final-edited-vent-grille-black-1tm8BMlbav2ItnvN.jpeg"/>
+<span class="absolute top-3 left-3 bg-secondary text-pure-white text-[11px] font-spec-label uppercase tracking-wider px-2.5 py-1 rounded">Compact</span>
+</div>
+<div class="p-6 flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<span class="font-eyebrow text-eyebrow-mobile text-secondary uppercase tracking-widest block mb-1">Tipe Persegi</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">VentiGrille Persegi Pendek</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Format kompak untuk area kamar mandi, ruang rias, atau zona dinding yang membutuhkan ventilasi ringkas.</p>
+</div>
+<div class="pt-4 bg-surface-container-low rounded-lg p-3 flex items-center justify-between">
+<span class="font-spec-label text-spec-label text-on-surface">Dimensi Resmi:</span>
+<span class="font-spec-value text-spec-value text-secondary font-semibold">15 cm × 30 cm</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- AIRFLOW DIAGRAM VISUAL SECTION -->
+<section class="bg-primary-container text-pure-white py-space-3xl relative overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-5 h-[2px] bg-secondary-fixed inline-block"></span>
+<span class="font-eyebrow text-eyebrow text-secondary-fixed uppercase tracking-[0.12em]">Mekanisme Sirkulasi</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-pure-white">
+            Pelepasan Udara Hangat Secara Berkesinambungan
+          </h2>
+<p class="font-body-md text-body-md text-sea-foam leading-relaxed">
+            Udara panas dan lembap secara alami bergerak ke atas plafon ruangan. Melalui rancang kisi aerodinamis Ventigrille, udara pengap diteruskan menuju rongga atap untuk dikeluarkan tanpa hambatan melalui ventilator atap VentiMax.
+          </p>
+<div class="p-4 rounded-xl bg-card-start-navy/80 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-pure-white text-[24px]">thermostat</span>
+</div>
+<div>
+<h4 class="font-spec-label text-spec-label text-pure-white">Pencegahan Panas Terjebak</h4>
+<p class="font-body-md text-xs text-sea-foam">Mengeliminasi kantong udara panas di plafon ruang tamu, kamar, maupun dapur.</p>
+</div>
+</div>
+</div>
+<!-- Inline Technical SVG Illustration -->
+<div class="lg:col-span-7 bg-card-start-navy p-6 lg:p-8 rounded-2xl shadow-xl">
+<div class="flex items-center justify-between mb-4">
+<span class="font-spec-label text-xs uppercase tracking-widest text-secondary-fixed-dim">Diagram Alir Termal & Plafon</span>
+<span class="text-xs text-sea-foam bg-ink/60 px-3 py-1 rounded-full">Sistem Pasif & Terintegrasi</span>
+</div>
+<div class="w-full flex items-center justify-center py-4">
+<svg class="w-full h-auto text-sea-foam" fill="none" viewbox="0 0 600 240" xmlns="http://www.w3.org/2000/svg">
+<!-- Roof & Attic Cavity -->
+<polygon fill="#002A52" opacity="0.6" points="50,90 300,20 550,90"></polygon>
+<path d="M 50 90 L 300 20 L 550 90" stroke="#4c93e6" stroke-dasharray="4 4" stroke-width="2"></path>
+<!-- Ventilator Top Icon -->
+<circle cx="300" cy="20" fill="#154388" r="14"></circle>
+<path d="M 300 10 L 300 30 M 290 20 L 310 20" stroke="#FFFFFF" stroke-width="2"></path>
+<text fill="#d4e3ff" font-size="11" font-weight="600" text-anchor="middle" x="300" y="-2">Ventilator Atap VentiMax</text>
+<!-- Ceiling Line -->
+<line stroke="#C1CDDA" stroke-width="3" x1="50" x2="550" y1="130" y2="130"></line>
+<text fill="#C1CDDA" font-size="10" text-anchor="end" x="540" y="122">Garis Plafon / Ceiling Gypsum</text>
+<!-- VentiGrille Louver Representation -->
+<rect fill="#071532" height="8" rx="2" stroke="#8eb3ff" stroke-width="1.5" width="140" x="230" y="126"></rect>
+<line stroke="#FFFFFF" stroke-width="2" x1="250" x2="265" y1="130" y2="130"></line>
+<line stroke="#FFFFFF" stroke-width="2" x1="275" x2="290" y1="130" y2="130"></line>
+<line stroke="#FFFFFF" stroke-width="2" x1="300" x2="315" y1="130" y2="130"></line>
+<line stroke="#FFFFFF" stroke-width="2" x1="325" x2="340" y1="130" y2="130"></line>
+<text fill="#8eb3ff" font-size="12" font-weight="700" text-anchor="middle" x="300" y="152">Kisi VentiGrille</text>
+<!-- Airflow Flow Lines Rising -->
+<g stroke="#8eb3ff" stroke-linecap="round" stroke-width="2">
+<path d="M 260 210 Q 260 170 270 140 Q 280 100 295 40" opacity="0.85" stroke-dasharray="6 4"></path>
+<path d="M 300 210 Q 300 160 300 140 Q 300 90 300 40" opacity="1" stroke-dasharray="6 4"></path>
+<path d="M 340 210 Q 340 170 330 140 Q 320 100 305 40" opacity="0.85" stroke-dasharray="6 4"></path>
+</g>
+<!-- Airflow Arrows -->
+<polygon fill="#d4e3ff" points="295,35 291,44 299,44"></polygon>
+<polygon fill="#d4e3ff" points="300,32 296,41 304,41"></polygon>
+<polygon fill="#d4e3ff" points="305,35 301,44 309,44"></polygon>
+<text fill="#C1CDDA" font-size="11" text-anchor="middle" x="300" y="225">Udara Hangat & Pengap Interior Naik</text>
+</svg>
+</div>
+<div class="grid grid-cols-2 gap-3 mt-2 pt-3 border-t border-pure-white/10 text-xs text-sea-foam">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span>Aliran laminar tanpa turbulensi</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span>Pembuangan panas 24 jam</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FITUR & KEUNGGULAN UTAMA (5 POIN LENGKAP DOKUMEN ASLI) -->
+<section class="bg-background py-space-3xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-2xl">
+<!-- Section Title -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-[2px] bg-secondary inline-block"></span>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]">Karakteristik Produk</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+          Fitur & Keunggulan Utama
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Dirancang untuk melampaui kisi ventilasi konvensional, Ventigrille menyatukan fungsionalitas termal dengan ketelitian visual arsitektural.
+        </p>
+</div>
+<!-- 5 Features Grid (Asymmetric Bento) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Keunggulan 1 (Large 2-column card) -->
+<div class="lg:col-span-2 bg-pure-white rounded-xl p-8 shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">mode_fan</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Kenyamanan Ruangan yang Optimal
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Ventigrille secara efisien mengalirkan udara hangat dan pengap dari dalam ruangan menuju ruang atap, sehingga udara tersebut dapat dibuang secara alami maupun mekanis melalui ventilator atap. Hal ini secara drastis mengurangi penumpukan panas serta menjaga suasana di sekitar Anda tetap sejuk dan segar.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-spec-label text-sm">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Mencegah akumulasi panas dan kelembapan di plafon hunian</span>
+</div>
+</div>
+<!-- Keunggulan 2 -->
+<div class="bg-pure-white rounded-xl p-8 shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">design_services</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Desain Minimalis dan Ramping
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Dirancang agar tidak mencolok secara visual, Ventigrille memiliki desain kisi-kisi (louver) elegan yang terpasang rata dengan permukaan langit-langit atau dinding. Garis desainnya yang bersih memungkinkannya menyatu secara harmonis dengan berbagai gaya arsitektur modern.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-spec-label text-sm">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Profil rata plafon (Flush profile)</span>
+</div>
+</div>
+<!-- Keunggulan 3 -->
+<div class="bg-pure-white rounded-xl p-8 shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">volume_mute</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Bekerja Dengan Senyap
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Dibuat dengan presisi untuk dinamika aliran udara yang optimal, kisi-kisi ini memastikan distribusi udara yang lancar tanpa suara siulan atau gemeretak yang mengganggu, yang sering ditemukan pada ventilasi standar.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-spec-label text-sm">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Aerodinamika anti-bising & anti-getar</span>
+</div>
+</div>
+<!-- Keunggulan 4 -->
+<div class="bg-pure-white rounded-xl p-8 shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">palette</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Pilihan Ukuran Beragam & Finishing Premium
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Untuk memenuhi berbagai kebutuhan ruang dan desain, Ventigrille tersedia dalam beragam dimensi, termasuk 30x30, 15x30, dan 15x40. Produk ini dapat disesuaikan dengan pilihan finishing: hitam <em>matte</em> klasik, putih bersih.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-4 rounded-full bg-ink inline-block"></span>
+<span class="text-xs font-spec-label text-on-surface">Hitam Matte</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-4 rounded-full bg-pure-white border border-outline-variant inline-block"></span>
+<span class="text-xs font-spec-label text-on-surface">Putih Bersih</span>
+</div>
+</div>
+</div>
+<!-- Keunggulan 5 -->
+<div class="bg-pure-white rounded-xl p-8 shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">build</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Pemasangan yang Mudah
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Dilengkapi dengan rangka yang ringan namun kokoh, Ventigrille dirancang untuk pemasangan yang cepat dan praktis, baik untuk bangunan baru maupun renovasi rumah yang sudah ada.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-2 text-secondary font-spec-label text-sm">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Rangka presisi ramah instalasi</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TECHNICAL SPECIFICATION TABLE -->
+<section class="bg-surface-container py-space-3xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<div class="text-center max-w-xl mx-auto flex flex-col gap-space-xs">
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]">Tabel Spesifikasi Teknis</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Detail Dimensi & Aplikasi</h2>
+</div>
+<!-- Overflow Scrolling Container for Table -->
+<div class="overflow-x-auto bg-pure-white rounded-xl shadow-md p-6">
+<table class="w-full text-left min-w-[640px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface font-spec-label text-spec-label">
+<th class="p-4 rounded-l-lg">Model Varian</th>
+<th class="p-4">Dimensi Luar (cm)</th>
+<th class="p-4">Pilihan Warna Finishing</th>
+<th class="p-4">Area Pemasangan Rekomendasi</th>
+<th class="p-4 rounded-r-lg">Karakteristik Rangka</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface-variant">
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-ink inline-block"></span>
+<span>VentiGrille Kotak Hitam</span>
+</td>
+<td class="p-4 font-spec-value">30 cm × 30 cm</td>
+<td class="p-4">Hitam Matte Klasik</td>
+<td class="p-4">Plafon Ruang Tamu, Kamar Utama, Kantor</td>
+<td class="p-4">Aluminium / Logam Ringan Presisi</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest border border-outline inline-block"></span>
+<span>VentiGrille Kotak Putih</span>
+</td>
+<td class="p-4 font-spec-value">30 cm × 30 cm</td>
+<td class="p-4">Putih Bersih (Powder Coated)</td>
+<td class="p-4">Langit-langit Gypsum Selaras Putih</td>
+<td class="p-4">Aluminium / Logam Ringan Presisi</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-ink inline-block"></span>
+<span>VentiGrille Persegi Panjang</span>
+</td>
+<td class="p-4 font-spec-value">15 cm × 40 cm</td>
+<td class="p-4">Hitam Matte & Putih Bersih</td>
+<td class="p-4">Dinding Atas Pintu, Koridor, Drop Ceiling</td>
+<td class="p-4">Slim Profile Flush Mount</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-ink inline-block"></span>
+<span>VentiGrille Persegi Pendek</span>
+</td>
+<td class="p-4 font-spec-value">15 cm × 30 cm</td>
+<td class="p-4">Hitam Matte & Putih Bersih</td>
+<td class="p-4">Kamar Mandi, Dapur Bersih, Ruang Pakaian</td>
+<td class="p-4">Slim Profile Flush Mount</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- CALL TO ACTION / PENUTUP RESMI -->
+<section class="bg-ink text-pure-white py-space-3xl relative overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin relative z-10 text-center flex flex-col items-center gap-space-lg">
+<div class="flex items-center gap-3">
+<span class="w-8 h-[2px] bg-secondary-fixed inline-block"></span>
+<span class="font-eyebrow text-eyebrow text-secondary-fixed uppercase tracking-[0.14em]">PT Venti Max Solutions</span>
+<span class="w-8 h-[2px] bg-secondary-fixed inline-block"></span>
+</div>
+<div class="flex flex-col gap-space-sm max-w-3xl">
+<h2 class="font-display-hero text-headline-lg lg:text-display-hero font-bold tracking-tight text-pure-white">
+          Performa. Presisi. VentiGrille.
+        </h2>
+<p class="font-headline-md text-headline-md font-normal text-sea-foam">
+          VentiGrille menghadirkan pengelolaan aliran udara yang unggul dan tetap stylish
+        </p>
+</div>
+<div class="pt-space-sm flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-secondary hover:bg-secondary/90 text-pure-white px-8 py-4 rounded-lg font-button-text text-button-text transition-all shadow-lg" href="https://wa.me/6281110016996?text=Halo%20VentiMax,%20saya%20ingin%20memesan%20kisi%20ventilasi%20VentiGrille" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px]">shopping_cart</span>
+<span>Pesan Unit VentiGrille</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-transparent text-pure-white px-8 py-4 rounded-lg font-button-text text-button-text hover:bg-pure-white/10 transition-all" href="tel:081110016996">
+<span class="material-symbols-outlined text-[22px]">call</span>
+<span>0811-1001-6996</span>
+</a>
+</div>
+<!-- Service Coverage Badge -->
+<div class="mt-space-md p-4 rounded-xl bg-card-start-navy/80 max-w-xl w-full flex flex-col sm:flex-row items-center justify-center gap-3 text-center">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">local_shipping</span>
+<div class="text-xs text-sea-foam">
+<span class="font-bold text-pure-white uppercase tracking-wider block sm:inline">Cakupan Pengiriman & Pemasangan:</span>
+<span> Jabodetabek, Bali & Seluruh Indonesia</span>
+</div>
+</div>
+</div>
+</section>
+</div></main>  <!-- WhatsApp Floating Button -->
+  <a aria-label="WhatsApp Ventimax Solutions" 
+     class="fixed bottom-6 right-6 z-[999] w-14 h-14 rounded-full bg-whatsapp-green flex items-center justify-center text-pure-white shadow-[0_8px_24px_rgba(0,128,96,0.35)] hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-whatsapp-green" 
+     href="https://wa.me/6281110016996" 
+     rel="noopener noreferrer" 
+     target="_blank">
+    <span class="material-symbols-outlined text-[30px]">chat</span>
+  </a>
+
+  <!-- ========================================== -->
+  <!-- FOOTER (Exact Match to Beranda with Video) -->
+  <!-- ========================================== -->
+  <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
+    <!-- Footer Video Background -->
+    <div class="absolute inset-0 z-0">
+      <video autoplay muted loop playsinline class="w-full h-full object-cover"
+             poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
+        <source src="https://videos.pexels.com/video-files/11773014/11773014-uhd_2560_1440_30fps.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-[rgb(15,76,129)]/[0.52]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl">
+
+        <!-- Footer Col 1: Brand -->
+        <div class="space-y-space-md">
+          <div class="flex items-center gap-space-sm">
+            <span class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase">VENTIMAX SOLUTIONS</span>
+          </div>
+          <p class="font-body-md text-body-md text-sea-foam leading-relaxed">
+            Sirkulasi udara optimal selama 24 jam tanpa biaya listrik dan dilengkapi dengan insulasi termal bergaransi hingga 15 tahun.
+          </p>
+          <div class="pt-space-xs">
+            <p class="font-spec-label text-spec-label text-primary-fixed uppercase tracking-wider mb-1">Cakupan Layanan</p>
+            <p class="font-body-md text-body-md text-pure-white">Jabodetabek, Bali &amp; Seluruh Indonesia</p>
+          </div>
+        </div>
+
+        <!-- Footer Col 2: Navigation -->
+        <div class="space-y-space-md">
+          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Navigasi Halaman</h4>
+          <ul class="space-y-space-sm">
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Beranda.html">Beranda</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Tentang Kami.html">Tentang Kami</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Proyek.html">Proyek</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 3: Kategori Produk -->
+        <div class="space-y-space-md">
+          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Kategori Produk</h4>
+          <ul class="space-y-space-sm">
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="supavent.html">Supavent</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="turbo-beam.html">Turbo Beam</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="hurricane.html">Hurricane</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="venticool.html">Venticool</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="ventigrille.html">Ventigrille</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 4: Contact -->
+        <div class="space-y-space-md">
+          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Info Kontak</h4>
+          <div class="space-y-space-sm text-sea-foam font-body-md text-body-md">
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">call</span>
+              <span>Telepon Kantor: <a href="tel:+6281110016996" class="hover:text-pure-white transition-colors">0811-1001-6996</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">mail</span>
+              <span>Email: <a href="mailto:hq@ventimaxsolutions.co.id" class="hover:text-pure-white transition-colors">hq@ventimaxsolutions.co.id</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">photo_camera</span>
+              <span>Instagram: <a href="https://www.instagram.com/ventimaxsolutionsofficial/" target="_blank" rel="noopener noreferrer" class="hover:text-pure-white transition-colors">@ventimaxsolutionsofficial</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">globe</span>
+              <span>Website: <a href="https://www.ventimaxsolutions.co.id" class="hover:text-pure-white transition-colors">www.ventimaxsolutions.co.id</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">location_on</span>
+              <span>Summarecon Serpong, Ruko Golden 8, Jl. Boulevard Raya Gading Serpong No.18 Blok D, Pakulonan Barat, Kec. Kelapa Dua, Kab. Tangerang, Banten 15818</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-space-lg border-t border-pure-white/15 text-center font-body-md text-body-md text-sea-foam">
+        <p>© 2026. Venti Max Solutions - Melayani pengadaan dan pemasangan sistem sirkulasi udara di seluruh Indonesia.</p>
+      </div>
+
+    </div>
+  </footer>
+</body></html>

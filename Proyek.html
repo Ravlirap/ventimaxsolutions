@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Proyek Portofolio | Ventimax Solutions</title>
+  <meta name="description" content="Jelajahi galeri portofolio instalasi sistem ventilasi turbin dan insulasi termal Ventimax Solutions pada fasilitas manufaktur, pergudangan, komersial, dan residensial di seluruh Indonesia.">
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00152f",
+            "primary-container": "#002a52",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#d4e3ff",
+            "secondary": "#355da3",
+            "secondary-container": "#8eb3ff",
+            "tertiary-container": "#002a51",
+            "ink": "#071532",
+            "card-start-navy": "#0A2247",
+            "card-border": "#0F3976",
+            "pure-white": "#FFFFFF",
+            "sea-foam": "#C1CDDA",
+            "surface": "#f6f9ff",
+            "surface-bright": "#f6f9ff",
+            "surface-container": "#e5effa",
+            "surface-container-low": "#ebf5ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#dfe9f4",
+            "surface-container-highest": "#dae4ef",
+            "outline": "#73777f",
+            "outline-variant": "#c3c6cf",
+            "on-surface": "#131d24",
+            "on-surface-variant": "#43474e",
+            "ocean-mist": "#4B6B7E",
+            "whatsapp-green": "#008060"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-2xl": "3rem",
+            "space-3xl": "5rem",
+            "gutter": "2rem",
+            "gutter-mobile": "1rem"
+          },
+          fontFamily: {
+            "headline-lg": ["Inter", "sans-serif"],
+            "headline-md": ["Inter", "sans-serif"],
+            "display-hero": ["Inter", "sans-serif"],
+            "body-hero": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "button-text": ["Inter", "sans-serif"],
+            "eyebrow": ["Inter", "sans-serif"],
+            "spec-label": ["Inter", "sans-serif"],
+            "spec-value": ["Inter", "sans-serif"]
+          },
+          fontSize: {
+            "eyebrow": ["14px", { "lineHeight": "20px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "eyebrow-mobile": ["12px", { "lineHeight": "18px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "display-hero-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "700" }],
+            "body-hero": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "button-text": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "spec-label": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "spec-value": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    .hero-video-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .hero-video-bg img, .hero-video-bg video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .hero-video-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(7,21,50,0.85) 0%, rgba(7,21,50,0.55) 50%, rgba(7,21,50,0.75) 100%);
+    }
+    .hero-video-overlay-bottom {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(7,21,50,0.95) 0%, transparent 40%, rgba(7,21,50,0.3) 100%);
+    }
+    .hero-text-shadow {
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
+    }
+    .hero-subtext-shadow {
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased">
+
+  <!-- ========================================== -->
+  <!-- HEADER / NAVIGATION (Exact Match to Site)  -->
+  <!-- ========================================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-20 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
+
+      <!-- Brand Logo Text -->
+      <div class="flex items-center gap-space-sm">
+        <a href="Beranda.html" class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase hover:opacity-90 transition-opacity">
+          VENTIMAX SOLUTIONS
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-space-lg">
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="beranda" href="Beranda.html">Beranda</a>
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="tentang-kami" href="Tentang Kami.html">Tentang Kami</a>
+
+        <!-- Produk Dropdown -->
+        <div class="relative group py-space-sm">
+          <button class="flex items-center gap-1 font-body-md text-body-md text-sea-foam group-hover:text-pure-white transition-colors focus:outline-none"
+                  type="button">
+            Produk
+            <span class="material-symbols-outlined text-[18px]">expand_more</span>
+          </button>
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-supavent" href="Produk/supavent.html">Supavent</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-turbo-beam" href="Produk/turbo-beam.html">Turbo Beam</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-hurricane" href="Produk/hurricane.html">Hurricane</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-venticool" href="Produk/venticool.html">Venticool</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-ventigrille" href="Produk/ventigrille.html">Ventigrille</a>
+          </div>
+        </div>
+
+        <!-- Proyek (Active Page) -->
+        <a aria-current="page"
+           class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
+           data-path="proyek" href="Proyek.html">Proyek</a>
+
+        <!-- Kontak -->
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+           data-path="kontak" href="Kontak.html">Kontak</a>
+      </nav>
+
+      <!-- Right Controls: Language Switcher (No Avatar Icon) -->
+      <div class="flex items-center gap-space-md">
+        <div class="relative group py-space-xs">
+          <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-tertiary-container text-on-primary font-spec-label text-spec-label hover:bg-card-start-navy transition-colors focus:outline-none"
+                  type="button">
+            <span class="material-symbols-outlined text-[18px]">flag</span>
+            <span>ID</span>
+            <span class="material-symbols-outlined text-[16px]">expand_more</span>
+          </button>
+          <div class="absolute right-0 top-full hidden group-hover:block w-32 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
+            <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               href="#">
+              <span class="material-symbols-outlined text-[16px]">flag</span>
+              <span>Indonesia</span>
+            </a>
+            <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               href="/en/proyek">
+              <span class="material-symbols-outlined text-[16px]">language</span>
+              <span>English</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- MAIN CONTENT                               -->
+  <!-- ========================================== -->
+  <main class="w-full pt-20 bg-surface">
+    <div class="flex flex-col w-full">
+
+      <!-- 1. HERO SECTION (Authentic Rooftop Project Installation Background) -->
+      <section class="relative w-full -mt-20 pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-ink min-h-[520px] lg:min-h-[580px] flex items-center">
+        <!-- Authentic Background Image from Ventimax Projects -->
+        <div class="hero-video-bg">
+          <img alt="Ventimax Solutions Proyek Instalasi Ventilator Turbin Industri" 
+               class="w-full h-full object-cover object-center" 
+               src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg">
+          <div class="hero-video-overlay"></div>
+          <div class="hero-video-overlay-bottom"></div>
+        </div>
+
+        <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter w-full">
+          <div class="max-w-4xl space-y-space-sm mb-space-xl">
+            <div class="inline-flex items-center gap-3">
+              <span class="w-8 h-0.5 bg-secondary-container rounded-full"></span>
+              <span class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-widest font-semibold">
+                PORTOFOLIO VENTILASI NASIONAL
+              </span>
+            </div>
+            <h1 class="font-display-hero text-headline-lg-mobile lg:text-display-hero text-pure-white tracking-tight font-bold uppercase hero-text-shadow leading-tight">
+              VENTIMAX SOLUTIONS<br>PROYEK
+            </h1>
+            <p class="font-body-hero text-body-lg lg:text-body-hero text-pure-white font-medium leading-relaxed hero-subtext-shadow">
+              Transformasi Ruang dengan Pengendalian Iklim Unggul &amp; Keanggunan Arsitektur.
+            </p>
+            <p class="font-body-md text-body-md text-sea-foam leading-relaxed max-w-2xl hero-subtext-shadow">
+              Jelajahi portofolio instalasi unggulan kami di sektor manufaktur, pergudangan logistik, komersial, dan residensial di seluruh Indonesia.
+            </p>
+          </div>
+
+          <!-- 4-Metric Grid Banner -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-md border-t border-card-border/60">
+            <div class="bg-card-start-navy/80 backdrop-blur-md p-space-md rounded-xl border border-card-border/60 shadow-lg">
+              <span class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-pure-white block font-bold">1.250+</span>
+              <span class="font-body-md text-body-md text-sea-foam">Unit Terpasang</span>
+            </div>
+            <div class="bg-card-start-navy/80 backdrop-blur-md p-space-md rounded-xl border border-card-border/60 shadow-lg">
+              <span class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-secondary-container block font-bold">15 Thn</span>
+              <span class="font-body-md text-body-md text-sea-foam">Garansi Material</span>
+            </div>
+            <div class="bg-card-start-navy/80 backdrop-blur-md p-space-md rounded-xl border border-card-border/60 shadow-lg">
+              <span class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-pure-white block font-bold">0 Watt</span>
+              <span class="font-body-md text-body-md text-sea-foam">Konsumsi Listrik</span>
+            </div>
+            <div class="bg-card-start-navy/80 backdrop-blur-md p-space-md rounded-xl border border-card-border/60 shadow-lg">
+              <span class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-secondary-container block font-bold">100%</span>
+              <span class="font-body-md text-body-md text-sea-foam">Bebas Karat &amp; Bocor</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. FILTER PILLS BAR -->
+      <section class="bg-surface-container-low border-b border-surface-container-highest sticky top-20 z-30 px-gutter-mobile lg:px-gutter py-3.5 shadow-sm">
+        <div class="max-w-[1200px] mx-auto flex items-center justify-between overflow-x-auto gap-3">
+          <div class="flex items-center gap-2 lg:gap-3 flex-shrink-0" id="filter-container">
+            <button class="filter-btn px-5 py-2 rounded-full font-spec-label text-spec-label bg-primary text-pure-white shadow-sm transition-all focus:outline-none" 
+                    data-filter="all" type="button">
+              Semua Proyek
+            </button>
+            <button class="filter-btn px-5 py-2 rounded-full font-spec-label text-spec-label bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all focus:outline-none" 
+                    data-filter="supavent" type="button">
+              SupaVent (Hunian &amp; Komersial)
+            </button>
+            <button class="filter-btn px-5 py-2 rounded-full font-spec-label text-spec-label bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all focus:outline-none" 
+                    data-filter="hurricane" type="button">
+              Hurricane (Pabrik &amp; Gudang)
+            </button>
+            <button class="filter-btn px-5 py-2 rounded-full font-spec-label text-spec-label bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all focus:outline-none" 
+                    data-filter="ventigrille" type="button">
+              VentiGrille (Interior &amp; Plafon)
+            </button>
+          </div>
+          <div class="hidden lg:flex items-center gap-2 text-ocean-mist font-body-md text-body-md whitespace-nowrap pl-4">
+            <span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+            <span>Standar Arsitektural Nasional</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. SECTION SUPAVENT (Hunian & Komersial) -->
+      <section class="py-space-2xl lg:py-space-3xl px-gutter-mobile lg:px-gutter bg-surface-bright" id="supavent-section">
+        <div class="max-w-[1200px] mx-auto">
+          
+          <!-- Section Header -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+            <div class="max-w-3xl">
+              <div class="inline-flex items-center gap-2 mb-space-xs">
+                <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
+                <span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest font-semibold">VENTILATOR BERTENAGA ANGIN</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary uppercase tracking-tight font-bold">
+                SUPAVENT
+              </h2>
+              <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mt-space-xs">
+                Temukan bagaimana VentiMax Solutions bermitra dengan pemilik rumah, arsitek, dan kontraktor untuk menghadirkan aliran udara yang optimal, manajemen energi menyeluruh, serta integrasi estetika yang harmonis pada properti hunian maupun komersial.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 text-on-surface-variant font-spec-label text-spec-label shrink-0">
+              <span class="material-symbols-outlined text-[20px] text-secondary">roofing</span>
+              <span>Instalasi Presisi Bebas Bocor</span>
+            </div>
+          </div>
+
+          <!-- Supavent Cards Grid with Real Site Images -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+            
+            <!-- Card 1: Supavent Skylight -->
+            <article class="project-card flex flex-col bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 overflow-hidden hover:shadow-md transition-shadow">
+              <div class="relative h-64 w-full bg-surface-container-high overflow-hidden">
+                <img alt="SupaVent & Turbo Beam di Skylight Kaca" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                     src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img-20250614-wa0001-HJ07NcQpWVzqejHT.jpg">
+                <div class="absolute top-4 left-4 bg-primary/85 text-pure-white px-3 py-1 rounded font-eyebrow text-[12px] tracking-wider uppercase backdrop-blur-sm">
+                  Turbo Beam &amp; Supavent
+                </div>
+                <div class="absolute bottom-3 right-3 bg-surface-bright/95 text-primary px-2.5 py-1 rounded text-xs font-semibold flex items-center gap-1 shadow-sm backdrop-blur-sm">
+                  <span class="material-symbols-outlined text-[14px] text-secondary">location_on</span> Badung, Bali
+                </div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-grow justify-between space-y-space-md">
+                <div>
+                  <div class="font-spec-label text-spec-label text-secondary mb-1">Skylight Arsitektur</div>
+                  <h3 class="font-headline-md text-headline-md text-primary mb-2">
+                    Atap Skylight Arsitektural Residensial
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Kombinasi ventilasi alami dan transmisi pencahayaan bersih pada kubah skylight kaca, menjaga suhu interior tetap sejuk tanpa menghalangi sinar matahari alami.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-surface-container flex items-center justify-between">
+                  <span class="font-spec-value text-spec-value text-ocean-mist">Transmisi Cahaya: +65%</span>
+                  <span class="material-symbols-outlined text-secondary text-[20px]">wb_sunny</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2: Supavent Night Sky Metal Roof -->
+            <article class="project-card flex flex-col bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 overflow-hidden hover:shadow-md transition-shadow">
+              <div class="relative h-64 w-full bg-surface-container-high overflow-hidden">
+                <img alt="Instalasi Supavent Night Sky Genteng Metal" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                     src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/nightsky22-0pY85b2B9oIhIDwF.jpg">
+                <div class="absolute top-4 left-4 bg-primary/85 text-pure-white px-3 py-1 rounded font-eyebrow text-[12px] tracking-wider uppercase backdrop-blur-sm">
+                  Night Sky Finish
+                </div>
+                <div class="absolute bottom-3 right-3 bg-surface-bright/95 text-primary px-2.5 py-1 rounded text-xs font-semibold flex items-center gap-1 shadow-sm backdrop-blur-sm">
+                  <span class="material-symbols-outlined text-[14px] text-secondary">location_on</span> Jakarta &amp; Tangerang
+                </div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-grow justify-between space-y-space-md">
+                <div>
+                  <div class="font-spec-label text-spec-label text-secondary mb-1">Hunian Premium Modern</div>
+                  <h3 class="font-headline-md text-headline-md text-primary mb-2">
+                    Instalasi Hunian Minimalis Genteng Metal
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Pemasangan SupaVent warna Night Sky yang menyatu selaras dengan atap metal gelap tanpa merusak keindahan garis arsitektur hunian modern.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-surface-container flex items-center justify-between">
+                  <span class="font-spec-value text-spec-value text-ocean-mist">Penurunan Suhu Plafon: -5°C</span>
+                  <span class="material-symbols-outlined text-secondary text-[20px]">air</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3: Supavent Residensial Cluster -->
+            <article class="project-card flex flex-col bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 overflow-hidden hover:shadow-md transition-shadow">
+              <div class="relative h-64 w-full bg-surface-container-high overflow-hidden">
+                <img alt="Instalasi SupaVent Cluster Residensial" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                     src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/nightsky111-hcAxyEKWbQJNPeRl.jpg">
+                <div class="absolute top-4 left-4 bg-primary/85 text-pure-white px-3 py-1 rounded font-eyebrow text-[12px] tracking-wider uppercase backdrop-blur-sm">
+                  Residential Cluster
+                </div>
+                <div class="absolute bottom-3 right-3 bg-surface-bright/95 text-primary px-2.5 py-1 rounded text-xs font-semibold flex items-center gap-1 shadow-sm backdrop-blur-sm">
+                  <span class="material-symbols-outlined text-[14px] text-secondary">location_on</span> BSD City &amp; Alam Sutera
+                </div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-grow justify-between space-y-space-md">
+                <div>
+                  <div class="font-spec-label text-spec-label text-secondary mb-1">Hunian Ramah Lingkungan</div>
+                  <h3 class="font-headline-md text-headline-md text-primary mb-2">
+                    Sistem Buang Udara Panas Rongga Plafon
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Mengalirkan udara panas yang terperangkap di bawah genteng rumah ke luar secara pasif, menjaga lantai atas tetap sejuk sepanjang hari tanpa suara bising.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-surface-container flex items-center justify-between">
+                  <span class="font-spec-value text-spec-value text-ocean-mist">Sirkulasi Pasif 24 Jam Non-Stop</span>
+                  <span class="material-symbols-outlined text-secondary text-[20px]">energy_savings_leaf</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. SECTION HURRICANE (Pabrik & Gudang Manufaktur) -->
+      <section class="py-space-2xl lg:py-space-3xl px-gutter-mobile lg:px-gutter bg-ink text-pure-white relative overflow-hidden" id="hurricane-section">
+        <div class="max-w-[1200px] mx-auto relative z-10">
+          
+          <!-- Section Header -->
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-2xl">
+            <div class="max-w-3xl">
+              <div class="inline-flex items-center gap-2 mb-space-xs">
+                <span class="w-6 h-0.5 bg-secondary-container rounded-full"></span>
+                <span class="font-eyebrow text-eyebrow tracking-widest text-secondary-container uppercase font-semibold">VENTILATOR BERTENAGA ANGIN</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-pure-white uppercase tracking-tight font-bold">
+                HURRICANE
+              </h2>
+              <p class="font-body-lg text-body-lg text-sea-foam leading-relaxed mb-space-xs mt-space-xs">
+                Di Ventimax Solutions, kami meyakini bahwa sistem ventilasi berkinerja tinggi harus menyempurnakan ruangan tanpa mengorbankan desainnya. Galeri proyek kami menampilkan beragam implementasi yang sukses, mulai dari hunian bergaya minimalis modern hingga fasilitas komersial berskala besar.
+              </p>
+              <p class="font-body-md text-body-md text-sea-foam/80 leading-relaxed">
+                Tim teknis kami siap melakukan survei lokasi dan menghitung kebutuhan sirkulasi udara optimal untuk fasilitas manufaktur maupun pergudangan Anda.
+              </p>
+            </div>
+            
+            <div class="bg-card-start-navy border border-card-border p-space-md rounded-2xl flex items-center gap-4 flex-shrink-0 shadow-lg">
+              <div class="w-12 h-12 rounded-xl bg-secondary/30 flex items-center justify-center text-secondary-container">
+                <span class="material-symbols-outlined text-[28px]">precision_manufacturing</span>
+              </div>
+              <div>
+                <div class="font-spec-label text-spec-label text-pure-white font-bold">Heavy Industrial Grade</div>
+                <div class="font-body-md text-body-md text-sea-foam">Aluminium Tahan Korosi Laut &amp; Kimia</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hurricane Cards Grid with Real Site Images -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+            
+            <!-- Card 1: Hurricane Pergudangan -->
+            <article class="project-card flex flex-col bg-gradient-to-b from-card-start-navy to-ink border border-card-border rounded-2xl overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="relative h-64 w-full bg-card-border overflow-hidden">
+                <img alt="Fasilitas Pergudangan Logistik Skala Besar" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                     src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg">
+                <div class="absolute top-4 left-4 bg-primary-container text-pure-white px-3 py-1 rounded font-eyebrow text-[12px] tracking-wider uppercase border border-card-border/80 backdrop-blur-sm">
+                  Hurricane 900mm
+                </div>
+                <div class="absolute bottom-3 right-3 bg-ink/80 text-sea-foam px-2.5 py-1 rounded text-xs font-semibold flex items-center gap-1 border border-card-border/50 backdrop-blur-sm">
+                  <span class="material-symbols-outlined text-[14px] text-secondary-container">warehouse</span> Cikarang, Jawa Barat
+                </div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-grow justify-between space-y-space-md">
+                <div>
+                  <div class="font-spec-label text-spec-label text-secondary-container mb-1">Pergudangan Logistik</div>
+                  <h3 class="font-headline-md text-headline-md text-pure-white mb-2">
+                    Fasilitas Pergudangan Logistik Skala Besar
+                  </h3>
+                  <p class="font-body-md text-body-md text-sea-foam leading-relaxed">
+                    Pemasangan puluhan unit Hurricane diameter besar untuk menjaga kestabilan suhu inventaris karton dan logistik farmasi tanpa lonjakan biaya listrik operasional.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-card-border/50 flex items-center justify-between">
+                  <span class="font-spec-value text-spec-value text-sea-foam/80">Survei Termal: Optimal</span>
+                  <span class="font-spec-label text-spec-label text-secondary-container">Luas: 12.000 m²</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2: Hurricane Pabrik Otomotif -->
+            <article class="project-card flex flex-col bg-gradient-to-b from-card-start-navy to-ink border border-card-border rounded-2xl overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="relative h-64 w-full bg-card-border overflow-hidden">
+                <img alt="Pabrik Manufaktur Otomotif & Baja" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                     src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250610_132324-4vzCsfOUcZQMhtfA.jpg">
+                <div class="absolute top-4 left-4 bg-primary-container text-pure-white px-3 py-1 rounded font-eyebrow text-[12px] tracking-wider uppercase border border-card-border/80 backdrop-blur-sm">
+                  Turbin Beruntun
+                </div>
+                <div class="absolute bottom-3 right-3 bg-ink/80 text-sea-foam px-2.5 py-1 rounded text-xs font-semibold flex items-center gap-1 border border-card-border/50 backdrop-blur-sm">
+                  <span class="material-symbols-outlined text-[14px] text-secondary-container">factory</span> KIIC Karawang
+                </div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-grow justify-between space-y-space-md">
+                <div>
+                  <div class="font-spec-label text-spec-label text-secondary-container mb-1">Pabrik Manufaktur</div>
+                  <h3 class="font-headline-md text-headline-md text-pure-white mb-2">
+                    Pabrik Manufaktur Otomotif &amp; Logam
+                  </h3>
+                  <p class="font-body-md text-body-md text-sea-foam leading-relaxed">
+                    Deretan unit ventilator industri yang mengekstraksi akumulasi panas dari mesin cetak dan pengelasan, menciptakan lingkungan kerja yang aman dan produktif.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-card-border/50 flex items-center justify-between">
+                  <span class="font-spec-value text-spec-value text-sea-foam/80">Sirkulasi: 24/7 Non-Stop</span>
+                  <span class="font-spec-label text-spec-label text-secondary-container">32 Unit Turbin</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3: Pabrik Pengolahan Logam & Industri -->
+            <article class="project-card flex flex-col bg-gradient-to-b from-card-start-navy to-ink border border-card-border rounded-2xl overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="relative h-64 w-full bg-card-border overflow-hidden">
+                <img alt="Pabrik Manufaktur Pengolahan Logam" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                     src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250201_115714-R84yeiCeJWAaKWVf.jpg">
+                <div class="absolute top-4 left-4 bg-primary-container text-pure-white px-3 py-1 rounded font-eyebrow text-[12px] tracking-wider uppercase border border-card-border/80 backdrop-blur-sm">
+                  Heavy Industry
+                </div>
+                <div class="absolute bottom-3 right-3 bg-ink/80 text-sea-foam px-2.5 py-1 rounded text-xs font-semibold flex items-center gap-1 border border-card-border/50 backdrop-blur-sm">
+                  <span class="material-symbols-outlined text-[14px] text-secondary-container">shield</span> Jababeka, Bekasi
+                </div>
+              </div>
+              <div class="p-space-lg flex flex-col flex-grow justify-between space-y-space-md">
+                <div>
+                  <div class="font-spec-label text-spec-label text-secondary-container mb-1">Insulasi &amp; Ventilasi</div>
+                  <h3 class="font-headline-md text-headline-md text-pure-white mb-2">
+                    Integrasi Ventilasi Turbin &amp; Insulasi Atap
+                  </h3>
+                  <p class="font-body-md text-body-md text-sea-foam leading-relaxed">
+                    Kombinasi lapisan insulasi penahan panas radiasi atap dengan ventilator Hurricane untuk perlindungan suhu ruangan maksimal dan bebas tetesan kondensasi.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-card-border/50 flex items-center justify-between">
+                  <span class="font-spec-value text-spec-value text-sea-foam/80">Reduksi Suhu: Hingga -6°C</span>
+                  <span class="font-spec-label text-spec-label text-secondary-container">Garansi 15 Tahun</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. SECTION VENTIGRILLE (Interior & Plafon Modern) -->
+      <section class="py-space-2xl lg:py-space-3xl px-gutter-mobile lg:px-gutter bg-surface-container-low" id="ventigrille-section">
+        <div class="max-w-[1200px] mx-auto">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+            <div>
+              <div class="inline-flex items-center gap-2 mb-space-xs">
+                <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
+                <span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest font-semibold">DETAIL INTERIOR &amp; PLAFON</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary uppercase tracking-tight font-bold">
+                VENTIGRILLE INTEGRASI
+              </h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+              Harmonisasi sempurna antara performa ventilasi buang udara dan estetika arsitektur interior modern.
+            </p>
+          </div>
+
+          <!-- Feature Highlight Card with Real Site Image -->
+          <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+            <div class="lg:col-span-7 relative h-72 md:h-96 lg:h-auto min-h-[320px] bg-surface-container-high overflow-hidden">
+              <img alt="Detail Instalasi Interior Plafon VentiGrille" 
+                   class="w-full h-full object-cover" 
+                   src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img-20251215-wa0067-Bz9Uf2dZ1zG8QOvW.jpg">
+              <div class="absolute top-4 left-4 bg-primary text-pure-white px-3 py-1 rounded font-eyebrow text-[12px] tracking-wider uppercase shadow">
+                Seamless Ceiling Integration
+              </div>
+            </div>
+            <div class="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col justify-between space-y-space-lg">
+              <div>
+                <div class="font-spec-label text-spec-label text-secondary mb-2 uppercase tracking-wider font-semibold">
+                  Solusi Interior Tanpa Celah
+                </div>
+                <h3 class="font-headline-md text-headline-md text-primary mb-space-md font-bold">
+                  Ventilasi Plafon Minimalis yang Menyatu dengan Desain
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+                  VentiGrille dirancang untuk dipadukan bersama pencahayaan recessed modern (downlight), plafon gypsum rata, maupun kisi-kisi kayu tanpa terlihat mencolok layaknya ventilasi konvensional.
+                </p>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+                    <span class="font-body-md text-body-md text-on-surface">Finishing cat powder coating putih murni anti-pudar.</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+                    <span class="font-body-md text-body-md text-on-surface">Pola kisi aerodinamis untuk debit udara maksimal tanpa dengung suara.</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+                    <span class="font-body-md text-body-md text-on-surface">Pemasangan cepat dan mudah dilepas untuk pembersihan berkala.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="pt-space-md border-t border-surface-container flex items-center justify-between">
+                <span class="font-spec-label text-spec-label text-on-surface-variant">Ideal untuk: Residensial, Butik, &amp; Kantor</span>
+                <a class="font-button-text text-button-text text-secondary hover:text-primary inline-flex items-center gap-1 font-semibold transition-colors" 
+                   data-path="produk-ventigrille" href="Produk/ventigrille.html">
+                  <span>Lihat Spesifikasi</span>
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 6. CTA BANNER (Rencanakan Sistem Ventilasi Properti Anda) -->
+      <section class="relative w-full py-20 lg:py-24 overflow-hidden bg-ink text-pure-white flex items-center justify-center">
+        <!-- Authentic Background Image -->
+        <div class="absolute inset-0 z-0">
+          <img alt="Instalasi Atap Industri Ventimax" 
+               class="w-full h-full object-cover object-center" 
+               src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/vent-2-Emg8AXU0nz4SJDJ6.jpg">
+          <div class="absolute inset-0 bg-gradient-to-r from-ink/90 via-primary-container/85 to-ink/90"></div>
+        </div>
+
+        <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter w-full flex flex-col md:flex-row items-center justify-between gap-space-xl text-center md:text-left">
+          <div class="max-w-2xl">
+            <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-pure-white mb-space-sm uppercase font-bold">
+              Rencanakan Sistem Ventilasi Properti Anda
+            </h2>
+            <p class="font-body-lg text-body-lg text-sea-foam leading-relaxed">
+              Tim teknis kami siap melakukan survei lokasi dan menghitung kebutuhan sirkulasi udara optimal untuk fasilitas manufaktur maupun pergudangan Anda.
+            </p>
+          </div>
+          <div class="flex-shrink-0">
+            <a class="inline-flex items-center justify-center px-8 py-3.5 bg-secondary-container text-ink font-button-text text-button-text rounded-lg hover:bg-pure-white transition-all shadow-md font-semibold" 
+               data-path="kontak" href="Kontak.html">
+              <span>Hubungi Tim Teknis</span>
+              <span class="material-symbols-outlined ml-2 text-[20px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- WhatsApp Floating Button -->
+  <a aria-label="WhatsApp Ventimax Solutions" 
+     class="fixed bottom-6 right-6 z-[999] w-14 h-14 rounded-full bg-whatsapp-green flex items-center justify-center text-pure-white shadow-[0_8px_24px_rgba(0,128,96,0.35)] hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-whatsapp-green" 
+     href="https://wa.me/6281110016996" 
+     rel="noopener noreferrer" 
+     target="_blank">
+    <span class="material-symbols-outlined text-[30px]">chat</span>
+  </a>
+
+  <!-- ========================================== -->
+  <!-- FOOTER (Exact Match to Beranda with Video) -->
+  <!-- ========================================== -->
+  <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
+    <!-- Footer Video Background -->
+    <div class="absolute inset-0 z-0">
+      <video autoplay muted loop playsinline class="w-full h-full object-cover"
+             poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
+        <source src="https://videos.pexels.com/video-files/11773014/11773014-uhd_2560_1440_30fps.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-[rgb(15,76,129)]/[0.52]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl">
+
+        <!-- Footer Col 1: Brand -->
+        <div class="space-y-space-md">
+          <div class="flex items-center gap-space-sm">
+            <span class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase">VENTIMAX SOLUTIONS</span>
+          </div>
+          <p class="font-body-md text-body-md text-sea-foam leading-relaxed">
+            Sirkulasi udara optimal selama 24 jam tanpa biaya listrik dan dilengkapi dengan insulasi termal bergaransi hingga 15 tahun.
+          </p>
+          <div class="pt-space-xs">
+            <p class="font-spec-label text-spec-label text-primary-fixed uppercase tracking-wider mb-1">Cakupan Layanan</p>
+            <p class="font-body-md text-body-md text-pure-white">Jabodetabek, Bali &amp; Seluruh Indonesia</p>
+          </div>
+        </div>
+
+        <!-- Footer Col 2: Navigation -->
+        <div class="space-y-space-md">
+          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Navigasi Halaman</h4>
+          <ul class="space-y-space-sm">
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Beranda.html">Beranda</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Tentang Kami.html">Tentang Kami</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-pure-white font-bold transition-colors" href="Proyek.html">Proyek</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 3: Kategori Produk -->
+        <div class="space-y-space-md">
+          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Kategori Produk</h4>
+          <ul class="space-y-space-sm">
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/supavent.html">Supavent</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/turbo-beam.html">Turbo Beam</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/hurricane.html">Hurricane</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/venticool.html">Venticool</a>
+            </li>
+            <li class="h-auto">
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/ventigrille.html">Ventigrille</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Col 4: Contact -->
+        <div class="space-y-space-md">
+          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Info Kontak</h4>
+          <div class="space-y-space-sm text-sea-foam font-body-md text-body-md">
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">call</span>
+              <span>Telepon Kantor: <a href="tel:+6281110016996" class="hover:text-pure-white transition-colors">0811-1001-6996</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">mail</span>
+              <span>Email: <a href="mailto:hq@ventimaxsolutions.co.id" class="hover:text-pure-white transition-colors">hq@ventimaxsolutions.co.id</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">photo_camera</span>
+              <span>Instagram: <a href="https://www.instagram.com/ventimaxsolutionsofficial/" target="_blank" rel="noopener noreferrer" class="hover:text-pure-white transition-colors">@ventimaxsolutionsofficial</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">globe</span>
+              <span>Website: <a href="https://www.ventimaxsolutions.co.id" class="hover:text-pure-white transition-colors">www.ventimaxsolutions.co.id</a></span>
+            </p>
+            <p class="flex items-start gap-space-sm">
+              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">location_on</span>
+              <span>Summarecon Serpong, Ruko Golden 8, Jl. Boulevard Raya Gading Serpong No.18 Blok D, Pakulonan Barat, Kec. Kelapa Dua, Kab. Tangerang, Banten 15818</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-space-lg border-t border-pure-white/15 text-center font-body-md text-body-md text-sea-foam">
+        <p>© 2026. Venti Max Solutions - Melayani pengadaan dan pemasangan sistem sirkulasi udara di seluruh Indonesia.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Filter Functionality Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const supaventSec = document.getElementById("supavent-section");
+      const hurricaneSec = document.getElementById("hurricane-section");
+      const ventigrilleSec = document.getElementById("ventigrille-section");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter");
+
+          filterButtons.forEach((b) => {
+            b.classList.remove("bg-primary", "text-pure-white", "shadow-sm");
+            b.classList.add("bg-surface-container", "text-on-surface-variant");
+          });
+
+          btn.classList.remove("bg-surface-container", "text-on-surface-variant");
+          btn.classList.add("bg-primary", "text-pure-white", "shadow-sm");
+
+          if (filter === "all") {
+            supaventSec.style.display = "block";
+            hurricaneSec.style.display = "block";
+            ventigrilleSec.style.display = "block";
+          } else if (filter === "supavent") {
+            supaventSec.style.display = "block";
+            hurricaneSec.style.display = "none";
+            ventigrilleSec.style.display = "none";
+          } else if (filter === "hurricane") {
+            supaventSec.style.display = "none";
+            hurricaneSec.style.display = "block";
+            ventigrilleSec.style.display = "none";
+          } else if (filter === "ventigrille") {
+            supaventSec.style.display = "none";
+            hurricaneSec.style.display = "none";
+            ventigrilleSec.style.display = "block";
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
