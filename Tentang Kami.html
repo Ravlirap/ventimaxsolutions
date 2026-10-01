@@ -140,23 +140,23 @@
 <body class="bg-surface font-body-md text-on-surface antialiased">
 
   <!-- ========================================== -->
-  <!-- HEADER / NAVIGATION (Exact Match to Beranda)-->
+  <!-- HEADER / NAVIGATION                        -->
   <!-- ========================================== -->
   <header class="fixed top-0 left-0 w-full z-50 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
     <div class="h-20 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
 
       <!-- Logo -->
-      <a href="Beranda.html" class="flex items-center gap-space-sm">
+      <div class="flex items-center gap-space-sm">
         <span class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase">VENTIMAX SOLUTIONS</span>
-      </a>
+      </div>
 
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex items-center gap-space-lg"
            data-active-classes="border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text">
-        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
-           data-path="beranda" href="Beranda.html">Beranda</a>
         <a aria-current="page"
            class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
+           data-path="beranda" href="Beranda.html">Beranda</a>
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="tentang-kami" href="Tentang Kami.html">Tentang Kami</a>
 
         <!-- Produk Dropdown -->
@@ -593,13 +593,13 @@
   </a>
 
   <!-- ========================================== -->
-  <!-- FOOTER (Exact Match to Beranda with Video) -->
+  <!-- FOOTER — with Video Background             -->
   <!-- ========================================== -->
   <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
     <!-- Footer Video Background -->
     <div class="absolute inset-0 z-0">
       <video autoplay muted loop playsinline class="w-full h-full object-cover"
-             poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=630&amp;w=1200">
+             poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
         <source src="https://videos.pexels.com/video-files/11773014/11773014-uhd_2560_1440_30fps.mp4" type="video/mp4">
       </video>
       <div class="absolute inset-0 bg-[rgb(15,76,129)]/[0.52]"></div>

@@ -130,21 +130,21 @@
 <body class="bg-surface font-body-md text-on-surface antialiased">
 
   <!-- ========================================== -->
-  <!-- HEADER / NAVIGATION (Exact Match to Site)  -->
+  <!-- HEADER / NAVIGATION                        -->
   <!-- ========================================== -->
   <header class="fixed top-0 left-0 w-full z-50 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
     <div class="h-20 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
 
-      <!-- Brand Logo Text -->
+      <!-- Logo -->
       <div class="flex items-center gap-space-sm">
-        <a href="Beranda.html" class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase hover:opacity-90 transition-opacity">
-          VENTIMAX SOLUTIONS
-        </a>
+        <span class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase">VENTIMAX SOLUTIONS</span>
       </div>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex items-center gap-space-lg">
-        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+      <nav class="hidden lg:flex items-center gap-space-lg"
+           data-active-classes="border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text">
+        <a aria-current="page"
+           class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
            data-path="beranda" href="Beranda.html">Beranda</a>
         <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="tentang-kami" href="Tentang Kami.html">Tentang Kami</a>
@@ -170,18 +170,16 @@
           </div>
         </div>
 
-        <!-- Proyek (Active Page) -->
-        <a aria-current="page"
-           class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="proyek" href="Proyek.html">Proyek</a>
-
-        <!-- Kontak -->
         <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="kontak" href="Kontak.html">Kontak</a>
       </nav>
 
-      <!-- Right Controls: Language Switcher (No Avatar Icon) -->
+      <!-- Right Controls -->
       <div class="flex items-center gap-space-md">
+
+        <!-- Language Switcher -->
         <div class="relative group py-space-xs">
           <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-tertiary-container text-on-primary font-spec-label text-spec-label hover:bg-card-start-navy transition-colors focus:outline-none"
                   type="button">
@@ -196,14 +194,14 @@
               <span>Indonesia</span>
             </a>
             <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
-               href="/en/proyek">
+               href="/en">
               <span class="material-symbols-outlined text-[16px]">language</span>
               <span>English</span>
             </a>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </header>
 
@@ -655,7 +653,7 @@
   </a>
 
   <!-- ========================================== -->
-  <!-- FOOTER (Exact Match to Beranda with Video) -->
+  <!-- FOOTER — with Video Background             -->
   <!-- ========================================== -->
   <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
     <!-- Footer Video Background -->
@@ -695,7 +693,7 @@
               <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Tentang Kami.html">Tentang Kami</a>
             </li>
             <li class="h-auto">
-              <a class="font-body-md text-body-md text-pure-white font-bold transition-colors" href="Proyek.html">Proyek</a>
+              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Proyek.html">Proyek</a>
             </li>
             <li class="h-auto">
               <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Kontak.html">Kontak</a>
@@ -754,7 +752,7 @@
 
       </div>
 
-      <!-- Copyright -->
+      <!-- Copyright — matched from original website -->
       <div class="pt-space-lg border-t border-pure-white/15 text-center font-body-md text-body-md text-sea-foam">
         <p>© 2026. Venti Max Solutions - Melayani pengadaan dan pemasangan sistem sirkulasi udara di seluruh Indonesia.</p>
       </div>

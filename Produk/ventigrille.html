@@ -10,31 +10,36 @@
 
       <!-- Logo -->
       <div class="flex items-center gap-space-sm">
-        <a href="../Beranda.html" class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase hover:opacity-90 transition-opacity">
-          VENTIMAX SOLUTIONS
-        </a>
+        <span class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase">VENTIMAX SOLUTIONS</span>
       </div>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex items-center gap-space-lg">
-        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+      <nav class="hidden lg:flex items-center gap-space-lg"
+           data-active-classes="border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text">
+        <a aria-current="page"
+           class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
            data-path="beranda" href="../Beranda.html">Beranda</a>
         <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="tentang-kami" href="../Tentang Kami.html">Tentang Kami</a>
 
-        <!-- Produk Dropdown (Active Section) -->
+        <!-- Produk Dropdown -->
         <div class="relative group py-space-sm">
-          <button class="flex items-center gap-1 border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text transition-colors focus:outline-none"
+          <button class="flex items-center gap-1 font-body-md text-body-md text-sea-foam group-hover:text-pure-white transition-colors focus:outline-none"
                   type="button">
             Produk
             <span class="material-symbols-outlined text-[18px]">expand_more</span>
           </button>
           <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="supavent.html">Supavent</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="turbo-beam.html">Turbo Beam</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="hurricane.html">Hurricane</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors" href="venticool.html">Venticool</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-pure-white bg-primary-container font-semibold" href="ventigrille.html">Ventigrille</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-supavent" href="supavent.html">Supavent</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-turbo-beam" href="turbo-beam.html">Turbo Beam</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-hurricane" href="hurricane.html">Hurricane</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-venticool" href="venticool.html">Venticool</a>
+            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
+               data-path="produk-ventigrille" href="ventigrille.html">Ventigrille</a>
           </div>
         </div>
 
@@ -44,8 +49,10 @@
            data-path="kontak" href="../Kontak.html">Kontak</a>
       </nav>
 
-      <!-- Right Controls: Language Switcher (No Avatar Icon) -->
+      <!-- Right Controls -->
       <div class="flex items-center gap-space-md">
+
+        <!-- Language Switcher -->
         <div class="relative group py-space-xs">
           <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-tertiary-container text-on-primary font-spec-label text-spec-label hover:bg-card-start-navy transition-colors focus:outline-none"
                   type="button">
@@ -60,14 +67,14 @@
               <span>Indonesia</span>
             </a>
             <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
-               href="../en">
+               href="/en">
               <span class="material-symbols-outlined text-[16px]">language</span>
               <span>English</span>
             </a>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
 <!-- HERO SECTION -->
@@ -566,7 +573,7 @@
   </a>
 
   <!-- ========================================== -->
-  <!-- FOOTER (Exact Match to Beranda with Video) -->
+  <!-- FOOTER — with Video Background             -->
   <!-- ========================================== -->
   <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
     <!-- Footer Video Background -->
@@ -665,7 +672,7 @@
 
       </div>
 
-      <!-- Copyright -->
+      <!-- Copyright — matched from original website -->
       <div class="pt-space-lg border-t border-pure-white/15 text-center font-body-md text-body-md text-sea-foam">
         <p>© 2026. Venti Max Solutions - Melayani pengadaan dan pemasangan sistem sirkulasi udara di seluruh Indonesia.</p>
       </div>
