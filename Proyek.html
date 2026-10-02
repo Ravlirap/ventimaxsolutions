@@ -96,28 +96,28 @@
   </script>
 
   <style>
-    .hero-video-bg {
-      position: absolute;
-      inset: 0;
-      overflow: hidden;
-      z-index: 0;
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        font-family: 'Inter', sans-serif;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
     }
-    .hero-video-bg img, .hero-video-bg video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+    ::-webkit-scrollbar {
+      display: none;
     }
-    .hero-video-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(7,21,50,0.85) 0%, rgba(7,21,50,0.55) 50%, rgba(7,21,50,0.75) 100%);
-    }
-    .hero-video-overlay-bottom {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(7,21,50,0.95) 0%, transparent 40%, rgba(7,21,50,0.3) 100%);
-    }
+
+    /* Soft text shadows for crystal clear legibility with reduced overlay opacity */
     .hero-text-shadow {
       text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
     }
@@ -214,51 +214,52 @@
     <div class="flex flex-col w-full">
 
       <!-- 1. HERO SECTION (Authentic Rooftop Project Installation Background) -->
-      <section class="relative w-full -mt-16 pt-20 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-ink min-h-screen flex items-center">
+      <section class="relative w-full bg-ink overflow-hidden min-h-[calc(100vh-4rem)] flex items-center justify-center">
         <!-- Authentic Background Image from Ventimax Projects -->
-        <div class="hero-video-bg">
+        <div class="absolute inset-0 z-0">
           <img alt="Ventimax Solutions Proyek Instalasi Ventilator Turbin Industri" 
                class="w-full h-full object-cover object-center" 
                src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg">
-          <div class="hero-video-overlay"></div>
-          <div class="hero-video-overlay-bottom"></div>
+          <!-- Reduced overlay opacity for natural sky, cloud, and roof clarity (matched to supavent) -->
+          <div class="absolute inset-0 bg-gradient-to-r from-ink/75 via-ink/40 to-transparent lg:from-ink/70 lg:via-ink/30 lg:to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-ink/25"></div>
         </div>
 
-        <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter w-full">
-          <div class="max-w-4xl mx-auto space-y-space-md mb-space-xl text-center flex flex-col items-center">
-            <div class="flex items-center justify-center gap-space-sm mb-space-md w-full">
+        <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter w-full py-8 sm:py-10 lg:py-12">
+          <div class="max-w-4xl mx-auto space-y-3.5 sm:space-y-4 mb-6 sm:mb-8 text-center flex flex-col items-center">
+            <div class="inline-flex items-center justify-center gap-2.5 w-full">
               <span class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"></span>
-              <span class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-[0.12em]">PORTOFOLIO VENTILASI NASIONAL</span>
+              <span class="font-eyebrow text-xs sm:text-sm uppercase tracking-[0.14em] text-secondary-container font-semibold">PORTOFOLIO VENTILASI NASIONAL</span>
               <span class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"></span>
             </div>
-            <h1 class="font-display-hero text-headline-lg-mobile lg:text-display-hero text-pure-white tracking-tight font-bold uppercase hero-text-shadow leading-tight">
+            <h1 class="font-display-hero text-3xl sm:text-4xl lg:text-[48px] text-pure-white tracking-tight font-bold uppercase hero-text-shadow leading-[1.15]">
               VENTIMAX SOLUTIONS<br>PROYEK
             </h1>
-            <p class="font-body-hero text-body-lg lg:text-body-hero text-pure-white font-medium leading-relaxed hero-subtext-shadow">
+            <p class="font-body-hero text-base sm:text-lg text-pure-white font-medium leading-relaxed hero-subtext-shadow max-w-2xl">
               Transformasi Ruang dengan Pengendalian Iklim Unggul &amp; Keanggunan Arsitektur.
             </p>
-            <p class="font-body-md text-body-md text-sea-foam leading-relaxed max-w-2xl hero-subtext-shadow mx-auto">
+            <p class="font-body-md text-sm sm:text-base text-sea-foam leading-relaxed max-w-2xl hero-subtext-shadow mx-auto">
               Jelajahi portofolio instalasi unggulan kami di sektor manufaktur, pergudangan logistik, komersial, dan residensial di seluruh Indonesia.
             </p>
           </div>
 
-          <!-- 4-Metric Grid Banner -->
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-md border-t border-card-border/60">
-            <div class="bg-card-start-navy/80 backdrop-blur-md p-space-md rounded-xl border border-card-border/60 shadow-lg">
-              <span class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-pure-white block font-bold">1.250+</span>
-              <span class="font-body-md text-body-md text-sea-foam">Unit Terpasang</span>
+          <!-- 4-Metric Grid Banner (Glassmorphism with reduced opacity matched to supavent) -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 pt-2 border-t border-card-border/40">
+            <div class="bg-card-start-navy/45 backdrop-blur-md p-4 sm:p-5 rounded-xl border border-pure-white/15 shadow-md hover:bg-card-start-navy/65 hover:border-pure-white/30 transition-all text-center">
+              <span class="font-headline-lg text-2xl sm:text-3xl lg:text-[32px] text-pure-white block font-bold hero-text-shadow">1.250+</span>
+              <span class="font-body-md text-xs sm:text-sm text-sea-foam">Unit Terpasang</span>
             </div>
-            <div class="bg-card-start-navy/80 backdrop-blur-md p-space-md rounded-xl border border-card-border/60 shadow-lg">
-              <span class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-secondary-container block font-bold">15 Thn</span>
-              <span class="font-body-md text-body-md text-sea-foam">Garansi Material</span>
+            <div class="bg-card-start-navy/45 backdrop-blur-md p-4 sm:p-5 rounded-xl border border-pure-white/15 shadow-md hover:bg-card-start-navy/65 hover:border-pure-white/30 transition-all text-center">
+              <span class="font-headline-lg text-2xl sm:text-3xl lg:text-[32px] text-secondary-container block font-bold hero-text-shadow">15 Thn</span>
+              <span class="font-body-md text-xs sm:text-sm text-sea-foam">Garansi Material</span>
             </div>
-            <div class="bg-card-start-navy/80 backdrop-blur-md p-space-md rounded-xl border border-card-border/60 shadow-lg">
-              <span class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-pure-white block font-bold">0 Watt</span>
-              <span class="font-body-md text-body-md text-sea-foam">Konsumsi Listrik</span>
+            <div class="bg-card-start-navy/45 backdrop-blur-md p-4 sm:p-5 rounded-xl border border-pure-white/15 shadow-md hover:bg-card-start-navy/65 hover:border-pure-white/30 transition-all text-center">
+              <span class="font-headline-lg text-2xl sm:text-3xl lg:text-[32px] text-pure-white block font-bold hero-text-shadow">0 Watt</span>
+              <span class="font-body-md text-xs sm:text-sm text-sea-foam">Konsumsi Listrik</span>
             </div>
-            <div class="bg-card-start-navy/80 backdrop-blur-md p-space-md rounded-xl border border-card-border/60 shadow-lg">
-              <span class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-secondary-container block font-bold">100%</span>
-              <span class="font-body-md text-body-md text-sea-foam">Bebas Karat &amp; Bocor</span>
+            <div class="bg-card-start-navy/45 backdrop-blur-md p-4 sm:p-5 rounded-xl border border-pure-white/15 shadow-md hover:bg-card-start-navy/65 hover:border-pure-white/30 transition-all text-center">
+              <span class="font-headline-lg text-2xl sm:text-3xl lg:text-[32px] text-secondary-container block font-bold hero-text-shadow">100%</span>
+              <span class="font-body-md text-xs sm:text-sm text-sea-foam">Bebas Karat &amp; Bocor</span>
             </div>
           </div>
         </div>

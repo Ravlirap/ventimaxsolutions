@@ -242,37 +242,38 @@
     <div class="flex flex-col w-full">
 
       <!-- ====================================== -->
-      <!-- 1. HERO SECTION (Persis Tentang Kami)  -->
+      <!-- 1. HERO SECTION (Persis Tentang Kami & Supavent) -->
       <!-- ====================================== -->
-      <section class="relative w-full -mt-20 overflow-hidden bg-ink min-h-screen flex flex-col justify-center">
+      <section class="relative w-full bg-ink overflow-hidden min-h-[calc(100vh-4rem)] flex items-center justify-center">
         <div class="absolute inset-0 z-0">
           <img alt="Sistem Ventilasi Alami Terpadu Ventimax Solutions"
                class="w-full h-full object-cover object-right lg:object-center"
                src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/hurricane....web-1J9gPFME2er0x1oT.png">
-          <div class="absolute inset-0 bg-gradient-to-r from-ink/80 via-primary-container/60 via-45% to-ink/20"></div>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-ink/30"></div>
+          <!-- Reduced overlay opacity for natural sky, cloud, and roof clarity (matched to supavent) -->
+          <div class="absolute inset-0 bg-gradient-to-r from-ink/75 via-ink/40 to-transparent lg:from-ink/70 lg:via-ink/30 lg:to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-ink/25"></div>
         </div>
 
-        <div class="relative z-10 max-w-[1200px] w-full mx-auto px-gutter-mobile lg:px-gutter pt-32 pb-16 lg:pt-40 lg:pb-24">
-          <div class="max-w-3xl space-y-space-md">
-            <div class="flex items-center justify-start gap-space-sm mb-space-sm w-full">
+        <div class="relative z-10 max-w-[1200px] w-full mx-auto px-gutter-mobile lg:px-gutter py-8 sm:py-10 lg:py-12">
+          <div class="max-w-3xl space-y-4">
+            <div class="inline-flex items-center gap-2.5">
               <span class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"></span>
-              <span class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-[0.12em]">SISTEM VENTILASI ALAMI TERPADU</span>
+              <span class="font-eyebrow text-xs sm:text-sm uppercase tracking-[0.14em] text-secondary-container font-semibold">SISTEM VENTILASI ALAMI TERPADU</span>
             </div>
-            <h1 class="font-display-hero text-headline-lg-mobile sm:text-headline-lg lg:text-display-hero font-bold text-pure-white tracking-tight leading-tight">
+            <h1 class="font-display-hero text-3xl sm:text-4xl lg:text-[48px] font-bold text-pure-white tracking-tight leading-[1.15] hero-text-shadow">
               Ventilasi Alami,<br>
               Lebih Cerdas. Lebih Sejuk. Lebih Baik.
             </h1>
-            <p class="font-body-hero text-body-lg lg:text-body-hero text-sea-foam max-w-2xl leading-relaxed mt-2">
+            <p class="font-body-hero text-base sm:text-lg text-sea-foam max-w-2xl leading-relaxed hero-subtext-shadow pt-1">
               Di VentiMax Solutions, kami meyakini bahwa sistem ventilasi berkinerja tinggi harus menyempurnakan ruangan tanpa mengorbankan desainnya. Galeri proyek kami menampilkan beragam implementasi yang sukses, mulai dari hunian bergaya minimalis modern hingga fasilitas komersial berskala besar.
             </p>
-            <div class="pt-space-md flex flex-wrap gap-space-md items-center">
-              <a class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-lg bg-secondary text-pure-white font-button-text text-button-text shadow-md hover:bg-on-tertiary-fixed-variant transition-colors"
+            <div class="pt-3 flex flex-wrap items-center gap-3.5">
+              <a class="inline-flex justify-center items-center gap-2 h-12 px-7 rounded-xl bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-sm sm:text-base transition-all shadow-lg active:scale-95 font-semibold"
                  href="#katalog-produk">
                 <span>Jelajahi Produk</span>
                 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
               </a>
-              <a class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-lg bg-tertiary-container/70 text-pure-white font-button-text text-button-text hover:bg-card-start-navy transition-colors backdrop-blur-sm"
+              <a class="inline-flex justify-center items-center gap-2 h-12 px-7 rounded-xl bg-pure-white/10 hover:bg-pure-white/20 text-pure-white border border-pure-white/25 font-button-text text-sm sm:text-base transition-all backdrop-blur-md shadow-sm"
                  href="https://wa.me/6281110016996?text=Halo%20VentiMax,%20saya%20ingin%20konsultasi%20produk%20ventilasi"
                  rel="noopener noreferrer"
                  target="_blank">
