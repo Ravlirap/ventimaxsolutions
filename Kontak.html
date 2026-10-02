@@ -292,10 +292,10 @@
             </p>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
             
             <!-- LEFT COLUMN: Informasi Kontak Resmi -->
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 h-full">
               <div>
                 <div class="inline-flex items-center gap-1.5 mb-2">
                   <span class="w-4 h-0.5 bg-secondary"></span>
@@ -310,7 +310,7 @@
               </div>
 
               <!-- Official Contact Directory Card (Compact) -->
-              <div class="bg-surface-bright p-5 rounded-xl shadow-sm border border-blue-100 flex flex-col gap-4">
+              <div class="bg-surface-bright p-5 rounded-xl shadow-sm border border-blue-100 flex flex-col gap-4 flex-grow">
                 <div class="flex items-center justify-between pb-3 border-b border-gray-200">
                   <span class="text-[10px] text-secondary font-bold uppercase tracking-wider">Kontak Resmi Ventimax</span>
                   <span class="flex items-center gap-1.5 text-[10px] font-bold text-whatsapp-green">
@@ -403,7 +403,7 @@
             </div>
 
             <!-- RIGHT COLUMN: Formulir Konsultasi Bangunan -->
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 h-full">
               
               <div>
                 <div class="inline-flex items-center gap-1.5 mb-2">
@@ -418,7 +418,7 @@
                 </p>
               </div>
 
-              <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 relative">
+              <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 relative flex flex-col flex-grow">
 
                 <!-- Feedback Notice (Hidden by default, shown by JS on submit) -->
                 <div class="hidden mb-4 p-3 rounded-lg bg-green-50 border border-green-200 text-green-800" id="consultation-success">
@@ -429,7 +429,7 @@
                   <p class="text-[11px]">Terima kasih. Tim konsultan teknis kami akan menghubungi Anda dalam waktu maksimal 1x24 jam kerja.</p>
                 </div>
 
-                <form class="flex flex-col gap-3.5" id="consultation-form" onsubmit="event.preventDefault(); document.getElementById('consultation-success').classList.remove('hidden'); this.reset();">
+                <form class="flex flex-col gap-3.5 flex-grow" id="consultation-form" onsubmit="event.preventDefault(); document.getElementById('consultation-success').classList.remove('hidden'); this.reset();">
                   
                   <!-- Field 1: Nama Lengkap -->
                   <div>
@@ -492,18 +492,20 @@
                               rows="3"></textarea>
                   </div>
 
-                  <!-- Commitment Notice -->
-                  <div class="flex items-center gap-1.5 p-2 rounded-md bg-blue-50 text-secondary mt-0.5">
-                    <span class="material-symbols-outlined text-[16px]">timer</span>
-                    <span class="text-[10px] font-medium">Tim konsultan kami merespons dalam 1x24 jam kerja.</span>
-                  </div>
+                  <div class="mt-auto flex flex-col gap-3.5">
+                    <!-- Commitment Notice -->
+                    <div class="flex items-center gap-1.5 p-2 rounded-md bg-blue-50 text-secondary">
+                      <span class="material-symbols-outlined text-[16px]">timer</span>
+                      <span class="text-[10px] font-medium">Tim konsultan kami merespons dalam 1x24 jam kerja.</span>
+                    </div>
 
-                  <!-- Submit Button -->
-                  <button class="w-full h-10 mt-1 rounded-md bg-secondary text-white text-[13px] font-bold flex items-center justify-center gap-1.5 shadow-sm hover:bg-blue-700 transition-colors focus:outline-none" 
-                          type="submit">
-                    <span>Kirim Formulir Konsultasi</span>
-                    <span class="material-symbols-outlined text-[14px]">send</span>
-                  </button>
+                    <!-- Submit Button -->
+                    <button class="w-full h-10 rounded-md bg-secondary text-white text-[13px] font-bold flex items-center justify-center gap-1.5 shadow-sm hover:bg-blue-700 transition-colors focus:outline-none" 
+                            type="submit">
+                      <span>Kirim Formulir Konsultasi</span>
+                      <span class="material-symbols-outlined text-[14px]">send</span>
+                    </button>
+                  </div>
 
                 </form>
               </div>
