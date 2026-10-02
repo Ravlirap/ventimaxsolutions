@@ -249,9 +249,10 @@
           <img alt="Sistem Ventilasi Alami Terpadu Ventimax Solutions"
                class="w-full h-full object-cover object-right lg:object-center"
                src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/hurricane....web-1J9gPFME2er0x1oT.png">
-          <!-- Overlay supavent style -->
-          <div class="absolute inset-0 bg-gradient-to-r from-ink/75 via-ink/40 to-transparent lg:from-ink/70 lg:via-ink/30 lg:to-transparent"></div>
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-ink/25"></div>
+          <!-- Overlay: left-to-right dark fade (inline CSS guaranteed to render) -->
+          <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(7,21,50,0.75) 0%, rgba(7,21,50,0.40) 45%, transparent 100%);"></div>
+          <!-- Overlay: bottom-to-top dark fade -->
+          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(7,21,50,0.75) 0%, transparent 50%, rgba(7,21,50,0.25) 100%);"></div>
         </div>
 
         <div class="relative z-10 max-w-[1200px] w-full mx-auto px-gutter-mobile lg:px-gutter py-8 sm:py-10 lg:py-12">
