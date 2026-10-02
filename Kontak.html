@@ -271,12 +271,12 @@
       </section>
 
       <!-- 2. FORMULIR KONSULTASI & DIREKTORI KONTAK -->
-      <section class="w-full bg-white py-12 lg:py-16" id="formulir-konsultasi">
+      <section class="w-full bg-white py-8 lg:py-10" id="formulir-konsultasi">
         <!-- MENGURANGI LEBAR KONTAINER AGAR TIDAK LEBAR/BESAR -->
         <div class="max-w-[1000px] mx-auto px-6">
           
           <!-- Pengantar Konsultasi -->
-          <div class="max-w-2xl mb-10 mx-auto text-center">
+          <div class="max-w-2xl mb-6 mx-auto text-center">
             <div class="inline-flex items-center gap-2 mb-2">
               <span class="w-4 h-0.5 bg-secondary rounded-full hidden sm:block"></span>
               <span class="text-[10px] text-secondary uppercase tracking-widest font-bold">
@@ -284,7 +284,7 @@
               </span>
               <span class="w-4 h-0.5 bg-secondary rounded-full hidden sm:block"></span>
             </div>
-            <h1 class="text-2xl lg:text-3xl text-card-start-navy tracking-tight font-bold mb-3">
+            <h1 class="text-xl lg:text-2xl text-card-start-navy tracking-tight font-bold mb-3">
               Hubungi Tim Ahli Ventimax Solutions
             </h1>
             <p class="text-[13px] text-gray-600 leading-relaxed">
@@ -292,10 +292,10 @@
             </p>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-stretch">
             
             <!-- LEFT COLUMN: Informasi Kontak Resmi -->
-            <div class="flex flex-col gap-4 h-full">
+            <div class="flex flex-col gap-3 h-full">
               <div>
                 <div class="inline-flex items-center gap-1.5 mb-2">
                   <span class="w-4 h-0.5 bg-secondary"></span>
@@ -310,7 +310,7 @@
               </div>
 
               <!-- Official Contact Directory Card (Compact) -->
-              <div class="bg-surface-bright p-5 rounded-xl shadow-sm border border-blue-100 flex flex-col gap-4 flex-grow">
+              <div class="bg-surface-bright p-4 rounded-xl shadow-sm border border-blue-100 flex flex-col gap-4 flex-grow">
                 <div class="flex items-center justify-between pb-3 border-b border-gray-200">
                   <span class="text-[10px] text-secondary font-bold uppercase tracking-wider">Kontak Resmi Ventimax</span>
                   <span class="flex items-center gap-1.5 text-[10px] font-bold text-whatsapp-green">
@@ -319,7 +319,7 @@
                   </span>
                 </div>
 
-                <div class="flex flex-col gap-3.5 text-sm text-gray-800">
+                <div class="flex flex-col gap-2.5 text-sm text-gray-800">
                   <!-- Phone -->
                   <div class="flex items-start gap-2.5">
                     <div class="w-7 h-7 rounded-md bg-blue-50 flex items-center justify-center text-secondary shrink-0">
@@ -403,7 +403,7 @@
             </div>
 
             <!-- RIGHT COLUMN: Formulir Konsultasi Bangunan -->
-            <div class="flex flex-col gap-4 h-full">
+            <div class="flex flex-col gap-3 h-full">
               
               <div>
                 <div class="inline-flex items-center gap-1.5 mb-2">
@@ -418,7 +418,7 @@
                 </p>
               </div>
 
-              <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 relative flex flex-col flex-grow">
+              <div class="bg-white p-4 rounded-xl shadow-md border border-gray-100 relative flex flex-col flex-grow">
 
                 <!-- Feedback Notice (Hidden by default, shown by JS on submit) -->
                 <div class="hidden mb-4 p-3 rounded-lg bg-green-50 border border-green-200 text-green-800" id="consultation-success">
@@ -429,7 +429,7 @@
                   <p class="text-[11px]">Terima kasih. Tim konsultan teknis kami akan menghubungi Anda dalam waktu maksimal 1x24 jam kerja.</p>
                 </div>
 
-                <form class="flex flex-col gap-3.5 flex-grow" id="consultation-form" onsubmit="event.preventDefault(); document.getElementById('consultation-success').classList.remove('hidden'); this.reset();">
+                <form class="flex flex-col gap-2.5 flex-grow" id="consultation-form" onsubmit="event.preventDefault(); document.getElementById('consultation-success').classList.remove('hidden'); this.reset();">
                   
                   <!-- Field 1: Nama Lengkap -->
                   <div>
@@ -437,7 +437,7 @@
                       Nama <span class="text-red-500">*</span>
                     </label>
                     <div class="relative">
-                      <input class="w-full h-9 rounded-md bg-surface-bright px-3 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
+                      <input class="w-full h-8 rounded-md bg-surface-bright px-3 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
                              id="contact-name" 
                              name="nama_lengkap" 
                              placeholder="Nama Anda..." 
@@ -448,13 +448,13 @@
                   </div>
 
                   <!-- Field 2 & 3: Email & Telepon -->
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     <div>
                       <label class="block text-[11px] text-gray-700 mb-1 font-bold" for="contact-email">
                         Alamat Email <span class="text-red-500">*</span>
                       </label>
                       <div class="relative">
-                        <input class="w-full h-9 rounded-md bg-surface-bright px-3 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
+                        <input class="w-full h-8 rounded-md bg-surface-bright px-3 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
                                id="contact-email" 
                                name="email" 
                                placeholder="nama@perusahaan.com" 
@@ -468,7 +468,7 @@
                         Nomor WhatsApp <span class="text-red-500">*</span>
                       </label>
                       <div class="relative">
-                        <input class="w-full h-9 rounded-md bg-surface-bright px-3 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
+                        <input class="w-full h-8 rounded-md bg-surface-bright px-3 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
                                id="contact-phone" 
                                name="telepon" 
                                placeholder="0812..." 
@@ -484,14 +484,14 @@
                     <label class="block text-[11px] text-gray-700 mb-1 font-bold" for="contact-project">
                       Detail Proyek & Lokasi <span class="text-red-500">*</span>
                     </label>
-                    <textarea class="w-full flex-grow rounded-md bg-surface-bright p-2.5 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors resize-none" 
+                    <textarea class="w-full flex-grow rounded-md bg-surface-bright p-2 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors resize-none" 
                               id="contact-project" 
                               name="detail_proyek" 
                               placeholder="Jelaskan kebutuhan Anda..." 
                               required></textarea>
                   </div>
 
-                  <div class="mt-auto flex flex-col gap-3.5">
+                  <div class="mt-auto flex flex-col gap-2.5">
                     <!-- Commitment Notice -->
                     <div class="flex items-center gap-1.5 p-2 rounded-md bg-blue-50 text-secondary">
                       <span class="material-symbols-outlined text-[16px]">timer</span>
@@ -499,7 +499,7 @@
                     </div>
 
                     <!-- Submit Button -->
-                    <button class="w-full h-10 rounded-md bg-secondary text-white text-[13px] font-bold flex items-center justify-center gap-1.5 shadow-sm hover:bg-blue-700 transition-colors focus:outline-none" 
+                    <button class="w-full h-9 rounded-md bg-secondary text-white text-[13px] font-bold flex items-center justify-center gap-1.5 shadow-sm hover:bg-blue-700 transition-colors focus:outline-none" 
                             type="submit">
                       <span>Kirim Formulir Konsultasi</span>
                       <span class="material-symbols-outlined text-[14px]">send</span>
@@ -515,7 +515,7 @@
       </section>
 
       <!-- 3. TESTIMONI KLIEN KAMI -->
-      <section class="w-full bg-surface py-12 lg:py-16 border-t border-gray-100">
+      <section class="w-full bg-surface py-8 lg:py-10 border-t border-gray-100">
         <div class="max-w-[1000px] mx-auto px-6">
           
           <!-- Section Header -->
@@ -615,7 +615,7 @@
       </section>
 
       <!-- 4. CLOSING STATEMENT BANNER -->
-      <section class="relative w-full py-12 lg:py-16 overflow-hidden bg-ink text-pure-white flex items-center justify-center">
+      <section class="relative w-full py-8 lg:py-10 overflow-hidden bg-ink text-pure-white flex items-center justify-center">
         <!-- Authentic Background Image -->
         <div class="absolute inset-0 z-0">
           <img alt="Ventimax Solutions Instalasi Atap" 
