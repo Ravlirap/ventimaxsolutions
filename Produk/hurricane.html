@@ -179,7 +179,7 @@
   <!-- ========================================== -->
   <!-- 1. HEADER / NAVIGATION                     -->
   <!-- ========================================== -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-primary-container shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#001c39]/75 backdrop-blur-md border-b border-pure-white/10 shadow-lg">
     <div class="h-16 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
 
       <!-- Logo -->
@@ -213,14 +213,13 @@
 
         <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="proyek" href="../Proyek.html">Proyek</a>
-        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
-           data-path="kontak" href="../Kontak.html">Kontak</a>
+        
       </nav>
 
       <!-- Right Controls: Language Switcher -->
       <div class="flex items-center gap-space-md">
         <div class="relative group py-space-xs">
-          <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-tertiary-container text-on-primary font-spec-label text-spec-label hover:bg-card-start-navy transition-colors focus:outline-none"
+          <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-pure-white/10 text-pure-white font-spec-label text-spec-label hover:bg-pure-white/20 border border-pure-white/10 transition-colors focus:outline-none"
                   type="button">
             <span class="material-symbols-outlined text-[18px]">flag</span>
             <span>ID</span>
@@ -239,10 +238,13 @@
             </a>
           </div>
         </div>
+          <!-- CTA Button (New) -->
+          <a href="../Kontak.html" class="hidden lg:inline-flex items-center justify-center h-8 px-4 rounded-full bg-secondary hover:bg-[#3b6bbd] text-pure-white text-xs font-bold shadow-md transition-all">
+            Konsultasi
+          </a>
+        </div>
       </div>
-
-    </div>
-  </header>
+    </header>
 
   <!-- ========================================== -->
   <!-- MAIN CONTENT                               -->
@@ -741,7 +743,7 @@
               <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Proyek.html">Proyek</a>
             </li>
             <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="../Kontak.html">Kontak</a>
+              
             </li>
           </ul>
         </div>
