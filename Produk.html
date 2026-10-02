@@ -175,13 +175,15 @@
         </div>
 
         <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex items-center gap-space-lg">
-        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors py-2"
+      <nav class="hidden lg:flex items-center gap-space-lg"
+           data-active-classes="border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text">
+        <a
+           class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="beranda" href="Beranda.html">Beranda</a>
-        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors py-2"
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="tentang-kami" href="Tentang Kami.html">Tentang Kami</a>
 
-        <!-- Produk Dropdown (ACTIVE PAGE) -->
+        <!-- Produk Dropdown -->
         <div class="relative group py-space-sm">
           <a href="Produk.html"
              class="flex items-center gap-1 border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text transition-colors focus:outline-none">
@@ -189,27 +191,28 @@
             <span class="material-symbols-outlined text-[18px]">expand_more</span>
           </a>
           <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border z-50">
-            
             <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               href="Produk/supavent.html">Supavent</a>
+               data-path="produk-supavent" href="Produk/supavent.html">Supavent</a>
             <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               href="Produk/turbo-beam.html">Turbo Beam</a>
+               data-path="produk-turbo-beam" href="Produk/turbo-beam.html">Turbo Beam</a>
             <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               href="Produk/hurricane.html">Hurricane</a>
+               data-path="produk-hurricane" href="Produk/hurricane.html">Hurricane</a>
             <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               href="Produk/venticool.html">Venticool</a>
+               data-path="produk-venticool" href="Produk/venticool.html">Venticool</a>
             <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               href="Produk/ventigrille.html">Ventigrille</a>
+               data-path="produk-ventigrille" href="Produk/ventigrille.html">Ventigrille</a>
           </div>
         </div>
 
-        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors py-2"
+        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
            data-path="proyek" href="Proyek.html">Proyek</a>
         
       </nav>
 
-      <!-- Right Controls: Language Switcher -->
+      <!-- Right Controls -->
       <div class="flex items-center gap-space-md">
+
+        <!-- Language Switcher -->
         <div class="relative group py-space-xs">
           <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-pure-white/10 text-pure-white font-spec-label text-spec-label hover:bg-pure-white/20 border border-pure-white/10 transition-colors focus:outline-none"
                   type="button">
@@ -217,14 +220,14 @@
             <span>ID</span>
             <span class="material-symbols-outlined text-[16px]">expand_more</span>
           </button>
-          <div class="absolute right-0 top-full hidden group-hover:block w-32 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border z-50">
+          <div class="absolute right-0 top-full hidden group-hover:block w-32 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
             <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
-               href="Produk.html">
+               href="#">
               <span class="material-symbols-outlined text-[16px]">flag</span>
               <span>Indonesia</span>
             </a>
             <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white"
-               href="en">
+               href="/en">
               <span class="material-symbols-outlined text-[16px]">language</span>
               <span>English</span>
             </a>
@@ -237,6 +240,7 @@
         </div>
       </div>
     </header>
+
 
   <!-- ========================================== -->
   <!-- MAIN CONTENT                               -->
