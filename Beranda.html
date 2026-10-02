@@ -508,7 +508,7 @@
           <!-- Tab Buttons -->
           <div class="flex items-center gap-space-sm mb-space-xl overflow-x-auto pb-2" role="tablist">
             <button aria-selected="true"
-                    class="product-tab-btn active px-space-lg py-space-sm rounded-lg bg-secondary text-pure-white font-button-text text-button-text transition-all duration-200 shadow-sm flex items-center gap-2"
+                    class="product-tab-btn active px-space-lg py-space-sm rounded-lg bg-secondary text-pure-white font-button-text text-button-text transition-all duration-200 shadow-sm flex items-center gap-2 whitespace-nowrap border-2 border-secondary"
                     id="tab-btn-hurricane"
                     onclick="selectProductTab('hurricane')"
                     role="tab">
@@ -516,7 +516,7 @@
               <span>Hurricane</span>
             </button>
             <button aria-selected="false"
-                    class="product-tab-btn px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-button-text text-button-text transition-all duration-200 hover:bg-surface flex items-center gap-2"
+                    class="product-tab-btn px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-on-surface border-2 border-surface-container-high font-button-text text-button-text transition-all duration-200 hover:border-secondary hover:text-secondary flex items-center gap-2 whitespace-nowrap"
                     id="tab-btn-venticool"
                     onclick="selectProductTab('venticool')"
                     role="tab">
@@ -524,7 +524,7 @@
               <span>Venticool</span>
             </button>
             <button aria-selected="false"
-                    class="product-tab-btn px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-button-text text-button-text transition-all duration-200 hover:bg-surface flex items-center gap-2"
+                    class="product-tab-btn px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-on-surface border-2 border-surface-container-high font-button-text text-button-text transition-all duration-200 hover:border-secondary hover:text-secondary flex items-center gap-2 whitespace-nowrap"
                     id="tab-btn-supavent"
                     onclick="selectProductTab('supavent')"
                     role="tab">
@@ -1015,8 +1015,8 @@
               panel.classList.add('block');
             }
             if (btn) {
-              btn.classList.add('bg-secondary', 'text-pure-white');
-              btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+              btn.classList.add('bg-secondary', 'text-pure-white', 'border-secondary');
+              btn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'border-surface-container-high');
               btn.setAttribute('aria-selected', 'true');
             }
           } else {
@@ -1025,8 +1025,8 @@
               panel.classList.remove('block');
             }
             if (btn) {
-              btn.classList.remove('bg-secondary', 'text-pure-white');
-              btn.classList.add('bg-surface-container-lowest', 'text-on-surface');
+              btn.classList.remove('bg-secondary', 'text-pure-white', 'border-secondary');
+              btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'border-surface-container-high');
               btn.setAttribute('aria-selected', 'false');
             }
           }
