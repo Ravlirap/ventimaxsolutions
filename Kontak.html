@@ -248,7 +248,7 @@
   <!-- ========================================== -->
   <!-- MAIN CONTENT                               -->
   <!-- ========================================== -->
-    <main class="w-full pt-16 bg-surface-bright">
+      <main class="w-full pt-16 bg-surface-bright">
     <div class="flex flex-col w-full">
 
       <!-- 1. HERO BRAND BANNER -->
@@ -263,137 +263,139 @@
           <div class="absolute inset-0 bg-sky-950/15"></div>
         </div>
         <!-- Logo Brand di Atas Latar Awan -->
-        <div class="relative z-10 w-full max-w-[1200px] mx-auto px-6 pt-32 pb-16 flex justify-center">
+        <div class="relative z-10 w-full max-w-[1000px] mx-auto px-6 pt-24 pb-16 flex justify-center">
           <img alt="VENTI MAX SOLUTIONS - COOL THE ATMOSPHERE AROUND YOU" 
-               class="w-full max-w-[600px] lg:max-w-[700px] h-auto object-contain drop-shadow select-none pointer-events-none transition-transform hover:scale-[1.02] duration-300"
+               class="w-full max-w-[500px] lg:max-w-[600px] h-auto object-contain drop-shadow select-none pointer-events-none transition-transform hover:scale-[1.02] duration-300"
                src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/ventimax-solutions-logo-LjxJejRQxKVCEHgr.png">
         </div>
       </section>
 
       <!-- 2. FORMULIR KONSULTASI & DIREKTORI KONTAK -->
-      <section class="w-full bg-white py-16 lg:py-24" id="formulir-konsultasi">
-        <div class="max-w-[1200px] mx-auto px-6">
+      <section class="w-full bg-white py-12 lg:py-16" id="formulir-konsultasi">
+        <!-- MENGURANGI LEBAR KONTAINER AGAR TIDAK LEBAR/BESAR -->
+        <div class="max-w-[1000px] mx-auto px-6">
           
           <!-- Pengantar Konsultasi -->
-          <div class="max-w-3xl mb-12">
-            <div class="inline-flex items-center gap-2 mb-3">
-              <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
-              <span class="text-xs text-secondary uppercase tracking-widest font-bold">
+          <div class="max-w-2xl mb-10 mx-auto text-center">
+            <div class="inline-flex items-center gap-2 mb-2">
+              <span class="w-4 h-0.5 bg-secondary rounded-full hidden sm:block"></span>
+              <span class="text-[10px] text-secondary uppercase tracking-widest font-bold">
                 KONSULTASI VENTILASI INDUSTRI
               </span>
+              <span class="w-4 h-0.5 bg-secondary rounded-full hidden sm:block"></span>
             </div>
-            <h1 class="text-3xl sm:text-4xl lg:text-4xl text-card-start-navy tracking-tight font-bold mb-4">
+            <h1 class="text-2xl lg:text-3xl text-card-start-navy tracking-tight font-bold mb-3">
               Hubungi Tim Ahli Ventimax Solutions
             </h1>
-            <p class="text-sm text-gray-600 leading-relaxed max-w-2xl">
+            <p class="text-[13px] text-gray-600 leading-relaxed">
               Dapatkan rekomendasi insulasi termal dan sistem ventilasi turbin bebas listrik yang disesuaikan dengan spesifikasi bangunan pabrik atau gudang Anda.
             </p>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
             
             <!-- LEFT COLUMN: Informasi Kontak Resmi -->
-            <div class="lg:col-span-5 flex flex-col gap-6">
+            <div class="flex flex-col gap-4">
               <div>
-                <div class="inline-flex items-center gap-2 mb-3">
-                  <span class="w-6 h-0.5 bg-secondary"></span>
-                  <span class="text-xs text-secondary uppercase tracking-wider font-bold">Direktori Kontak</span>
+                <div class="inline-flex items-center gap-1.5 mb-2">
+                  <span class="w-4 h-0.5 bg-secondary"></span>
+                  <span class="text-[10px] text-secondary uppercase tracking-wider font-bold">Direktori Kontak</span>
                 </div>
-                <h2 class="text-2xl lg:text-3xl text-card-start-navy font-bold mb-3">
+                <h2 class="text-xl lg:text-xl text-card-start-navy font-bold mb-2">
                   Hubungi Kantor Kami
                 </h2>
-                <p class="text-[13px] text-gray-600 leading-relaxed mb-6">
+                <p class="text-xs text-gray-600 leading-relaxed mb-4">
                   Silakan hubungi kontak resmi kami untuk pertanyaan teknis, konsultasi kebutuhan material, maupun penjadwalan survey lokasi.
                 </p>
               </div>
 
-              <!-- Official Contact Directory Card -->
-              <div class="bg-surface-bright p-6 rounded-2xl shadow-sm border border-blue-100 flex flex-col gap-5">
-                <div class="flex items-center justify-between pb-4 border-b border-gray-100">
-                  <span class="text-[11px] text-secondary font-bold uppercase tracking-wider">Kontak Resmi Ventimax</span>
-                  <span class="flex items-center gap-1.5 text-[11px] font-bold text-whatsapp-green">
-                    <span class="flex h-2 w-2 rounded-full bg-whatsapp-green animate-pulse"></span>
+              <!-- Official Contact Directory Card (Compact) -->
+              <div class="bg-surface-bright p-5 rounded-xl shadow-sm border border-blue-100 flex flex-col gap-4">
+                <div class="flex items-center justify-between pb-3 border-b border-gray-200">
+                  <span class="text-[10px] text-secondary font-bold uppercase tracking-wider">Kontak Resmi Ventimax</span>
+                  <span class="flex items-center gap-1.5 text-[10px] font-bold text-whatsapp-green">
+                    <span class="flex h-1.5 w-1.5 rounded-full bg-whatsapp-green animate-pulse"></span>
                     Online
                   </span>
                 </div>
 
-                <div class="flex flex-col gap-4 text-sm text-gray-800">
+                <div class="flex flex-col gap-3.5 text-sm text-gray-800">
                   <!-- Phone -->
-                  <div class="flex items-start gap-3">
-                    <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center text-secondary shrink-0">
-                      <span class="material-symbols-outlined text-[18px]">call</span>
+                  <div class="flex items-start gap-2.5">
+                    <div class="w-7 h-7 rounded-md bg-blue-50 flex items-center justify-center text-secondary shrink-0">
+                      <span class="material-symbols-outlined text-[16px]">call</span>
                     </div>
                     <div class="flex flex-col gap-0.5">
-                      <p class="text-[11px] font-bold text-gray-400">Telepon Kantor</p>
-                      <a class="text-base text-card-start-navy hover:text-secondary hover:underline font-bold" href="tel:+6281110016996">0811-1001-6996</a>
+                      <p class="text-[10px] font-bold text-gray-400">Telepon Kantor</p>
+                      <a class="text-sm text-card-start-navy hover:text-secondary hover:underline font-bold" href="tel:+6281110016996">0811-1001-6996</a>
                     </div>
                   </div>
 
                   <!-- Email -->
-                  <div class="flex items-start gap-3">
-                    <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center text-secondary shrink-0">
-                      <span class="material-symbols-outlined text-[18px]">mail</span>
+                  <div class="flex items-start gap-2.5">
+                    <div class="w-7 h-7 rounded-md bg-blue-50 flex items-center justify-center text-secondary shrink-0">
+                      <span class="material-symbols-outlined text-[16px]">mail</span>
                     </div>
                     <div class="flex flex-col gap-0.5">
-                      <p class="text-[11px] font-bold text-gray-400">Email</p>
-                      <a class="text-sm text-card-start-navy hover:text-secondary font-semibold" href="mailto:hq@ventimaxsolutions.co.id">hq@ventimaxsolutions.co.id</a>
+                      <p class="text-[10px] font-bold text-gray-400">Email</p>
+                      <a class="text-[13px] text-card-start-navy hover:text-secondary font-semibold" href="mailto:hq@ventimaxsolutions.co.id">hq@ventimaxsolutions.co.id</a>
                     </div>
                   </div>
 
                   <!-- Instagram -->
-                  <div class="flex items-start gap-3">
-                    <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center text-secondary shrink-0">
-                      <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+                  <div class="flex items-start gap-2.5">
+                    <div class="w-7 h-7 rounded-md bg-blue-50 flex items-center justify-center text-secondary shrink-0">
+                      <span class="material-symbols-outlined text-[16px]">photo_camera</span>
                     </div>
                     <div class="flex flex-col gap-0.5">
-                      <p class="text-[11px] font-bold text-gray-400">Instagram</p>
-                      <a class="text-sm text-card-start-navy hover:text-secondary font-medium" href="https://www.instagram.com/ventimaxsolutionsofficial/" rel="noopener noreferrer" target="_blank">@ventimaxsolutionsofficial</a>
+                      <p class="text-[10px] font-bold text-gray-400">Instagram</p>
+                      <a class="text-[13px] text-card-start-navy hover:text-secondary font-medium" href="https://www.instagram.com/ventimaxsolutionsofficial/" rel="noopener noreferrer" target="_blank">@ventimaxsolutionsofficial</a>
                     </div>
                   </div>
 
                   <!-- Website -->
-                  <div class="flex items-start gap-3">
-                    <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center text-secondary shrink-0">
-                      <span class="material-symbols-outlined text-[18px]">globe</span>
+                  <div class="flex items-start gap-2.5">
+                    <div class="w-7 h-7 rounded-md bg-blue-50 flex items-center justify-center text-secondary shrink-0">
+                      <span class="material-symbols-outlined text-[16px]">globe</span>
                     </div>
                     <div class="flex flex-col gap-0.5">
-                      <p class="text-[11px] font-bold text-gray-400">Website Resmi</p>
-                      <a class="text-sm text-card-start-navy hover:text-secondary font-medium" href="https://www.ventimaxsolutions.co.id" rel="noopener noreferrer" target="_blank">www.ventimaxsolutions.co.id</a>
+                      <p class="text-[10px] font-bold text-gray-400">Website Resmi</p>
+                      <a class="text-[13px] text-card-start-navy hover:text-secondary font-medium" href="https://www.ventimaxsolutions.co.id" rel="noopener noreferrer" target="_blank">www.ventimaxsolutions.co.id</a>
                     </div>
                   </div>
 
                   <!-- Office Address -->
-                  <div class="flex items-start gap-3">
-                    <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center text-secondary shrink-0">
-                      <span class="material-symbols-outlined text-[18px]">location_on</span>
+                  <div class="flex items-start gap-2.5">
+                    <div class="w-7 h-7 rounded-md bg-blue-50 flex items-center justify-center text-secondary shrink-0">
+                      <span class="material-symbols-outlined text-[16px]">location_on</span>
                     </div>
-                    <div class="flex flex-col gap-1">
-                      <p class="text-[11px] font-bold text-gray-400">Alamat Kantor</p>
-                      <p class="text-[13px] text-gray-600 leading-relaxed">
+                    <div class="flex flex-col gap-0.5">
+                      <p class="text-[10px] font-bold text-gray-400">Alamat Kantor</p>
+                      <p class="text-[11px] text-gray-600 leading-snug">
                         Summarecon Serpong, Ruko Golden 8, Jl. Boulevard Raya Gading Serpong No.18 Blok D, Pakulonan Barat, Kec. Kelapa Dua, Kab. Tangerang, Banten 15818
                       </p>
                     </div>
                   </div>
 
                   <!-- Service Area -->
-                  <div class="flex items-start gap-3">
-                    <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center text-secondary shrink-0">
-                      <span class="material-symbols-outlined text-[18px]">travel_explore</span>
+                  <div class="flex items-start gap-2.5">
+                    <div class="w-7 h-7 rounded-md bg-blue-50 flex items-center justify-center text-secondary shrink-0">
+                      <span class="material-symbols-outlined text-[16px]">travel_explore</span>
                     </div>
                     <div class="flex flex-col gap-0.5">
-                      <p class="text-[11px] font-bold text-gray-400">Cakupan Layanan</p>
-                      <p class="text-[13px] text-card-start-navy font-semibold">Jabodetabek, Bali &amp; Seluruh Indonesia</p>
+                      <p class="text-[10px] font-bold text-gray-400">Cakupan Layanan</p>
+                      <p class="text-[12px] text-card-start-navy font-semibold">Jabodetabek, Bali &amp; Seluruh Indonesia</p>
                     </div>
                   </div>
                 </div>
 
                 <!-- Direct WhatsApp Button -->
-                <div class="pt-2">
-                  <a class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-whatsapp-green text-white text-sm font-bold shadow-md hover:opacity-95 transition-opacity" 
+                <div class="pt-1">
+                  <a class="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-md bg-whatsapp-green text-white text-[13px] font-bold shadow-sm hover:opacity-95 transition-opacity" 
                      href="https://wa.me/6281110016996" 
                      rel="noopener noreferrer" 
                      target="_blank">
-                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Chat Langsung via WhatsApp</span>
                   </a>
                 </div>
@@ -401,105 +403,105 @@
             </div>
 
             <!-- RIGHT COLUMN: Formulir Konsultasi Bangunan -->
-            <div class="lg:col-span-7">
-              <div class="bg-white p-6 lg:p-8 rounded-2xl shadow-lg border border-gray-100 relative">
+            <div>
+              <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 relative">
                 
-                <div class="mb-6">
-                  <div class="inline-flex items-center gap-2 mb-2">
+                <div class="mb-5">
+                  <div class="inline-flex items-center gap-1.5 mb-1.5">
                     <span class="w-4 h-0.5 bg-secondary"></span>
-                    <span class="text-[11px] text-secondary uppercase tracking-wider font-bold">Formulir Konsultasi</span>
+                    <span class="text-[10px] text-secondary uppercase tracking-wider font-bold">Formulir Konsultasi</span>
                   </div>
-                  <h3 class="text-2xl lg:text-3xl text-card-start-navy font-bold mb-2">
+                  <h3 class="text-xl lg:text-2xl text-card-start-navy font-bold mb-1.5">
                     Diskusikan Proyek Anda
                   </h3>
-                  <p class="text-[13px] text-gray-600 leading-relaxed">
-                    Isi formulir di bawah ini untuk mengonsultasikan kebutuhan sistem pendinginan atap properti Anda. Tim teknis kami akan merespons dalam 1x24 jam kerja.
+                  <p class="text-xs text-gray-600 leading-relaxed">
+                    Isi formulir di bawah ini untuk mengonsultasikan kebutuhan sistem pendinginan atap properti Anda.
                   </p>
                 </div>
 
                 <!-- Feedback Notice (Hidden by default, shown by JS on submit) -->
-                <div class="hidden mb-5 p-4 rounded-xl bg-green-50 border border-green-200 text-green-800" id="consultation-success">
-                  <div class="flex items-center gap-2 mb-1">
-                    <span class="material-symbols-outlined text-green-600 text-[20px]">check_circle</span>
-                    <span class="text-sm font-bold">Formulir Berhasil Terkirim!</span>
+                <div class="hidden mb-4 p-3 rounded-lg bg-green-50 border border-green-200 text-green-800" id="consultation-success">
+                  <div class="flex items-center gap-1.5 mb-1">
+                    <span class="material-symbols-outlined text-green-600 text-[18px]">check_circle</span>
+                    <span class="text-xs font-bold">Formulir Berhasil Terkirim!</span>
                   </div>
-                  <p class="text-xs">Terima kasih. Tim konsultan teknis kami akan menghubungi Anda dalam waktu maksimal 1x24 jam kerja.</p>
+                  <p class="text-[11px]">Terima kasih. Tim konsultan teknis kami akan menghubungi Anda dalam waktu maksimal 1x24 jam kerja.</p>
                 </div>
 
-                <form class="flex flex-col gap-4" id="consultation-form" onsubmit="event.preventDefault(); document.getElementById('consultation-success').classList.remove('hidden'); this.reset();">
+                <form class="flex flex-col gap-3.5" id="consultation-form" onsubmit="event.preventDefault(); document.getElementById('consultation-success').classList.remove('hidden'); this.reset();">
                   
                   <!-- Field 1: Nama Lengkap -->
                   <div>
-                    <label class="block text-xs text-gray-700 mb-1.5 font-bold" for="contact-name">
+                    <label class="block text-[11px] text-gray-700 mb-1 font-bold" for="contact-name">
                       Nama <span class="text-red-500">*</span>
                     </label>
                     <div class="relative">
-                      <input class="w-full h-10 rounded-lg bg-surface-bright px-3 border border-gray-200 text-sm text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
+                      <input class="w-full h-9 rounded-md bg-surface-bright px-3 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
                              id="contact-name" 
                              name="nama_lengkap" 
                              placeholder="Nama Anda..." 
                              required 
                              type="text">
-                      <span class="absolute right-3 top-2.5 text-gray-400 text-[18px] material-symbols-outlined pointer-events-none">person</span>
+                      <span class="absolute right-2.5 top-2 text-gray-400 text-[16px] material-symbols-outlined pointer-events-none">person</span>
                     </div>
                   </div>
 
                   <!-- Field 2 & 3: Email & Telepon -->
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                     <div>
-                      <label class="block text-xs text-gray-700 mb-1.5 font-bold" for="contact-email">
+                      <label class="block text-[11px] text-gray-700 mb-1 font-bold" for="contact-email">
                         Alamat Email <span class="text-red-500">*</span>
                       </label>
                       <div class="relative">
-                        <input class="w-full h-10 rounded-lg bg-surface-bright px-3 border border-gray-200 text-sm text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
+                        <input class="w-full h-9 rounded-md bg-surface-bright px-3 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
                                id="contact-email" 
                                name="email" 
                                placeholder="nama@perusahaan.com" 
                                required 
                                type="email">
-                        <span class="absolute right-3 top-2.5 text-gray-400 text-[18px] material-symbols-outlined pointer-events-none">mail</span>
+                        <span class="absolute right-2.5 top-2 text-gray-400 text-[16px] material-symbols-outlined pointer-events-none">mail</span>
                       </div>
                     </div>
                     <div>
-                      <label class="block text-xs text-gray-700 mb-1.5 font-bold" for="contact-phone">
+                      <label class="block text-[11px] text-gray-700 mb-1 font-bold" for="contact-phone">
                         Nomor WhatsApp <span class="text-red-500">*</span>
                       </label>
                       <div class="relative">
-                        <input class="w-full h-10 rounded-lg bg-surface-bright px-3 border border-gray-200 text-sm text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
+                        <input class="w-full h-9 rounded-md bg-surface-bright px-3 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors" 
                                id="contact-phone" 
                                name="telepon" 
                                placeholder="0812..." 
                                required 
                                type="tel">
-                        <span class="absolute right-3 top-2.5 text-gray-400 text-[18px] material-symbols-outlined pointer-events-none">smartphone</span>
+                        <span class="absolute right-2.5 top-2 text-gray-400 text-[16px] material-symbols-outlined pointer-events-none">smartphone</span>
                       </div>
                     </div>
                   </div>
 
                   <!-- Field 4: Detail Proyek & Lokasi Bangunan -->
                   <div>
-                    <label class="block text-xs text-gray-700 mb-1.5 font-bold" for="contact-project">
-                      Detail Proyek &amp; Lokasi Bangunan <span class="text-red-500">*</span>
+                    <label class="block text-[11px] text-gray-700 mb-1 font-bold" for="contact-project">
+                      Detail Proyek & Lokasi <span class="text-red-500">*</span>
                     </label>
-                    <textarea class="w-full rounded-lg bg-surface-bright p-3 border border-gray-200 text-sm text-gray-800 focus:outline-none focus:border-secondary transition-colors resize-y" 
+                    <textarea class="w-full rounded-md bg-surface-bright p-2.5 border border-gray-200 text-xs text-gray-800 focus:outline-none focus:border-secondary transition-colors resize-y" 
                               id="contact-project" 
                               name="detail_proyek" 
-                              placeholder="Jelaskan luas atap, tipe bangunan (rumah/gudang/pabrik), dan kebutuhan sirkulasi udara Anda..." 
+                              placeholder="Jelaskan kebutuhan Anda..." 
                               required 
-                              rows="4"></textarea>
+                              rows="3"></textarea>
                   </div>
 
                   <!-- Commitment Notice -->
-                  <div class="flex items-center gap-2 p-3 rounded-lg bg-blue-50 text-secondary mt-1">
-                    <span class="material-symbols-outlined text-[18px]">timer</span>
-                    <span class="text-xs font-medium">Tim konsultan teknis kami akan merespons dalam 1x24 jam kerja.</span>
+                  <div class="flex items-center gap-1.5 p-2 rounded-md bg-blue-50 text-secondary mt-0.5">
+                    <span class="material-symbols-outlined text-[16px]">timer</span>
+                    <span class="text-[10px] font-medium">Tim konsultan kami merespons dalam 1x24 jam kerja.</span>
                   </div>
 
                   <!-- Submit Button -->
-                  <button class="w-full h-11 mt-2 rounded-lg bg-secondary text-white text-sm font-bold flex items-center justify-center gap-2 shadow-md hover:bg-blue-700 transition-colors focus:outline-none" 
+                  <button class="w-full h-10 mt-1 rounded-md bg-secondary text-white text-[13px] font-bold flex items-center justify-center gap-1.5 shadow-sm hover:bg-blue-700 transition-colors focus:outline-none" 
                           type="submit">
                     <span>Kirim Formulir Konsultasi</span>
-                    <span class="material-symbols-outlined text-[16px]">send</span>
+                    <span class="material-symbols-outlined text-[14px]">send</span>
                   </button>
 
                 </form>
@@ -511,97 +513,97 @@
       </section>
 
       <!-- 3. TESTIMONI KLIEN KAMI -->
-      <section class="w-full bg-surface py-16 lg:py-24 border-t border-gray-100">
-        <div class="max-w-[1200px] mx-auto px-6">
+      <section class="w-full bg-surface py-12 lg:py-16 border-t border-gray-100">
+        <div class="max-w-[1000px] mx-auto px-6">
           
           <!-- Section Header -->
-          <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="text-2xl sm:text-3xl font-bold text-card-start-navy">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <h2 class="text-xl sm:text-2xl font-bold text-card-start-navy">
               Testimoni Klien Kami
             </h2>
-            <div class="w-10 h-1 bg-secondary mx-auto mt-3 rounded-full"></div>
+            <div class="w-8 h-1 bg-secondary mx-auto mt-2.5 rounded-full"></div>
           </div>
 
           <!-- 3 Testimonial Cards -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch">
             
             <!-- Card 1 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
-              <div class="flex flex-col gap-4">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div class="flex flex-col gap-3">
                 <!-- Golden Stars -->
-                <div class="flex items-center gap-1 text-[#fbbf24]">
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                <div class="flex items-center gap-0.5 text-[#fbbf24]">
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
                 </div>
                 <!-- Quote -->
-                <p class="text-sm text-gray-600 italic leading-relaxed">
+                <p class="text-[12px] text-gray-600 italic leading-relaxed">
                   “Pemasangan ventilator turbin VENTI MAX telah memberikan perubahan yang sangat besar. Gudang kami menjadi jauh lebih sejuk dan nyaman sepanjang hari.”
                 </p>
               </div>
 
               <!-- Profile -->
-              <div class="flex items-center gap-3 pt-4 mt-4 border-t border-gray-100">
-                <div class="w-10 h-10 rounded-full bg-card-start-navy text-white flex items-center justify-center font-bold text-[14px]">
+              <div class="flex items-center gap-2.5 pt-3 mt-3 border-t border-gray-100">
+                <div class="w-8 h-8 rounded-full bg-card-start-navy text-white flex items-center justify-center font-bold text-[12px]">
                   BS
                 </div>
                 <div class="flex flex-col">
-                  <p class="text-sm font-bold text-card-start-navy leading-tight">Budi Santoso</p>
-                  <p class="text-[11px] font-bold text-gray-400">Pemilik Gudang</p>
+                  <p class="text-[13px] font-bold text-card-start-navy leading-tight">Budi Santoso</p>
+                  <p class="text-[10px] font-bold text-gray-400">Pemilik Gudang</p>
                 </div>
               </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
-              <div class="flex flex-col gap-4">
-                <div class="flex items-center gap-1 text-[#fbbf24]">
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-0.5 text-[#fbbf24]">
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
                 </div>
-                <p class="text-sm text-gray-600 italic leading-relaxed">
+                <p class="text-[12px] text-gray-600 italic leading-relaxed">
                   “Insulasi dari VENTI MAX SOLUTIONS sangat membantu mengurangi panas di dalam pabrik kami. Timnya profesional dan pemasangannya cepat.”
                 </p>
               </div>
 
-              <div class="flex items-center gap-3 pt-4 mt-4 border-t border-gray-100">
-                <div class="w-10 h-10 rounded-full bg-card-start-navy text-white flex items-center justify-center font-bold text-[14px]">
+              <div class="flex items-center gap-2.5 pt-3 mt-3 border-t border-gray-100">
+                <div class="w-8 h-8 rounded-full bg-card-start-navy text-white flex items-center justify-center font-bold text-[12px]">
                   RH
                 </div>
                 <div class="flex flex-col">
-                  <p class="text-sm font-bold text-card-start-navy leading-tight">Rudi Hartanto</p>
-                  <p class="text-[11px] font-bold text-gray-400">Pemilik Pabrik</p>
+                  <p class="text-[13px] font-bold text-card-start-navy leading-tight">Rudi Hartanto</p>
+                  <p class="text-[10px] font-bold text-gray-400">Pemilik Pabrik</p>
                 </div>
               </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
-              <div class="flex flex-col gap-4">
-                <div class="flex items-center gap-1 text-[#fbbf24]">
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
-                  <span class="material-symbols-outlined text-[16px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-0.5 text-[#fbbf24]">
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[14px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
                 </div>
-                <p class="text-sm text-gray-600 italic leading-relaxed">
+                <p class="text-[12px] text-gray-600 italic leading-relaxed">
                   “Produk-produk yang baik, berkualitas tinggi, dan sangat awet. Kami telah menggunakan solusi mereka dalam berbagai proyek dan hasilnya sangat memuaskan.”
                 </p>
               </div>
 
-              <div class="flex items-center gap-3 pt-4 mt-4 border-t border-gray-100">
-                <div class="w-10 h-10 rounded-full bg-card-start-navy text-white flex items-center justify-center font-bold text-[14px]">
+              <div class="flex items-center gap-2.5 pt-3 mt-3 border-t border-gray-100">
+                <div class="w-8 h-8 rounded-full bg-card-start-navy text-white flex items-center justify-center font-bold text-[12px]">
                   AW
                 </div>
                 <div class="flex flex-col">
-                  <p class="text-sm font-bold text-card-start-navy leading-tight">Andi Wijaya</p>
-                  <p class="text-[11px] font-bold text-gray-400">Workshop Manajer</p>
+                  <p class="text-[13px] font-bold text-card-start-navy leading-tight">Andi Wijaya</p>
+                  <p class="text-[10px] font-bold text-gray-400">Workshop Manajer</p>
                 </div>
               </div>
             </div>
@@ -611,7 +613,7 @@
       </section>
 
       <!-- 4. CLOSING STATEMENT BANNER -->
-      <section class="relative w-full py-16 lg:py-24 overflow-hidden bg-ink text-pure-white flex items-center justify-center">
+      <section class="relative w-full py-12 lg:py-16 overflow-hidden bg-ink text-pure-white flex items-center justify-center">
         <!-- Authentic Background Image -->
         <div class="absolute inset-0 z-0">
           <img alt="Ventimax Solutions Instalasi Atap" 
@@ -620,28 +622,28 @@
           <div class="absolute inset-0 bg-gradient-to-r from-ink/90 via-primary-container/85 to-ink/90"></div>
         </div>
 
-        <div class="relative z-10 max-w-[1200px] mx-auto px-6 text-center flex flex-col items-center gap-4">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/10 backdrop-blur-sm mx-auto">
-            <span class="w-6 h-0.5 bg-blue-300"></span>
-            <span class="text-[11px] font-bold text-blue-300 uppercase tracking-wider">Komitmen Masa Depan</span>
-            <span class="w-6 h-0.5 bg-blue-300"></span>
+        <div class="relative z-10 max-w-[1000px] mx-auto px-6 text-center flex flex-col items-center gap-3">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white/10 backdrop-blur-sm mx-auto">
+            <span class="w-4 h-0.5 bg-blue-300"></span>
+            <span class="text-[10px] font-bold text-blue-300 uppercase tracking-wider">Komitmen Masa Depan</span>
+            <span class="w-4 h-0.5 bg-blue-300"></span>
           </div>
 
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white max-w-4xl mx-auto leading-tight drop-shadow-md">
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-white max-w-3xl mx-auto leading-tight drop-shadow-md">
             “Mari Wujudkan Hari Esok Yang Lebih Sejuk, Bersama Ventimax Solutions”
           </h2>
 
-          <div class="pt-4 flex flex-wrap justify-center gap-3 items-center">
-            <a class="inline-flex items-center justify-center gap-2 h-10 px-6 rounded-lg bg-secondary text-white text-sm font-bold shadow-md hover:bg-blue-600 transition-colors" 
+          <div class="pt-3 flex flex-wrap justify-center gap-2.5 items-center">
+            <a class="inline-flex items-center justify-center gap-1.5 h-9 px-5 rounded-md bg-secondary text-white text-[13px] font-bold shadow-sm hover:bg-blue-600 transition-colors" 
                href="#formulir-konsultasi">
               <span>Konsultasi Sekarang</span>
-              <span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+              <span class="material-symbols-outlined text-[14px]">arrow_upward</span>
             </a>
-            <a class="inline-flex items-center justify-center gap-2 h-10 px-5 rounded-lg bg-whatsapp-green text-white text-sm font-bold hover:bg-[#006b50] transition-colors shadow-md" 
+            <a class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-md bg-whatsapp-green text-white text-[13px] font-bold hover:bg-[#006b50] transition-colors shadow-sm" 
                href="https://wa.me/6281110016996" 
                rel="noopener noreferrer" 
                target="_blank">
-              <span class="material-symbols-outlined text-[18px]">chat</span>
+              <span class="material-symbols-outlined text-[16px]">chat</span>
               <span>WhatsApp: 0811-1001-6996</span>
             </a>
           </div>
@@ -650,6 +652,7 @@
 
     </div>
   </main>
+
 
 
   <!-- WhatsApp Floating Button -->
