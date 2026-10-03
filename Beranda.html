@@ -1,1256 +1,2132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="web_standard" name="shell-type">
-  <meta name="description" content="Ventimax Solutions specializes in advanced ventilation systems and thermal protection to enhance heat management in buildings. Discover how our practical solutions improve air movement and indoor comfort in hot and humid environments.">
-  <meta name="keywords" content="ventilation systems, thermal protection, heat management">
-  <title>Innovative Ventilation Systems for Heat Management | Ventimax Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-  <style>
-    @layer base {
-      html, body {
-        margin: 0;
-        padding: 0;
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <meta
+      name="description"
+      content="Ventimax Solutions specializes in advanced ventilation systems and thermal protection to enhance heat management in buildings. Discover how our practical solutions improve air movement and indoor comfort in hot and humid environments."
+    />
+    <meta
+      name="keywords"
+      content="ventilation systems, thermal protection, heat management"
+    />
+    <title>
+      Innovative Ventilation Systems for Heat Management | Ventimax Solutions
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
       }
-      body {
-        overscroll-behavior: none;
+      ::-webkit-scrollbar {
+        display: none;
       }
-      main > :first-child {
-        margin-top: 0 !important;
-      }
-      main > :last-child {
-        margin-bottom: 0 !important;
-      }
-    }
-    ::-webkit-scrollbar {
-      display: none;
-    }
 
-    /* Video Background Styles - Reduced overlay opacity for crystal clear ocean visibility */
-    .hero-video-bg {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      overflow: hidden;
-    }
-    .hero-video-bg video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .hero-video-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(7,21,50,0.45) 0%, rgba(7,21,50,0.15) 50%, rgba(7,21,50,0.35) 100%);
-    }
-    .hero-video-overlay-bottom {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(7,21,50,0.75) 0%, transparent 30%, rgba(7,21,50,0.3) 100%);
-    }
+      /* Video Background Styles - Reduced overlay opacity for crystal clear ocean visibility */
+      .hero-video-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+      }
+      .hero-video-bg video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hero-video-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(7, 21, 50, 0.45) 0%,
+          rgba(7, 21, 50, 0.15) 50%,
+          rgba(7, 21, 50, 0.35) 100%
+        );
+      }
+      .hero-video-overlay-bottom {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(7, 21, 50, 0.75) 0%,
+          transparent 30%,
+          rgba(7, 21, 50, 0.3) 100%
+        );
+      }
 
-    .hero-text-shadow {
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
-    }
-    .hero-subtext-shadow {
-      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
-    }
+      .hero-text-shadow {
+        text-shadow:
+          0 2px 10px rgba(0, 0, 0, 0.75),
+          0 1px 3px rgba(0, 0, 0, 0.9);
+      }
+      .hero-subtext-shadow {
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+      }
 
-    /* Tab hover: only applies when tab is NOT active */
-    .product-tab-btn[aria-selected="false"]:hover {
-      border-color: #355da3;
-      color: #355da3;
-      background-color: #ebf5ff;
-    }
-  </style>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "on-background": "#131d24",
-            "surface-container-high": "#dfe9f4",
-            "surface-container-low": "#ebf5ff",
-            "sea-foam": "#C1CDDA",
-            "surface-bright": "#f6f9ff",
-            "whatsapp-green": "#008060",
-            "on-primary-fixed-variant": "#274871",
-            "primary-fixed": "#d4e3ff",
-            "pure-white": "#FFFFFF",
-            "surface-container": "#e5effa",
-            "surface-tint": "#40608a",
-            "tertiary-container": "#002a51",
-            "outline-variant": "#c3c6cf",
-            "ocean-deep": "#15364B",
-            "secondary-container": "#8eb3ff",
-            "on-surface": "#131d24",
-            "surface-variant": "#dae4ef",
-            "on-tertiary-fixed-variant": "#004883",
-            "on-tertiary-fixed": "#001c39",
-            "secondary-fixed": "#d8e2ff",
-            "background": "#f6f9ff",
-            "ocean-mist": "#4B6B7E",
-            "inverse-surface": "#28313a",
-            "on-secondary-fixed-variant": "#17458a",
-            "secondary-fixed-dim": "#adc6ff",
-            "card-start-navy": "#0A2247",
-            "primary-container": "#002a52",
-            "ink": "#071532",
-            "primary": "#00152f",
-            "on-surface-variant": "#43474e",
-            "inverse-on-surface": "#e8f2fd",
-            "error-container": "#ffdad6",
-            "inverse-primary": "#a9c8f9",
-            "on-error-container": "#93000a",
-            "on-tertiary-container": "#4c93e6",
-            "on-tertiary": "#ffffff",
-            "ocean-teal": "#27475C",
-            "secondary": "#355da3",
-            "on-primary": "#ffffff",
-            "card-border": "#0F3976",
-            "on-secondary-fixed": "#001a41",
-            "tertiary": "#00152e",
-            "on-primary-fixed": "#001c3a",
-            "surface-dim": "#d1dbe6",
-            "surface-container-lowest": "#ffffff",
-            "tertiary-fixed-dim": "#a4c9ff",
-            "error": "#ba1a1a",
-            "primary-fixed-dim": "#a9c8f9",
-            "on-secondary": "#ffffff",
-            "on-error": "#ffffff",
-            "on-primary-container": "#7392c0",
-            "on-secondary-container": "#154388",
-            "surface": "#f6f9ff",
-            "tertiary-fixed": "#d4e3ff",
-            "outline": "#73777f",
-            "surface-container-highest": "#dae4ef"
+      /* Tab hover: only applies when tab is NOT active */
+      .product-tab-btn[aria-selected="false"]:hover {
+        border-color: #355da3;
+        color: #355da3;
+        background-color: #ebf5ff;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#131d24",
+              "surface-container-high": "#dfe9f4",
+              "surface-container-low": "#ebf5ff",
+              "sea-foam": "#C1CDDA",
+              "surface-bright": "#f6f9ff",
+              "whatsapp-green": "#008060",
+              "on-primary-fixed-variant": "#274871",
+              "primary-fixed": "#d4e3ff",
+              "pure-white": "#FFFFFF",
+              "surface-container": "#e5effa",
+              "surface-tint": "#40608a",
+              "tertiary-container": "#002a51",
+              "outline-variant": "#c3c6cf",
+              "ocean-deep": "#15364B",
+              "secondary-container": "#8eb3ff",
+              "on-surface": "#131d24",
+              "surface-variant": "#dae4ef",
+              "on-tertiary-fixed-variant": "#004883",
+              "on-tertiary-fixed": "#001c39",
+              "secondary-fixed": "#d8e2ff",
+              background: "#f6f9ff",
+              "ocean-mist": "#4B6B7E",
+              "inverse-surface": "#28313a",
+              "on-secondary-fixed-variant": "#17458a",
+              "secondary-fixed-dim": "#adc6ff",
+              "card-start-navy": "#0A2247",
+              "primary-container": "#002a52",
+              ink: "#071532",
+              primary: "#00152f",
+              "on-surface-variant": "#43474e",
+              "inverse-on-surface": "#e8f2fd",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#a9c8f9",
+              "on-error-container": "#93000a",
+              "on-tertiary-container": "#4c93e6",
+              "on-tertiary": "#ffffff",
+              "ocean-teal": "#27475C",
+              secondary: "#355da3",
+              "on-primary": "#ffffff",
+              "card-border": "#0F3976",
+              "on-secondary-fixed": "#001a41",
+              tertiary: "#00152e",
+              "on-primary-fixed": "#001c3a",
+              "surface-dim": "#d1dbe6",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#a4c9ff",
+              error: "#ba1a1a",
+              "primary-fixed-dim": "#a9c8f9",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-primary-container": "#7392c0",
+              "on-secondary-container": "#154388",
+              surface: "#f6f9ff",
+              "tertiary-fixed": "#d4e3ff",
+              outline: "#73777f",
+              "surface-container-highest": "#dae4ef",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "space-lg": "1.25rem",
+              "space-3xl": "3rem",
+              "space-2xl": "2rem",
+              "space-xs": "0.25rem",
+              "gutter-mobile": "1rem",
+              "space-md": "1rem",
+              "margin-mobile": "1.25rem",
+              "space-xl": "1.5rem",
+              gutter: "2rem",
+              margin: "2rem",
+              "space-sm": "0.5rem",
+            },
+            fontFamily: {
+              "eyebrow-mobile": ["Inter", "sans-serif"],
+              "display-hero-mobile": ["Inter", "sans-serif"],
+              "headline-lg": ["Inter", "sans-serif"],
+              "display-hero": ["Inter", "sans-serif"],
+              "body-hero": ["Inter", "sans-serif"],
+              "body-lg": ["Inter", "sans-serif"],
+              "spec-value": ["Inter", "sans-serif"],
+              "headline-md": ["Inter", "sans-serif"],
+              eyebrow: ["Inter", "sans-serif"],
+              "button-text": ["Inter", "sans-serif"],
+              "body-md": ["Inter", "sans-serif"],
+              "headline-lg-mobile": ["Inter", "sans-serif"],
+              "spec-label": ["Inter", "sans-serif"],
+              "headline-md-mobile": ["Inter", "sans-serif"],
+            },
+            fontSize: {
+              "eyebrow-mobile": [
+                "12px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.12em",
+                  fontWeight: "600",
+                },
+              ],
+              "display-hero-mobile": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "display-hero": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-hero": [
+                "15px",
+                { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "body-lg": [
+                "14px",
+                { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "spec-value": [
+                "14px",
+                { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-md": [
+                "18px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              eyebrow: [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.12em",
+                  fontWeight: "600",
+                },
+              ],
+              "button-text": [
+                "16px",
+                {
+                  lineHeight: "24px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": [
+                "14px",
+                { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "headline-lg-mobile": [
+                "22px",
+                {
+                  lineHeight: "30px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "spec-label": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md-mobile": [
+                "18px",
+                {
+                  lineHeight: "26px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "700",
+                },
+              ],
+            },
           },
-          "borderRadius": {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
-          },
-          "spacing": {
-            "space-lg": "1.25rem",
-            "space-3xl": "3rem",
-            "space-2xl": "2rem",
-            "space-xs": "0.25rem",
-            "gutter-mobile": "1rem",
-            "space-md": "1rem",
-            "margin-mobile": "1.25rem",
-            "space-xl": "1.5rem",
-            "gutter": "2rem",
-            "margin": "2rem",
-            "space-sm": "0.5rem"
-          },
-          "fontFamily": {
-            "eyebrow-mobile": ["Inter", "sans-serif"],
-            "display-hero-mobile": ["Inter", "sans-serif"],
-            "headline-lg": ["Inter", "sans-serif"],
-            "display-hero": ["Inter", "sans-serif"],
-            "body-hero": ["Inter", "sans-serif"],
-            "body-lg": ["Inter", "sans-serif"],
-            "spec-value": ["Inter", "sans-serif"],
-            "headline-md": ["Inter", "sans-serif"],
-            "eyebrow": ["Inter", "sans-serif"],
-            "button-text": ["Inter", "sans-serif"],
-            "body-md": ["Inter", "sans-serif"],
-            "headline-lg-mobile": ["Inter", "sans-serif"],
-            "spec-label": ["Inter", "sans-serif"],
-            "headline-md-mobile": ["Inter", "sans-serif"]
-          },
-          "fontSize": {
-            "eyebrow-mobile": ["12px", { "lineHeight": "18px", "letterSpacing": "0.12em", "fontWeight": "600" }],
-            "display-hero-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-            "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-            "body-hero": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
-            "body-lg": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
-            "spec-value": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
-            "headline-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0.02em", "fontWeight": "700" }],
-            "eyebrow": ["14px", { "lineHeight": "20px", "letterSpacing": "0.12em", "fontWeight": "600" }],
-            "button-text": ["16px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600" }],
-            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
-            "headline-lg-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-            "spec-label": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
-            "headline-md-mobile": ["18px", { "lineHeight": "26px", "letterSpacing": "0.02em", "fontWeight": "700" }]
-          }
         },
-      },
-    }
-  </script>
-</head>
+      };
+    </script>
+  </head>
 
-<body class="bg-surface font-body-md text-on-surface antialiased">
-
-  <!-- ========================================== -->
-  <!-- HEADER / NAVIGATION                        -->
-  <!-- ========================================== -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-[#071532]/95 backdrop-blur-sm border-b border-pure-white/10 shadow-lg">
-    <div class="h-16 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between">
-
-      <!-- Logo -->
+  <body class="bg-surface font-body-md text-on-surface antialiased">
+    <!-- ========================================== -->
+    <!-- HEADER / NAVIGATION                        -->
+    <!-- ========================================== -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-[#071532]/95 backdrop-blur-sm border-b border-pure-white/10 shadow-lg"
+    >
+      <div
+        class="h-16 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between"
+      >
+        <!-- Logo -->
         <div class="flex items-center gap-2">
           <a href="Beranda.html" class="flex flex-col">
-            <span class="text-xl text-pure-white tracking-tight font-extrabold uppercase leading-none drop-shadow-sm">VENTIMAX</span>
-            <span class="text-[9px] text-secondary-container tracking-[0.2em] uppercase font-bold leading-none mt-0.5">SOLUTIONS</span>
+            <span
+              class="text-xl text-pure-white tracking-tight font-extrabold uppercase leading-none drop-shadow-sm"
+              >VENTIMAX</span
+            >
+            <span
+              class="text-[9px] text-secondary-container tracking-[0.2em] uppercase font-bold leading-none mt-0.5"
+              >SOLUTIONS</span
+            >
           </a>
         </div>
 
         <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex items-center gap-space-lg"
-           data-active-classes="border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text">
-        <a
-           class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
-           data-path="beranda" href="Beranda.html">Beranda</a>
-        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
-           data-path="tentang-kami" href="Tentang Kami.html">Tentang Kami</a>
+        <nav
+          class="hidden lg:flex items-center gap-space-lg"
+          data-active-classes="border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
+        >
+          <a
+            class="transition-colors border-b-2 border-pure-white text-pure-white pb-1 font-button-text text-button-text"
+            data-path="beranda"
+            href="Beranda.html"
+            >Beranda</a
+          >
+          <a
+            class="font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:text-pure-white transition-colors"
+            data-path="tentang-kami"
+            href="Tentang Kami.html"
+            >Tentang Kami</a
+          >
 
-        <!-- Produk Dropdown -->
-        <div class="relative group py-space-sm">
-          <a href="Produk.html"
-             class="flex items-center gap-1 font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors focus:outline-none">
-            Produk
-            <span class="material-symbols-outlined text-[18px]">expand_more</span>
-          </a>
-          <div class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border z-50">
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               data-path="produk-supavent" href="Produk/supavent.html">Supavent</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               data-path="produk-turbo-beam" href="Produk/turbo-beam.html">Turbo Beam</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               data-path="produk-hurricane" href="Produk/hurricane.html">Hurricane</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               data-path="produk-venticool" href="Produk/venticool.html">Venticool</a>
-            <a class="block px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
-               data-path="produk-ventigrille" href="Produk/ventigrille.html">Ventigrille</a>
+          <!-- Produk Dropdown -->
+          <div class="relative group py-space-sm">
+            <a
+              href="Produk.html"
+              class="flex items-center gap-1 font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:text-pure-white transition-colors focus:outline-none"
+            >
+              Produk
+              <span class="material-symbols-outlined text-[18px]"
+                >expand_more</span
+              >
+            </a>
+            <div
+              class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border z-50"
+            >
+              <a
+                class="block px-space-md py-space-xs font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
+                data-path="produk-supavent"
+                href="Produk/supavent.html"
+                >Supavent</a
+              >
+              <a
+                class="block px-space-md py-space-xs font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
+                data-path="produk-turbo-beam"
+                href="Produk/turbo-beam.html"
+                >Turbo Beam</a
+              >
+              <a
+                class="block px-space-md py-space-xs font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
+                data-path="produk-hurricane"
+                href="Produk/hurricane.html"
+                >Hurricane</a
+              >
+              <a
+                class="block px-space-md py-space-xs font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
+                data-path="produk-venticool"
+                href="Produk/venticool.html"
+                >Venticool</a
+              >
+              <a
+                class="block px-space-md py-space-xs font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
+                data-path="produk-ventigrille"
+                href="Produk/ventigrille.html"
+                >Ventigrille</a
+              >
+            </div>
           </div>
-        </div>
 
-        <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
-           data-path="proyek" href="Proyek.html">Proyek</a>
-        
-      </nav>
+          <a
+            class="font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:text-pure-white transition-colors"
+            data-path="proyek"
+            href="Proyek.html"
+            >Proyek</a
+          >
+        </nav>
 
-      <!-- Right Controls -->
-      <div class="flex items-center gap-space-md">
-
-        <!-- Language Switcher -->
-        <div class="relative group py-space-xs">
-          <button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-pure-white/10 text-pure-white font-spec-label text-spec-label hover:bg-pure-white/20 border border-pure-white/10 transition-colors focus:outline-none"
-                  type="button">
-            <span class="material-symbols-outlined text-[18px]">flag</span>
-            <span>ID</span>
-            <span class="material-symbols-outlined text-[16px]">expand_more</span>
-          </button>
-          <div class="absolute right-0 top-full hidden group-hover:block w-32 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border">
-            <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white" href="#"><span class="material-symbols-outlined text-[16px]">flag</span><span>Indonesia</span></a>
-            <a class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-body-md text-sea-foam hover:bg-primary-container hover:text-pure-white" href="en/Beranda.html"><span class="material-symbols-outlined text-[16px]">language</span><span>English</span></a>
+        <!-- Right Controls -->
+        <div class="flex items-center gap-space-md">
+          <!-- Language Switcher -->
+          <div class="relative group py-space-xs">
+            <button
+              class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-pure-white/10 text-pure-white font-spec-label text-spec-label hover:bg-pure-white/20 border border-pure-white/10 transition-colors focus:outline-none"
+              type="button"
+            >
+              <span class="material-symbols-outlined text-[18px]">flag</span>
+              <span>ID</span>
+              <span class="material-symbols-outlined text-[16px]"
+                >expand_more</span
+              >
+            </button>
+            <div
+              class="absolute right-0 top-full hidden group-hover:block w-32 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border"
+            >
+              <a
+                class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:bg-primary-container hover:text-pure-white"
+                href="#"
+                ><span class="material-symbols-outlined text-[16px]">flag</span
+                ><span>Indonesia</span></a
+              >
+              <a
+                class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-[10px] sm:text-[11px] text-sea-foam hover:bg-primary-container hover:text-pure-white"
+                href="en/Beranda.html"
+                ><span class="material-symbols-outlined text-[16px]"
+                  >language</span
+                ><span>English</span></a
+              >
+            </div>
           </div>
-        </div>
           <!-- CTA Button (New) -->
-          <a href="Kontak.html" class="hidden lg:inline-flex items-center justify-center h-8 px-4 rounded-full bg-secondary hover:bg-[#3b6bbd] text-pure-white text-xs font-bold shadow-md transition-all">
+          <a
+            href="Kontak.html"
+            class="hidden lg:inline-flex items-center justify-center h-8 px-4 rounded-full bg-secondary hover:bg-[#3b6bbd] text-pure-white text-xs font-bold shadow-md transition-all"
+          >
             Kontak
           </a>
         </div>
       </div>
     </header>
 
-
-  <!-- ========================================== -->
-  <!-- MAIN CONTENT                               -->
-  <!-- ========================================== -->
-  <main class="w-full pt-16 bg-surface">
-    <div class="flex flex-col w-full">
-
-      <!-- ====================================== -->
-      <!-- 1. HERO SECTION — Video Background     -->
-      <!-- ====================================== -->
-      <section class="relative w-full -mt-16 pt-20 pb-space-lg overflow-hidden bg-ink min-h-screen flex flex-col justify-center">
-
-        <!-- Video Background -->
-        <div class="hero-video-bg">
-          <video webkit-playsinline preload="auto" autoplay muted loop playsinline poster="https://images.pexels.com/videos/3571264/free-video-3571264.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
-            <source src="https://videos.pexels.com/video-files/3571264/3571264-hd_1920_1080_30fps.mp4" type="video/mp4">
-          </video>
-          <div class="hero-video-overlay"></div>
-          <div class="hero-video-overlay-bottom"></div>
-        </div>
-
-        <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
-
-                    <!-- Hero Text Content -->
-          <div class="max-w-4xl mx-auto pt-space-md pb-space-md text-center flex flex-col items-center justify-center">
-            <div class="flex items-center justify-center gap-space-sm mb-space-md">
-              <span class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"></span>
-              <span class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-[0.12em]">SOLUSI VENTILASI ALAMI</span>
-              <span class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"></span>
-            </div>
-            <h1 class="font-display-hero text-4xl lg:text-[52px] text-pure-white leading-tight font-bold mb-space-md hero-text-shadow">
-              Ruangan Lebih Sejuk.<br>Performa Lebih Baik.
-            </h1>
-            <p class="font-body-hero text-body-lg lg:text-body-hero text-sea-foam mb-space-lg leading-relaxed hero-subtext-shadow max-w-2xl mx-auto">
-              Venti Max menghadirkan solusi ventilasi inovatif dan ramah lingkungan yang meningkatkan kenyamanan, menghemat energi, serta menciptakan lingkungan yang lebih baik secara alami.
-            </p>
-            <div class="flex flex-wrap items-center justify-center gap-space-md">
-              <a class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-lg bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text transition-colors shadow-md"
-                 href="#produk-overview">
-                Jelajahi Produk
-                <span class="material-symbols-outlined ml-2 text-[20px]">arrow_forward</span>
-              </a>
-              <a class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-lg bg-transparent hover:bg-pure-white/10 text-pure-white font-button-text text-button-text transition-colors border border-pure-white/30 backdrop-blur-sm"
-                 href="#konsultasi">
-                Konsultasi Gratis
-              </a>
-            </div>
+    <!-- ========================================== -->
+    <!-- MAIN CONTENT                               -->
+    <!-- ========================================== -->
+    <main class="w-full pt-16 bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- ====================================== -->
+        <!-- 1. HERO SECTION — Video Background     -->
+        <!-- ====================================== -->
+        <section
+          class="relative w-full -mt-16 pt-20 pb-space-lg overflow-hidden bg-ink min-h-screen flex flex-col justify-center"
+        >
+          <!-- Video Background -->
+          <div class="hero-video-bg">
+            <video
+              webkit-playsinline
+              preload="auto"
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="https://images.pexels.com/videos/3571264/free-video-3571264.jpg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
+            >
+              <source
+                src="https://videos.pexels.com/video-files/3571264/3571264-hd_1920_1080_30fps.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="hero-video-overlay"></div>
+            <div class="hero-video-overlay-bottom"></div>
           </div>
 
-          <!-- 4-Column Feature Card -->
-          <div class="mt-space-sm rounded-[24px] bg-gradient-to-br from-card-start-navy/80 to-secondary/70 backdrop-blur-md p-space-md lg:p-space-lg shadow-xl border border-pure-white/10">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md lg:gap-0">
-
-              <!-- Col 1 -->
-              <div class="lg:pr-space-md lg:border-r lg:border-pure-white/15 flex flex-col justify-between text-center lg:text-left">
-                <div class="flex flex-col items-center lg:items-start">
-                  <div class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-pure-white mb-2">
-                    <span class="material-symbols-outlined text-[20px]">public</span>
-                  </div>
-                  <h3 class="font-headline-md text-sm lg:text-base text-pure-white uppercase font-bold mb-1">
-                    DIDESAIN DI AUSTRALIA
-                  </h3>
-                  <p class="font-body-md text-xs text-sea-foam leading-relaxed">
-                    Standar kualitas tinggi untuk lingkungan tropis.
-                  </p>
-                </div>
+          <div
+            class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter"
+          >
+            <!-- Hero Text Content -->
+            <div
+              class="max-w-4xl mx-auto pt-space-md pb-space-md text-center flex flex-col items-center justify-center"
+            >
+              <div
+                class="flex items-center justify-center gap-space-sm mb-space-md"
+              >
+                <span
+                  class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"
+                ></span>
+                <span
+                  class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-[0.12em]"
+                  >SOLUSI VENTILASI ALAMI</span
+                >
+                <span
+                  class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"
+                ></span>
               </div>
-
-              <!-- Col 2 -->
-              <div class="lg:px-space-md lg:border-r lg:border-pure-white/15 flex flex-col justify-between text-center lg:text-left">
-                <div class="flex flex-col items-center lg:items-start">
-                  <div class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-pure-white mb-2">
-                    <span class="material-symbols-outlined text-[20px]">cyclone</span>
-                  </div>
-                  <h3 class="font-headline-md text-sm lg:text-base text-pure-white uppercase font-bold mb-1">
-                    TEKNOLOGI TURBIN
-                  </h3>
-                  <p class="font-body-md text-xs text-sea-foam leading-relaxed">
-                    Desain dipatenkan untuk aliran udara maksimal.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Col 3 -->
-              <div class="lg:px-space-md lg:border-r lg:border-pure-white/15 flex flex-col justify-between text-center lg:text-left">
-                <div class="flex flex-col items-center lg:items-start">
-                  <div class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-pure-white mb-2">
-                    <span class="material-symbols-outlined text-[20px]">domain</span>
-                  </div>
-                  <h3 class="font-headline-md text-sm lg:text-base text-pure-white uppercase font-bold mb-1">
-                    PERUMAHAN & INDUSTRIAL
-                  </h3>
-                  <p class="font-body-md text-xs text-sea-foam leading-relaxed">
-                    Kami memberikan hasil nyata secara signifikan.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Col 4 -->
-              <div class="lg:pl-space-md flex flex-col justify-between text-center lg:text-left">
-                <div class="flex flex-col items-center lg:items-start">
-                  <div class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-pure-white mb-2">
-                    <span class="material-symbols-outlined text-[20px]">energy_savings_leaf</span>
-                  </div>
-                  <h3 class="font-headline-md text-sm lg:text-base text-pure-white uppercase font-bold mb-1">
-                    MASA DEPAN LEBIH SEJUK
-                  </h3>
-                  <p class="font-body-md text-xs text-sea-foam leading-relaxed">
-                    Mengurangi panas. Hemat energi secara alami.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ====================================== -->
-      <!-- 2. SEKILAS TENTANG VENTIMAX SOLUTIONS   -->
-      <!-- ====================================== -->
-      <section class="w-full bg-surface-bright py-space-3xl">
-        <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
-          <div class="bg-surface-container rounded-2xl p-space-xl lg:p-space-2xl shadow-sm">
-            <div class="max-w-4xl mx-auto text-center space-y-space-md">
-              <div class="inline-flex items-center gap-space-sm justify-center">
-                <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
-                <span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]">SEKILAS TENTANG VENTIMAX</span>
-                <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
-              </div>
-              <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold">
-                Efisiensi Termal Alami Tanpa Beban Listrik
-              </h2>
-              <p class="font-body-hero text-body-lg lg:text-body-hero text-on-surface-variant leading-relaxed">
-                Venti Max Solutions adalah perusahaan yang berdedikasi untuk menciptakan ruang hunian dan tempat kerja yang lebih nyaman serta hemat energi. Kami memiliki spesialisasi dalam menyediakan turbin ventilator dan sistem isolasi termal modern yang dirancang untuk mengurangi panas tanpa menggunakan listrik, sehingga mendinginkan ruangan Anda secara alami dan efisien.
+              <h1
+                class="font-display-hero text-4xl lg:text-[52px] text-pure-white leading-tight font-bold mb-space-md hero-text-shadow"
+              >
+                Ruangan Lebih Sejuk.<br />Performa Lebih Baik.
+              </h1>
+              <p
+                class="font-body-hero text-body-lg lg:text-body-hero text-sea-foam mb-space-lg leading-relaxed hero-subtext-shadow max-w-2xl mx-auto"
+              >
+                Venti Max menghadirkan solusi ventilasi inovatif dan ramah
+                lingkungan yang meningkatkan kenyamanan, menghemat energi, serta
+                menciptakan lingkungan yang lebih baik secara alami.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ====================================== -->
-      <!-- 3. APA YANG KAMI TAWARKAN (3 Cards)     -->
-      <!-- ====================================== -->
-      <section class="w-full bg-background py-space-3xl">
-        <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
-
-          <!-- Section Header -->
-          <div class="text-center max-w-2xl mx-auto mb-space-2xl">
-            <div class="inline-flex items-center gap-space-sm justify-center mb-space-xs">
-              <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
-              <span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]">LAYANAN SPESIALIS</span>
-            </div>
-            <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold">
-              Apa yang Kami Tawarkan
-            </h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm">
-              Sinergi sirkulasi kinetik alami dan perisai radiasi panas berstandar global.
-            </p>
-          </div>
-
-          <!-- Cards Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-
-            <!-- Card 1 -->
-            <div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-              <div class="space-y-space-md">
-                <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
-                  <span class="material-symbols-outlined text-[28px]">air</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-on-surface font-bold">
-                  Ventilator Bertenaga Angin Berkinerja Tinggi
-                </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  Ventilator bertenaga angin kami berfungsi membuang udara panas dan lembap dari ruang bawah atap (attic), sehingga meningkatkan sirkulasi udara tanpa memerlukan listrik.
-                </p>
-              </div>
-              <div class="pt-space-lg flex items-center gap-2 text-secondary font-button-text text-button-text">
-                <span>Performa Aerodinamis</span>
-                <span class="material-symbols-outlined text-[18px]">verified</span>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-              <div class="space-y-space-md">
-                <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
-                  <span class="material-symbols-outlined text-[28px]">wind_power</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-on-surface font-bold">
-                  Ventilator Bertenaga Angin
-                </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  Ventilator turbin atap yang dirancang untuk menjaga sirkulasi udara tetap berjalan setiap saat.
-                </p>
-              </div>
-              <div class="pt-space-lg flex items-center gap-2 text-secondary font-button-text text-button-text">
-                <span>Operasional 24 Jam Nonstop</span>
-                <span class="material-symbols-outlined text-[18px]">verified</span>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-              <div class="space-y-space-md">
-                <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
-                  <span class="material-symbols-outlined text-[28px]">shield</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-on-surface font-bold">
-                  Insulasi Termal Modern
-                </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  Produk insulasi kami mampu memantulkan panas radiasi dan meningkatkan efisiensi termal bangunan secara keseluruhan, menjadikan ruangan terasa lebih sejuk dan nyaman.
-                </p>
-              </div>
-              <div class="pt-space-lg flex items-center gap-2 text-secondary font-button-text text-button-text">
-                <span>Reflektifitas Radiasi &gt;97%</span>
-                <span class="material-symbols-outlined text-[18px]">verified</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ====================================== -->
-      <!-- 4. PRODUCTS OVERVIEW (Interactive Tabs) -->
-      <!-- ====================================== -->
-      <section class="w-full bg-surface-container-high py-space-3xl" id="produk-overview">
-        <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
-
-          <!-- Section Header -->
-          <div class="max-w-3xl mb-space-2xl">
-            <div class="flex items-center gap-space-sm mb-space-xs">
-              <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
-              <span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]">PRODUCTS OVERVIEW</span>
-            </div>
-            <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold mb-2">
-              Produk yang Dirancang untuk Mengurangi Panas Tanpa Listrik.
-            </h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-              Venti Max Solutions menyediakan sistem ventilasi turbin tanpa listrik dan insulasi termal yang efisien untuk properti industri, komersial, dan hunian di seluruh Indonesia.
-            </p>
-          </div>
-
-          <!-- Tab Buttons -->
-          <div class="flex items-center gap-space-sm mb-space-xl overflow-x-auto pb-2" role="tablist">
-            <button aria-selected="true"
-                    class="product-tab-btn active px-space-lg py-space-sm rounded-lg bg-secondary text-pure-white font-button-text text-button-text transition-all duration-200 shadow-sm flex items-center gap-2 whitespace-nowrap border-2 border-secondary"
-                    id="tab-btn-hurricane"
-                    onclick="selectProductTab('hurricane')"
-                    role="tab">
-              <span class="material-symbols-outlined text-[20px]">cyclone</span>
-              <span>Hurricane</span>
-            </button>
-            <button aria-selected="false"
-                    class="product-tab-btn px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-on-surface border-2 border-surface-container-high font-button-text text-button-text transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
-                    id="tab-btn-venticool"
-                    onclick="selectProductTab('venticool')"
-                    role="tab">
-              <span class="material-symbols-outlined text-[20px]">layers</span>
-              <span>Venticool</span>
-            </button>
-            <button aria-selected="false"
-                    class="product-tab-btn px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-on-surface border-2 border-surface-container-high font-button-text text-button-text transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
-                    id="tab-btn-supavent"
-                    onclick="selectProductTab('supavent')"
-                    role="tab">
-              <span class="material-symbols-outlined text-[20px]">air</span>
-              <span>Supavent</span>
-            </button>
-          </div>
-
-          <!-- Tab Panels Container -->
-          <div class="bg-surface-container-lowest rounded-2xl shadow-xl p-space-lg lg:p-space-2xl overflow-hidden">
-
-            <!-- Tab Panel: HURRICANE -->
-            <div class="product-panel block" id="tab-panel-hurricane">
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-                <div class="lg:col-span-5">
-                  <div class="relative rounded-xl overflow-hidden bg-surface-container aspect-square flex items-center justify-center p-space-md">
-                    <img alt="Ventilator Hurricane Venti Max"
-                         class="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
-                         src="https://lh3.googleusercontent.com/aida/AEtjO1WaJhUL_Cansjm5ZD-e4-NXggOT75BoY6b1j_MLR3VDlEIkZ-va2ZndArlbLLi5Uxoj2kVj0Ga4ga5MaNEOHY2oCK2UowDgLr2Z2o3N0hy_SLXoU0zRgRipwm3-5dafHszj7RGS3fYKAQfWowxMvV-rR-1t-ECb_ePtYhMBs50DhCCj-QF3R7cQLLxuafxCemdcU-XEPWhPRqsqWyN1daxyrvGVCEn2PZ2y1K6mY1-tubkpvqVMVDfcXR0">
-                    <span class="absolute top-4 left-4 bg-primary text-pure-white text-[12px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
-                      Industrial Grade
-                    </span>
-                  </div>
-                </div>
-                <div class="lg:col-span-7 space-y-space-lg">
-                  <div>
-                    <span class="font-spec-label text-spec-label text-secondary uppercase tracking-wider">Ventilator Bertenaga Angin</span>
-                    <h3 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold mt-1">
-                      Hurricane
-                    </h3>
-                  </div>
-                  <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                    Hurricane adalah ventilator turbin atap bertenaga angin yang dirancang untuk menjaga sirkulasi udara tetap berjalan setiap saat pada pabrik, gudang, gedung, dan berbagai jenis bangunan lainnya.
-                  </p>
-                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
-                    <div class="bg-surface-container rounded-xl p-space-md">
-                      <div class="flex items-center gap-1.5 text-secondary mb-1">
-                        <span class="material-symbols-outlined text-[18px]">speed</span>
-                        <span class="font-spec-label text-spec-label">Kapasitas Maks</span>
-                      </div>
-                      <p class="font-spec-value text-spec-value font-bold text-on-surface">3,267,000 Liter / Jam</p>
-                    </div>
-                    <div class="bg-surface-container rounded-xl p-space-md">
-                      <div class="flex items-center gap-1.5 text-secondary mb-1">
-                        <span class="material-symbols-outlined text-[18px]">hardware</span>
-                        <span class="font-spec-label text-spec-label">Material</span>
-                      </div>
-                      <p class="font-spec-value text-spec-value font-bold text-on-surface">Aluminium Korosi Marine</p>
-                    </div>
-                    <div class="bg-surface-container rounded-xl p-space-md">
-                      <div class="flex items-center gap-1.5 text-secondary mb-1">
-                        <span class="material-symbols-outlined text-[18px]">verified_user</span>
-                        <span class="font-spec-label text-spec-label">Garansi</span>
-                      </div>
-                      <p class="font-spec-value text-spec-value font-bold text-on-surface">15 Tahun Resmi</p>
-                    </div>
-                  </div>
-                  <div class="pt-space-sm flex flex-wrap gap-space-md">
-                    <a class="px-space-lg py-space-sm rounded-lg bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text transition-colors"
-                       href="#konsultasi">Minta Penawaran Hurricane</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tab Panel: VENTICOOL -->
-            <div class="product-panel hidden" id="tab-panel-venticool">
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-                <div class="lg:col-span-5">
-                  <div class="relative rounded-xl overflow-hidden bg-surface-container aspect-square flex items-center justify-center p-space-md">
-                    <img alt="Insulasi Atap Venticool"
-                         class="w-full h-full object-cover rounded-lg"
-                         src="https://lh3.googleusercontent.com/aida/AEtjO1XKEWAA6qTVppcjZoR2XNcHJeMipZ3wzNR12c7_NVzpnjjXep7vh7Ozy7Z-rRuFcZsiSf_2wHtgM9H4t9oE79YomCVxuk1iN_KE5AapCFyGF4ABSeg6eTuhmodJj_MK8k67Q1ntqmKVIstby4rMZbQemIrO9wsAekAIeP-jhoQclx_PaBudWKr57Pr8nS9bhvbBf38DRt5hpvC_4UMxSnu3JzZfaOK5qj33ft5MFGcXmdgBph11xdvAAQ">
-                    <span class="absolute top-4 left-4 bg-primary text-pure-white text-[12px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
-                      Thermal Barrier
-                    </span>
-                  </div>
-                </div>
-                <div class="lg:col-span-7 space-y-space-lg">
-                  <div>
-                    <span class="font-spec-label text-spec-label text-secondary uppercase tracking-wider">Insulasi Atap Berbahan Aluminium Foil</span>
-                    <h3 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold mt-1">
-                      Venticool
-                    </h3>
-                  </div>
-                  <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                    Venticool adalah insulasi atap berbahan aluminium foil yang dipasang di antara atap dan plafon rumah atau bangunan untuk memantulkan panas agar tidak masuk ke dalam bangunan.
-                  </p>
-                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
-                    <div class="bg-surface-container rounded-xl p-space-md">
-                      <div class="flex items-center gap-1.5 text-secondary mb-1">
-                        <span class="material-symbols-outlined text-[18px]">wb_sunny</span>
-                        <span class="font-spec-label text-spec-label">Daya Pantul</span>
-                      </div>
-                      <p class="font-spec-value text-spec-value font-bold text-on-surface">Daya Pantul &gt; 97%</p>
-                    </div>
-                    <div class="bg-surface-container rounded-xl p-space-md">
-                      <div class="flex items-center gap-1.5 text-secondary mb-1">
-                        <span class="material-symbols-outlined text-[18px]">texture</span>
-                        <span class="font-spec-label text-spec-label">Komposisi</span>
-                      </div>
-                      <p class="font-spec-value text-spec-value font-bold text-on-surface">100% Aluminum Foil Murni</p>
-                    </div>
-                    <div class="bg-surface-container rounded-xl p-space-md">
-                      <div class="flex items-center gap-1.5 text-secondary mb-1">
-                        <span class="material-symbols-outlined text-[18px]">verified_user</span>
-                        <span class="font-spec-label text-spec-label">Garansi</span>
-                      </div>
-                      <p class="font-spec-value text-spec-value font-bold text-on-surface">10 Tahun Garansi</p>
-                    </div>
-                  </div>
-                  <div class="pt-space-sm flex flex-wrap gap-space-md">
-                    <a class="px-space-lg py-space-sm rounded-lg bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text transition-colors"
-                       href="#konsultasi">Minta Penawaran Venticool</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tab Panel: SUPAVENT -->
-            <div class="product-panel hidden" id="tab-panel-supavent">
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-                <div class="lg:col-span-5">
-                  <div class="relative rounded-xl overflow-hidden bg-surface-container aspect-square flex items-center justify-center p-space-md">
-                    <img alt="Ventilator SupaVent Rooftop"
-                         class="w-full h-full object-cover rounded-lg"
-                         src="https://lh3.googleusercontent.com/aida/AEtjO1V64-TSiOgjAmY8GGur4XZx6Fn6H_NQKkH8dfQugwKEvfcG4z81Bc5s1NrDq4P5BeMuowMANzpBReFQs1MgKM4cR24EEMezo476gE46oC3QKOPj52OmH0adhjSw0w98l9aoHm4-MuU5VTkDVOGph_NxNvkbJrnUkkwMH_au6yrwJgfN2Tz4RiBSUqcXywjeizLBG91nvUDDAilYeh7KQFb4ErrnNYVdnXZvEBeQJdGgUb_BhbmMGN4gz1o">
-                    <span class="absolute top-4 left-4 bg-primary text-pure-white text-[12px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
-                      Residential &amp; Commercial
-                    </span>
-                  </div>
-                </div>
-                <div class="lg:col-span-7 space-y-space-lg">
-                  <div>
-                    <span class="font-spec-label text-spec-label text-secondary uppercase tracking-wider">Ventilator Bertenaga Angin</span>
-                    <h3 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold mt-1">
-                      SupaVent™
-                    </h3>
-                  </div>
-                  <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                    SupaVent™ adalah ventilator turbin atap bertenaga angin yang dirancang untuk menjaga sirkulasi udara tetap berjalan setiap saat tanpa menggunakan listrik.
-                  </p>
-                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
-                    <div class="bg-surface-container rounded-xl p-space-md">
-                      <div class="flex items-center gap-1.5 text-secondary mb-1">
-                        <span class="material-symbols-outlined text-[18px]">power_off</span>
-                        <span class="font-spec-label text-spec-label">Tenaga Penggerak</span>
-                      </div>
-                      <p class="font-spec-value text-spec-value font-bold text-on-surface">Bertenaga Angin Murni</p>
-                    </div>
-                    <div class="bg-surface-container rounded-xl p-space-md">
-                      <div class="flex items-center gap-1.5 text-secondary mb-1">
-                        <span class="material-symbols-outlined text-[18px]">shield</span>
-                        <span class="font-spec-label text-spec-label">Material Tahan Korosi</span>
-                      </div>
-                      <p class="font-spec-value text-spec-value font-bold text-on-surface">Polikarbonat UV-Stabil</p>
-                    </div>
-                    <div class="bg-surface-container rounded-xl p-space-md">
-                      <div class="flex items-center gap-1.5 text-secondary mb-1">
-                        <span class="material-symbols-outlined text-[18px]">verified_user</span>
-                        <span class="font-spec-label text-spec-label">Garansi</span>
-                      </div>
-                      <p class="font-spec-value text-spec-value font-bold text-on-surface">15 Tahun Masa Pakai</p>
-                    </div>
-                  </div>
-                  <div class="pt-space-sm flex flex-wrap gap-space-md">
-                    <a class="px-space-lg py-space-sm rounded-lg bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text transition-colors"
-                       href="#konsultasi">Minta Penawaran SupaVent</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ====================================== -->
-      <!-- 5. DESAIN VENTILATOR (Diagram)          -->
-      <!-- ====================================== -->
-      <section class="w-full bg-ink text-pure-white py-space-3xl overflow-hidden relative">
-        <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-
-            <!-- Text & Principle Explanation -->
-            <div class="lg:col-span-6 space-y-space-lg">
-              <div class="flex items-center gap-space-sm">
-                <span class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"></span>
-                <span class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-[0.12em]">PRINSIP KERJA TERMAL</span>
-              </div>
-              <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-pure-white font-bold leading-tight">
-                Desain Ventilator Bertenaga Angin
-              </h2>
-              <p class="font-body-hero text-body-hero text-sea-foam leading-relaxed">
-                Turbin berputar bersama angin untuk menciptakan efek isapan kuat yang membuang udara panas dan pengap dari dalam bangunan, menarik udara sejuk dan segar masuk melalui celah bukaan.
-              </p>
-              <div class="space-y-space-md pt-space-xs">
-                <div class="flex items-start gap-space-md p-space-md rounded-xl bg-card-start-navy/60">
-                  <div class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-secondary-container shrink-0 mt-0.5">
-                    <span class="material-symbols-outlined text-[20px]">thermostat</span>
-                  </div>
-                  <div>
-                    <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Efek Termal Stack</h4>
-                    <p class="font-body-md text-body-md text-sea-foam mt-0.5">
-                      Udara panas secara alami naik ke puncak atap dan langsung ditarik keluar sebelum menembus ruang hunian bawah.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-space-md p-space-md rounded-xl bg-card-start-navy/60">
-                  <div class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-secondary-container shrink-0 mt-0.5">
-                    <span class="material-symbols-outlined text-[20px]">air</span>
-                  </div>
-                  <div>
-                    <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Hisapan Tekanan Negatif</h4>
-                    <p class="font-body-md text-body-md text-sea-foam mt-0.5">
-                      Rotasi sirip aerodinamis menghasilkan ruang hampa bertekanan rendah yang terus-menerus menyedot kelembapan tanpa listrik.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Diagram Graphic Card -->
-            <div class="lg:col-span-6">
-              <div class="rounded-2xl p-space-lg bg-gradient-to-b from-card-start-navy to-primary-container shadow-2xl relative">
-                <div class="relative rounded-xl overflow-hidden bg-surface-container-lowest/5 p-space-sm flex items-center justify-center min-h-[380px]">
-                  <img alt="Diagram aliran udara ventilator turbin atap"
-                       class="w-full h-auto object-contain rounded-lg"
-                       src="https://lh3.googleusercontent.com/aida/AEtjO1XHQDzO9s8QnXidPEol1MpoQPmtSbqUmYdLeAZpXESS5SZOPglEeinuBVmeOMFvO7FplWq_1xhGjM_diP4F1Gt1YJB98F863h2OpJ9NTh2Fcfa6RX9FBDwLmtXM_emI362H1QN2vkkoy2K9OIqErhJfd7Yn06Ko4EW5Z8-OMcx43tFIsyHzvbwiZv7n4NCcyBAeKTvFrxJ3pooMA4wCpFeOFWCSZZILMyKYiYkppQE-qaEKdNivqX_W3wY">
-                </div>
-                <div class="mt-space-md flex items-center justify-between text-xs text-sea-foam font-spec-label">
-                  <span class="flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-secondary-container inline-block"></span> Aliran Udara Sejuk
-                  </span>
-                  <span class="flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-error inline-block"></span> Pembuangan Udara Panas
-                  </span>
-                  <span class="flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-primary-fixed inline-block"></span> Sirkulasi 24 Jam
-                  </span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ====================================== -->
-      <!-- 6. MENGAPA MEMILIH VENTIMAX (3 Kartu)   -->
-      <!-- ====================================== -->
-      <section class="w-full bg-surface-bright py-space-3xl">
-        <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
-
-          <div class="text-center max-w-2xl mx-auto mb-space-2xl">
-            <div class="inline-flex items-center gap-space-sm justify-center mb-space-xs">
-              <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
-              <span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]">KEUNGGULAN UTAMA</span>
-            </div>
-            <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold">
-              Mengapa Memilih Ventimax Solutions
-            </h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm">
-              Dirancang untuk kinerja tahan lama, efisiensi maksimal, dan investasi tanpa biaya operasional.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-
-            <!-- Feature 1 -->
-            <div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
-              <div>
-                <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md">
-                  <span class="material-symbols-outlined text-[28px]">energy_savings_leaf</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-2">
-                  Ventilasi Tanpa Listrik
-                </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  Bekerja secara alami memanfaatkan angin dan perbedaan suhu, menghasilkan aliran udara berkelanjutan tanpa biaya energi tambahan.
-                </p>
-              </div>
-              <div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
-                <span class="font-spec-label text-spec-label text-on-surface-variant">Biaya Listrik</span>
-                <span class="font-spec-value text-spec-value font-bold text-secondary">Rp 0,- / Bulan</span>
-              </div>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
-              <div>
-                <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md">
-                  <span class="material-symbols-outlined text-[28px]">savings</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-2">
-                  Pengendalian Suhu yang Hemat Biaya
-                </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  Mengurangi ketergantungan pada AC dan sistem pendingin lainnya, sehingga membantu menghemat biaya listrik.
-                </p>
-              </div>
-              <div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
-                <span class="font-spec-label text-spec-label text-on-surface-variant">Beban Pendingin</span>
-                <span class="font-spec-value text-spec-value font-bold text-secondary">Turun s/d 35%</span>
-              </div>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
-              <div>
-                <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md">
-                  <span class="material-symbols-outlined text-[28px]">shield_with_heart</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-2">
-                  Tahan Lama &amp; Tahan Cuaca
-                </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  Terbuat dari material antikarat berkualitas tinggi, dirancang untuk tahan terhadap kondisi cuaca ekstrem dan memiliki masa pakai yang panjang.
-                </p>
-              </div>
-              <div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
-                <span class="font-spec-label text-spec-label text-on-surface-variant">Jaminan Pabrik</span>
-                <span class="font-spec-value text-spec-value font-bold text-secondary">Garansi s/d 15 Tahun</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ====================================== -->
-      <!-- 7. KLIEN KAMI                           -->
-      <!-- ====================================== -->
-      <section class="w-full bg-surface-container-low py-space-3xl">
-        <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
-
-          <div class="text-center max-w-3xl mx-auto mb-space-2xl">
-            <div class="inline-flex items-center gap-space-sm justify-center mb-space-xs">
-              <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
-              <span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]">KLIEN KAMI</span>
-              <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
-            </div>
-            <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-bold leading-tight">
-              Klien Kami Yang Telah Menggunakan<br>
-              <span class="text-secondary">Produk Ventimax Solutions</span>
-            </h2>
-            <p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
-              Dipercaya oleh berbagai industri manufaktur, pergudangan, fasilitas komersial, dan hunian di seluruh Indonesia.
-            </p>
-          </div>
-
-          <!-- Authentic Client Banners Showcase (Direct from ventimaxsolutions.co.id) -->
-          <div class="relative bg-surface-container-lowest rounded-2xl p-4 sm:p-6 lg:p-8 shadow-md border border-card-border/20">
-            <div class="relative overflow-hidden rounded-xl bg-surface-container/20 py-4 flex items-center justify-center">
-              
-              <div id="client-slides-container" class="w-full flex transition-transform duration-500 ease-in-out">
-                <!-- Slide 1 -->
-                <div class="w-full flex-shrink-0 px-2 sm:px-4 flex items-center justify-center">
-                  <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-03-YtTHnYCKCoA5AhRY.jpg" 
-                       alt="Klien Ventimax Solutions 1" 
-                       class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg">
-                </div>
-                <!-- Slide 2 -->
-                <div class="w-full flex-shrink-0 px-2 sm:px-4 flex items-center justify-center">
-                  <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-06-g8vnI52nRKwY62pp.jpg" 
-                       alt="Klien Ventimax Solutions 2" 
-                       class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg">
-                </div>
-                <!-- Slide 3 -->
-                <div class="w-full flex-shrink-0 px-2 sm:px-4 flex items-center justify-center">
-                  <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-32-DNUstoz4J44t4XeV.jpg" 
-                       alt="Klien Ventimax Solutions 3" 
-                       class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg">
-                </div>
-                <!-- Slide 4 -->
-                <div class="w-full flex-shrink-0 px-2 sm:px-4 flex items-center justify-center">
-                  <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-38-neXsAeNkjbzrqeWK.jpg" 
-                       alt="Klien Ventimax Solutions 4" 
-                       class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg">
-                </div>
-                <!-- Slide 5 -->
-                <div class="w-full flex-shrink-0 px-2 sm:px-4 flex items-center justify-center">
-                  <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-41-q7zf4n08GXKDPx2B.jpg" 
-                       alt="Klien Ventimax Solutions 5" 
-                       class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg">
-                </div>
-                <!-- Slide 6 -->
-                <div class="w-full flex-shrink-0 px-2 sm:px-4 flex items-center justify-center">
-                  <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-44-iYGzRzziBHX4HYGA.jpg" 
-                       alt="Klien Ventimax Solutions 6" 
-                       class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg">
-                </div>
-                <!-- Slide 7 -->
-                <div class="w-full flex-shrink-0 px-2 sm:px-4 flex items-center justify-center">
-                  <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-51-2PzWx4g1WmSxXR2u.jpg" 
-                       alt="Klien Ventimax Solutions 7" 
-                       class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg">
-                </div>
-                <!-- Slide 8 -->
-                <div class="w-full flex-shrink-0 px-2 sm:px-4 flex items-center justify-center">
-                  <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-47-XYGge2sswH9q44wk.jpg" 
-                       alt="Klien Ventimax Solutions 8" 
-                       class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg">
-                </div>
-              </div>
-
-              <!-- Prev / Next Controls -->
-              <button onclick="prevClientSlide()" aria-label="Slide sebelumnya" class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary-container/85 text-pure-white hover:bg-secondary flex items-center justify-center shadow-lg transition-all focus:outline-none">
-                <span class="material-symbols-outlined text-[20px]">chevron_left</span>
-              </button>
-              <button onclick="nextClientSlide()" aria-label="Slide berikutnya" class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary-container/85 text-pure-white hover:bg-secondary flex items-center justify-center shadow-lg transition-all focus:outline-none">
-                <span class="material-symbols-outlined text-[20px]">chevron_right</span>
-              </button>
-            </div>
-
-            <!-- Dots Indicator -->
-            <div id="client-dots-container" class="flex items-center justify-center gap-2 mt-4">
-              <!-- Injected by JavaScript -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ====================================== -->
-      <!-- 8. CTA KONSULTASI                       -->
-      <!-- ====================================== -->
-      <section class="w-full bg-ink text-pure-white py-space-3xl relative overflow-hidden" id="konsultasi">
-        <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
-        <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
-          <div class="bg-gradient-to-r from-card-start-navy to-secondary rounded-2xl p-space-xl lg:p-space-2xl shadow-2xl">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-
-              <div class="lg:col-span-8 space-y-space-md">
-                <div class="flex items-center gap-space-sm">
-                  <span class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"></span>
-                  <span class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-[0.12em]">GRATIS KONSULTASI</span>
-                </div>
-                <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-pure-white font-bold leading-tight">
-                  Hitung Potensi Penghematan Anda
-                </h2>
-                <p class="font-body-hero text-body-lg lg:text-body-hero text-sea-foam leading-relaxed max-w-2xl">
-                  Dapatkan perhitungan akurat mengenai kebutuhan aliran udara dan isolasi termal untuk area atap bangunan Anda. Ajukan permintaan konsultasi gratis sekarang.
-                </p>
-                <div class="pt-space-xs flex flex-wrap gap-space-lg text-sea-foam font-spec-label text-spec-label">
-                  <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span>
-                    <span>Analisis Beban Panas Bebas Biaya</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span>
-                    <span>Rekomendasi Spesifikasi Tepat Guna</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center">
-                <a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-lg bg-pure-white hover:bg-surface-container-high text-primary font-button-text text-button-text font-bold transition-all shadow-lg hover:scale-105"
-                   href="https://wa.me/6281219453272?text=Ventimax%20Solutions%20Headquarter"
-                   rel="noopener noreferrer"
-                   target="_blank">
-                  <span>Gratis Konsultasi</span>
-                  <span class="material-symbols-outlined text-[20px]">send</span>
+              <div
+                class="flex flex-wrap items-center justify-center gap-space-md"
+              >
+                <a
+                  class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-lg bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text transition-colors shadow-md"
+                  href="#produk-overview"
+                >
+                  Jelajahi Produk
+                  <span class="material-symbols-outlined ml-2 text-[20px]"
+                    >arrow_forward</span
+                  >
                 </a>
-                <p class="mt-space-sm text-[12px] text-sea-foam font-spec-value">
-                  Respon cepat tim teknis kami dalam 1x24 jam kerja
-                </p>
+                <a
+                  class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-lg bg-transparent hover:bg-pure-white/10 text-pure-white font-button-text text-button-text transition-colors border border-pure-white/30 backdrop-blur-sm"
+                  href="#konsultasi"
+                >
+                  Konsultasi Gratis
+                </a>
               </div>
+            </div>
 
+            <!-- 4-Column Feature Card -->
+            <div
+              class="mt-space-sm rounded-[24px] bg-gradient-to-br from-card-start-navy/80 to-secondary/70 backdrop-blur-md p-space-md lg:p-space-lg shadow-xl border border-pure-white/10"
+            >
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md lg:gap-0"
+              >
+                <!-- Col 1 -->
+                <div
+                  class="lg:pr-space-md lg:border-r lg:border-pure-white/15 flex flex-col justify-between text-center lg:text-left"
+                >
+                  <div class="flex flex-col items-center lg:items-start">
+                    <div
+                      class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-pure-white mb-2"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >public</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-md text-sm lg:text-base text-pure-white uppercase font-bold mb-1"
+                    >
+                      DIDESAIN DI AUSTRALIA
+                    </h3>
+                    <p
+                      class="font-body-md text-xs text-sea-foam leading-relaxed"
+                    >
+                      Standar kualitas tinggi untuk lingkungan tropis.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div
+                  class="lg:px-space-md lg:border-r lg:border-pure-white/15 flex flex-col justify-between text-center lg:text-left"
+                >
+                  <div class="flex flex-col items-center lg:items-start">
+                    <div
+                      class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-pure-white mb-2"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >cyclone</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-md text-sm lg:text-base text-pure-white uppercase font-bold mb-1"
+                    >
+                      TEKNOLOGI TURBIN
+                    </h3>
+                    <p
+                      class="font-body-md text-xs text-sea-foam leading-relaxed"
+                    >
+                      Desain dipatenkan untuk aliran udara maksimal.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Col 3 -->
+                <div
+                  class="lg:px-space-md lg:border-r lg:border-pure-white/15 flex flex-col justify-between text-center lg:text-left"
+                >
+                  <div class="flex flex-col items-center lg:items-start">
+                    <div
+                      class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-pure-white mb-2"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >domain</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-md text-sm lg:text-base text-pure-white uppercase font-bold mb-1"
+                    >
+                      PERUMAHAN & INDUSTRIAL
+                    </h3>
+                    <p
+                      class="font-body-md text-xs text-sea-foam leading-relaxed"
+                    >
+                      Kami memberikan hasil nyata secara signifikan.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Col 4 -->
+                <div
+                  class="lg:pl-space-md flex flex-col justify-between text-center lg:text-left"
+                >
+                  <div class="flex flex-col items-center lg:items-start">
+                    <div
+                      class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-pure-white mb-2"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >energy_savings_leaf</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-md text-sm lg:text-base text-pure-white uppercase font-bold mb-1"
+                    >
+                      MASA DEPAN LEBIH SEJUK
+                    </h3>
+                    <p
+                      class="font-body-md text-xs text-sea-foam leading-relaxed"
+                    >
+                      Mengurangi panas. Hemat energi secara alami.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-    </div>
-
-    <!-- Product Tabs JavaScript -->
-    <script>
-      function selectProductTab(productName) {
-        const tabs = ['hurricane', 'venticool', 'supavent'];
-
-        tabs.forEach(function(tab) {
-          const panel = document.getElementById('tab-panel-' + tab);
-          const btn = document.getElementById('tab-btn-' + tab);
-
-          if (tab === productName) {
-            if (panel) {
-              panel.classList.remove('hidden');
-              panel.classList.add('block');
-            }
-            if (btn) {
-              btn.classList.add('bg-secondary', 'text-pure-white', 'border-secondary');
-              btn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'border-surface-container-high');
-              btn.setAttribute('aria-selected', 'true');
-            }
-          } else {
-            if (panel) {
-              panel.classList.add('hidden');
-              panel.classList.remove('block');
-            }
-            if (btn) {
-              btn.classList.remove('bg-secondary', 'text-pure-white', 'border-secondary');
-              btn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'border-surface-container-high');
-              btn.setAttribute('aria-selected', 'false');
-            }
-          }
-        });
-      }
-
-      // Client Showcase Carousel Logic
-      let currentClientIndex = 0;
-      const totalClientSlides = 8;
-      let clientInterval = null;
-
-      function updateClientSlide() {
-        const container = document.getElementById('client-slides-container');
-        if (container) {
-          container.style.transform = `translateX(-${currentClientIndex * 100}%)`;
-        }
-        const dots = document.querySelectorAll('.client-dot');
-        dots.forEach((dot, idx) => {
-          if (idx === currentClientIndex) {
-            dot.classList.add('bg-secondary', 'w-6');
-            dot.classList.remove('bg-surface-tint/30', 'w-2.5');
-          } else {
-            dot.classList.remove('bg-secondary', 'w-6');
-            dot.classList.add('bg-surface-tint/30', 'w-2.5');
-          }
-        });
-      }
-
-      function nextClientSlide() {
-        currentClientIndex = (currentClientIndex + 1) % totalClientSlides;
-        updateClientSlide();
-        resetClientInterval();
-      }
-
-      function prevClientSlide() {
-        currentClientIndex = (currentClientIndex - 1 + totalClientSlides) % totalClientSlides;
-        updateClientSlide();
-        resetClientInterval();
-      }
-
-      function goToClientSlide(idx) {
-        currentClientIndex = idx;
-        updateClientSlide();
-        resetClientInterval();
-      }
-
-      function resetClientInterval() {
-        if (clientInterval) clearInterval(clientInterval);
-        clientInterval = setInterval(nextClientSlide, 4000);
-      }
-
-      document.addEventListener('DOMContentLoaded', function() {
-        const dotsContainer = document.getElementById('client-dots-container');
-        if (dotsContainer) {
-          dotsContainer.innerHTML = '';
-          for (let i = 0; i < totalClientSlides; i++) {
-            const dot = document.createElement('button');
-            dot.className = `client-dot h-2.5 rounded-full transition-all duration-300 ${i === 0 ? 'bg-secondary w-6' : 'bg-surface-tint/30 w-2.5'}`;
-            dot.setAttribute('aria-label', `Slide klien ${i + 1}`);
-            dot.onclick = () => goToClientSlide(i);
-            dotsContainer.appendChild(dot);
-          }
-        }
-        resetClientInterval();
-      });
-    </script>
-  </main>
-
-  <!-- ========================================== -->
-  <!-- WHATSAPP FLOATING BUTTON                   -->
-  <!-- ========================================== -->
-  <a aria-label="WhatsApp Ventimax Solutions"
-     class="fixed bottom-6 right-6 z-[999] w-12 h-12 rounded-full bg-whatsapp-green flex items-center justify-center text-pure-white shadow-[0_8px_24px_rgba(0,128,96,0.35)] hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-whatsapp-green"
-     href="https://wa.me/6281219453272?text=Ventimax%20Solutions%20Headquarter"
-     rel="noopener noreferrer"
-     target="_blank">
-    <span class="material-symbols-outlined text-[30px]">chat</span>
-  </a>
-
-  <!-- ========================================== -->
-  <!-- FOOTER — with Video Background             -->
-  <!-- ========================================== -->
-  <footer class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden">
-    <!-- Footer Video Background -->
-    <div class="absolute inset-0 z-0">
-      <video webkit-playsinline preload="auto" autoplay muted loop playsinline class="w-full h-full object-cover"
-             poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
-        <source src="https://videos.pexels.com/video-files/11773014/11773014-hd_1280_720_30fps.mp4" type="video/mp4">
-      </video>
-      <div class="absolute inset-0 bg-[rgb(15,76,129)]/[0.52]"></div>
-    </div>
-
-    <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl">
-
-        <!-- Footer Col 1: Brand -->
-        <div class="space-y-space-md">
-          <div class="flex items-center gap-space-sm">
-            <span class="font-headline-md text-headline-md text-pure-white tracking-tight font-bold uppercase">VENTIMAX SOLUTIONS</span>
+        <!-- ====================================== -->
+        <!-- 2. SEKILAS TENTANG VENTIMAX SOLUTIONS   -->
+        <!-- ====================================== -->
+        <section class="w-full bg-surface-bright py-6 lg:py-10">
+          <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+            <div class="bg-surface-container rounded-2xl p-4 lg:p-6 shadow-sm">
+              <div class="max-w-4xl mx-auto text-center space-y-space-md">
+                <div
+                  class="inline-flex items-center gap-space-sm justify-center"
+                >
+                  <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
+                  <span
+                    class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]"
+                    >SEKILAS TENTANG VENTIMAX</span
+                  >
+                  <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
+                </div>
+                <h2
+                  class="font-headline-lg text-lg sm:text-xl lg:text-2xl text-on-surface font-bold"
+                >
+                  Efisiensi Termal Alami Tanpa Beban Listrik
+                </h2>
+                <p
+                  class="font-body-hero text-[11px] lg:text-[12px] text-on-surface-variant leading-relaxed"
+                >
+                  Venti Max Solutions adalah perusahaan yang berdedikasi untuk
+                  menciptakan ruang hunian dan tempat kerja yang lebih nyaman
+                  serta hemat energi. Kami memiliki spesialisasi dalam
+                  menyediakan turbin ventilator dan sistem isolasi termal modern
+                  yang dirancang untuk mengurangi panas tanpa menggunakan
+                  listrik, sehingga mendinginkan ruangan Anda secara alami dan
+                  efisien.
+                </p>
+              </div>
+            </div>
           </div>
-          <p class="font-body-md text-body-md text-sea-foam leading-relaxed">
-            Sirkulasi udara optimal selama 24 jam tanpa biaya listrik dan dilengkapi dengan insulasi termal bergaransi hingga 15 tahun.
-          </p>
-          <div class="pt-space-xs">
-            <p class="font-spec-label text-spec-label text-primary-fixed uppercase tracking-wider mb-1">Cakupan Layanan</p>
-            <p class="font-body-md text-body-md text-pure-white">Jabodetabek, Bali &amp; Seluruh Indonesia</p>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 3. APA YANG KAMI TAWARKAN (3 Cards)     -->
+        <!-- ====================================== -->
+        <section class="w-full bg-background py-6 lg:py-10">
+          <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+            <!-- Section Header -->
+            <div class="text-center max-w-2xl mx-auto mb-8">
+              <div
+                class="inline-flex items-center gap-space-sm justify-center mb-space-xs"
+              >
+                <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
+                <span
+                  class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]"
+                  >LAYANAN SPESIALIS</span
+                >
+              </div>
+              <h2
+                class="font-headline-lg text-lg sm:text-xl lg:text-2xl text-on-surface font-bold"
+              >
+                Apa yang Kami Tawarkan
+              </h2>
+              <p
+                class="font-body-lg text-[11px] sm:text-[12px] text-on-surface-variant mt-space-sm"
+              >
+                Sinergi sirkulasi kinetik alami dan perisai radiasi panas
+                berstandar global.
+              </p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+              <!-- Card 1 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="space-y-space-md">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >air</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-[13px] sm:text-sm text-on-surface font-bold"
+                  >
+                    Ventilator Bertenaga Angin Berkinerja Tinggi
+                  </h3>
+                  <p
+                    class="font-body-md text-[10px] sm:text-[11px] text-on-surface-variant leading-relaxed"
+                  >
+                    Ventilator bertenaga angin kami berfungsi membuang udara
+                    panas dan lembap dari ruang bawah atap (attic), sehingga
+                    meningkatkan sirkulasi udara tanpa memerlukan listrik.
+                  </p>
+                </div>
+                <div
+                  class="pt-space-lg flex items-center gap-2 text-secondary font-button-text text-button-text"
+                >
+                  <span>Performa Aerodinamis</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    >verified</span
+                  >
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="space-y-space-md">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >wind_power</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-[13px] sm:text-sm text-on-surface font-bold"
+                  >
+                    Ventilator Bertenaga Angin
+                  </h3>
+                  <p
+                    class="font-body-md text-[10px] sm:text-[11px] text-on-surface-variant leading-relaxed"
+                  >
+                    Ventilator turbin atap yang dirancang untuk menjaga
+                    sirkulasi udara tetap berjalan setiap saat.
+                  </p>
+                </div>
+                <div
+                  class="pt-space-lg flex items-center gap-2 text-secondary font-button-text text-button-text"
+                >
+                  <span>Operasional 24 Jam Nonstop</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    >verified</span
+                  >
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div class="space-y-space-md">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >shield</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-[13px] sm:text-sm text-on-surface font-bold"
+                  >
+                    Insulasi Termal Modern
+                  </h3>
+                  <p
+                    class="font-body-md text-[10px] sm:text-[11px] text-on-surface-variant leading-relaxed"
+                  >
+                    Produk insulasi kami mampu memantulkan panas radiasi dan
+                    meningkatkan efisiensi termal bangunan secara keseluruhan,
+                    menjadikan ruangan terasa lebih sejuk dan nyaman.
+                  </p>
+                </div>
+                <div
+                  class="pt-space-lg flex items-center gap-2 text-secondary font-button-text text-button-text"
+                >
+                  <span>Reflektifitas Radiasi &gt;97%</span>
+                  <span class="material-symbols-outlined text-[18px]"
+                    >verified</span
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <!-- Footer Col 2: Navigation -->
-        <div class="space-y-space-md">
-          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Navigasi Halaman</h4>
-          <ul class="space-y-space-sm">
-            <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Beranda.html">Beranda</a>
-            </li>
-            <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Tentang Kami.html">Tentang Kami</a>
-            </li>
-            <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk.html">Produk</a>
-            </li>
-            <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Proyek.html">Proyek</a>
-            </li>
-            <li class="h-auto">
-              
-            </li>
-          </ul>
-        </div>
+        <!-- ====================================== -->
+        <!-- 4. PRODUCTS OVERVIEW (Interactive Tabs) -->
+        <!-- ====================================== -->
+        <section
+          class="w-full bg-surface-container-high py-6 lg:py-10"
+          id="produk-overview"
+        >
+          <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+            <!-- Section Header -->
+            <div class="max-w-3xl mb-8">
+              <div class="flex items-center gap-space-sm mb-space-xs">
+                <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
+                <span
+                  class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]"
+                  >PRODUCTS OVERVIEW</span
+                >
+              </div>
+              <h2
+                class="font-headline-lg text-lg sm:text-xl lg:text-2xl text-on-surface font-bold mb-2"
+              >
+                Produk yang Dirancang untuk Mengurangi Panas Tanpa Listrik.
+              </h2>
+              <p
+                class="font-body-lg text-[11px] sm:text-[12px] text-on-surface-variant"
+              >
+                Venti Max Solutions menyediakan sistem ventilasi turbin tanpa
+                listrik dan insulasi termal yang efisien untuk properti
+                industri, komersial, dan hunian di seluruh Indonesia.
+              </p>
+            </div>
 
-        <!-- Footer Col 3: Kategori Produk -->
-        <div class="space-y-space-md">
-          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Kategori Produk</h4>
-          <ul class="space-y-space-sm">
-            <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/supavent.html">Supavent</a>
-            </li>
-            <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/turbo-beam.html">Turbo Beam</a>
-            </li>
-            <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/hurricane.html">Hurricane</a>
-            </li>
-            <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/venticool.html">Venticool</a>
-            </li>
-            <li class="h-auto">
-              <a class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors" href="Produk/ventigrille.html">Ventigrille</a>
-            </li>
-          </ul>
-        </div>
+            <!-- Tab Buttons -->
+            <div
+              class="flex items-center gap-space-sm mb-space-xl overflow-x-auto pb-2"
+              role="tablist"
+            >
+              <button
+                aria-selected="true"
+                class="product-tab-btn active px-space-lg py-space-sm rounded-lg bg-secondary text-pure-white font-button-text text-button-text transition-all duration-200 shadow-sm flex items-center gap-2 whitespace-nowrap border-2 border-secondary"
+                id="tab-btn-hurricane"
+                onclick="selectProductTab('hurricane')"
+                role="tab"
+              >
+                <span class="material-symbols-outlined text-[20px]"
+                  >cyclone</span
+                >
+                <span>Hurricane</span>
+              </button>
+              <button
+                aria-selected="false"
+                class="product-tab-btn px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-on-surface border-2 border-surface-container-high font-button-text text-button-text transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
+                id="tab-btn-venticool"
+                onclick="selectProductTab('venticool')"
+                role="tab"
+              >
+                <span class="material-symbols-outlined text-[20px]"
+                  >layers</span
+                >
+                <span>Venticool</span>
+              </button>
+              <button
+                aria-selected="false"
+                class="product-tab-btn px-space-lg py-space-sm rounded-lg bg-surface-container-lowest text-on-surface border-2 border-surface-container-high font-button-text text-button-text transition-all duration-200 flex items-center gap-2 whitespace-nowrap"
+                id="tab-btn-supavent"
+                onclick="selectProductTab('supavent')"
+                role="tab"
+              >
+                <span class="material-symbols-outlined text-[20px]">air</span>
+                <span>Supavent</span>
+              </button>
+            </div>
 
-        <!-- Footer Col 4: Contact -->
-        <div class="space-y-space-md">
-          <h4 class="font-headline-md text-headline-md text-pure-white font-bold">Info Kontak</h4>
-          <div class="space-y-space-sm text-sea-foam font-body-md text-body-md">
-            <p class="flex items-start gap-space-sm">
-              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">call</span>
-              <span>Telepon Kantor: <a href="tel:+6281110016996" class="hover:text-pure-white transition-colors">0811-1001-6996</a></span>
-            </p>
-            <p class="flex items-start gap-space-sm">
-              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">mail</span>
-              <span>Email: <a href="mailto:hq@ventimaxsolutions.co.id" class="hover:text-pure-white transition-colors">hq@ventimaxsolutions.co.id</a></span>
-            </p>
-            <p class="flex items-start gap-space-sm">
-              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">photo_camera</span>
-              <span>Instagram: <a href="https://www.instagram.com/ventimaxsolutionsofficial/" target="_blank" rel="noopener noreferrer" class="hover:text-pure-white transition-colors">@ventimaxsolutionsofficial</a></span>
-            </p>
-            <p class="flex items-start gap-space-sm">
-              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">globe</span>
-              <span>Website: <a href="https://www.ventimaxsolutions.co.id" class="hover:text-pure-white transition-colors">www.ventimaxsolutions.co.id</a></span>
-            </p>
-            <p class="flex items-start gap-space-sm">
-              <span class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5">location_on</span>
-              <span>Summarecon Serpong, Ruko Golden 8, Jl. Boulevard Raya Gading Serpong No.18 Blok D, Pakulonan Barat, Kec. Kelapa Dua, Kab. Tangerang, Banten 15818</span>
-            </p>
+            <!-- Tab Panels Container -->
+            <div
+              class="bg-surface-container-lowest rounded-2xl shadow-xl p-space-lg lg:p-space-2xl overflow-hidden"
+            >
+              <!-- Tab Panel: HURRICANE -->
+              <div class="product-panel block" id="tab-panel-hurricane">
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:p-5 items-center"
+                >
+                  <div class="lg:col-span-5">
+                    <div
+                      class="relative rounded-xl overflow-hidden bg-surface-container aspect-[4/3] w-full flex items-center justify-center"
+                    >
+                      <img
+                        alt="Ventilator Hurricane Venti Max"
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/ventimaxs18-WsHrRqqgyHs2WSZP.png"
+                      />
+                      <span
+                        class="absolute top-4 left-4 bg-primary text-pure-white text-[12px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider"
+                      >
+                        Industrial Grade
+                      </span>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-7 space-y-space-lg">
+                    <div>
+                      <span
+                        class="font-spec-label text-spec-label text-secondary uppercase tracking-wider"
+                        >Ventilator Bertenaga Angin</span
+                      >
+                      <h3
+                        class="font-headline-lg text-lg sm:text-xl lg:text-2xl text-on-surface font-bold mt-1"
+                      >
+                        Hurricane
+                      </h3>
+                    </div>
+                    <p
+                      class="font-body-lg text-[11px] sm:text-[12px] text-on-surface-variant leading-relaxed"
+                    >
+                      Hurricane adalah ventilator turbin atap bertenaga angin
+                      yang dirancang untuk menjaga sirkulasi udara tetap
+                      berjalan setiap saat pada pabrik, gudang, gedung, dan
+                      berbagai jenis bangunan lainnya.
+                    </p>
+                    <div
+                      class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs"
+                    >
+                      <div class="bg-surface-container rounded-xl p-space-md">
+                        <div
+                          class="flex items-center gap-1.5 text-secondary mb-1"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >speed</span
+                          >
+                          <span class="font-spec-label text-spec-label"
+                            >Kapasitas Maks</span
+                          >
+                        </div>
+                        <p
+                          class="font-spec-value text-spec-value font-bold text-on-surface"
+                        >
+                          3,267,000 Liter / Jam
+                        </p>
+                      </div>
+                      <div class="bg-surface-container rounded-xl p-space-md">
+                        <div
+                          class="flex items-center gap-1.5 text-secondary mb-1"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >hardware</span
+                          >
+                          <span class="font-spec-label text-spec-label"
+                            >Material</span
+                          >
+                        </div>
+                        <p
+                          class="font-spec-value text-spec-value font-bold text-on-surface"
+                        >
+                          Aluminium Korosi Marine
+                        </p>
+                      </div>
+                      <div class="bg-surface-container rounded-xl p-space-md">
+                        <div
+                          class="flex items-center gap-1.5 text-secondary mb-1"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >verified_user</span
+                          >
+                          <span class="font-spec-label text-spec-label"
+                            >Garansi</span
+                          >
+                        </div>
+                        <p
+                          class="font-spec-value text-spec-value font-bold text-on-surface"
+                        >
+                          15 Tahun Resmi
+                        </p>
+                      </div>
+                    </div>
+                    <div class="pt-space-sm flex flex-wrap gap-space-md">
+                      <a
+                        class="px-space-lg py-space-sm rounded-lg bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text transition-colors"
+                        href="#konsultasi"
+                        >Minta Penawaran Hurricane</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab Panel: VENTICOOL -->
+              <div class="product-panel hidden" id="tab-panel-venticool">
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:p-5 items-center"
+                >
+                  <div class="lg:col-span-5">
+                    <div
+                      class="relative rounded-xl overflow-hidden bg-surface-container aspect-[4/3] w-full flex items-center justify-center"
+                    >
+                      <img
+                        alt="Insulasi Atap Venticool"
+                        class="w-full h-full object-cover rounded-lg"
+                        src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=1024,fit=crop/uQWpCx6RhwPSfkUj/venticool1-cJuxPQHIx6FHTQFp.jpeg"
+                      />
+                      <span
+                        class="absolute top-4 left-4 bg-primary text-pure-white text-[12px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider"
+                      >
+                        Thermal Barrier
+                      </span>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-7 space-y-space-lg">
+                    <div>
+                      <span
+                        class="font-spec-label text-spec-label text-secondary uppercase tracking-wider"
+                        >Insulasi Atap Berbahan Aluminium Foil</span
+                      >
+                      <h3
+                        class="font-headline-lg text-lg sm:text-xl lg:text-2xl text-on-surface font-bold mt-1"
+                      >
+                        Venticool
+                      </h3>
+                    </div>
+                    <p
+                      class="font-body-lg text-[11px] sm:text-[12px] text-on-surface-variant leading-relaxed"
+                    >
+                      Venticool adalah insulasi atap berbahan aluminium foil
+                      yang dipasang di antara atap dan plafon rumah atau
+                      bangunan untuk memantulkan panas agar tidak masuk ke dalam
+                      bangunan.
+                    </p>
+                    <div
+                      class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs"
+                    >
+                      <div class="bg-surface-container rounded-xl p-space-md">
+                        <div
+                          class="flex items-center gap-1.5 text-secondary mb-1"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >wb_sunny</span
+                          >
+                          <span class="font-spec-label text-spec-label"
+                            >Daya Pantul</span
+                          >
+                        </div>
+                        <p
+                          class="font-spec-value text-spec-value font-bold text-on-surface"
+                        >
+                          Daya Pantul &gt; 97%
+                        </p>
+                      </div>
+                      <div class="bg-surface-container rounded-xl p-space-md">
+                        <div
+                          class="flex items-center gap-1.5 text-secondary mb-1"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >texture</span
+                          >
+                          <span class="font-spec-label text-spec-label"
+                            >Komposisi</span
+                          >
+                        </div>
+                        <p
+                          class="font-spec-value text-spec-value font-bold text-on-surface"
+                        >
+                          100% Aluminum Foil Murni
+                        </p>
+                      </div>
+                      <div class="bg-surface-container rounded-xl p-space-md">
+                        <div
+                          class="flex items-center gap-1.5 text-secondary mb-1"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >verified_user</span
+                          >
+                          <span class="font-spec-label text-spec-label"
+                            >Garansi</span
+                          >
+                        </div>
+                        <p
+                          class="font-spec-value text-spec-value font-bold text-on-surface"
+                        >
+                          10 Tahun Garansi
+                        </p>
+                      </div>
+                    </div>
+                    <div class="pt-space-sm flex flex-wrap gap-space-md">
+                      <a
+                        class="px-space-lg py-space-sm rounded-lg bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text transition-colors"
+                        href="#konsultasi"
+                        >Minta Penawaran Venticool</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab Panel: SUPAVENT -->
+              <div class="product-panel hidden" id="tab-panel-supavent">
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:p-5 items-center"
+                >
+                  <div class="lg:col-span-5">
+                    <div
+                      class="relative rounded-xl overflow-hidden bg-surface-container aspect-[4/3] w-full flex items-center justify-center"
+                    >
+                      <img
+                        alt="Ventilator SupaVent Rooftop"
+                        class="w-full h-full object-cover rounded-lg"
+                        src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/suppavent-01-HsQ7dRm3J8xRLfmB.png"
+                      />
+                      <span
+                        class="absolute top-4 left-4 bg-primary text-pure-white text-[12px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider"
+                      >
+                        Residential &amp; Commercial
+                      </span>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-7 space-y-space-lg">
+                    <div>
+                      <span
+                        class="font-spec-label text-spec-label text-secondary uppercase tracking-wider"
+                        >Ventilator Bertenaga Angin</span
+                      >
+                      <h3
+                        class="font-headline-lg text-lg sm:text-xl lg:text-2xl text-on-surface font-bold mt-1"
+                      >
+                        SupaVent™
+                      </h3>
+                    </div>
+                    <p
+                      class="font-body-lg text-[11px] sm:text-[12px] text-on-surface-variant leading-relaxed"
+                    >
+                      SupaVent™ adalah ventilator turbin atap bertenaga angin
+                      yang dirancang untuk menjaga sirkulasi udara tetap
+                      berjalan setiap saat tanpa menggunakan listrik.
+                    </p>
+                    <div
+                      class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs"
+                    >
+                      <div class="bg-surface-container rounded-xl p-space-md">
+                        <div
+                          class="flex items-center gap-1.5 text-secondary mb-1"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >power_off</span
+                          >
+                          <span class="font-spec-label text-spec-label"
+                            >Tenaga Penggerak</span
+                          >
+                        </div>
+                        <p
+                          class="font-spec-value text-spec-value font-bold text-on-surface"
+                        >
+                          Bertenaga Angin Murni
+                        </p>
+                      </div>
+                      <div class="bg-surface-container rounded-xl p-space-md">
+                        <div
+                          class="flex items-center gap-1.5 text-secondary mb-1"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >shield</span
+                          >
+                          <span class="font-spec-label text-spec-label"
+                            >Material Tahan Korosi</span
+                          >
+                        </div>
+                        <p
+                          class="font-spec-value text-spec-value font-bold text-on-surface"
+                        >
+                          Polikarbonat UV-Stabil
+                        </p>
+                      </div>
+                      <div class="bg-surface-container rounded-xl p-space-md">
+                        <div
+                          class="flex items-center gap-1.5 text-secondary mb-1"
+                        >
+                          <span class="material-symbols-outlined text-[18px]"
+                            >verified_user</span
+                          >
+                          <span class="font-spec-label text-spec-label"
+                            >Garansi</span
+                          >
+                        </div>
+                        <p
+                          class="font-spec-value text-spec-value font-bold text-on-surface"
+                        >
+                          15 Tahun Masa Pakai
+                        </p>
+                      </div>
+                    </div>
+                    <div class="pt-space-sm flex flex-wrap gap-space-md">
+                      <a
+                        class="px-space-lg py-space-sm rounded-lg bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text transition-colors"
+                        href="#konsultasi"
+                        >Minta Penawaran SupaVent</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
 
+        <!-- ====================================== -->
+        <!-- 5. DESAIN VENTILATOR (Diagram)          -->
+        <!-- ====================================== -->
+        <section
+          class="w-full bg-ink text-pure-white py-6 lg:py-10 overflow-hidden relative"
+        >
+          <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:p-5 items-center"
+            >
+              <!-- Text & Principle Explanation -->
+              <div class="lg:col-span-6 space-y-space-lg">
+                <div class="flex items-center gap-space-sm">
+                  <span
+                    class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"
+                  ></span>
+                  <span
+                    class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-[0.12em]"
+                    >PRINSIP KERJA TERMAL</span
+                  >
+                </div>
+                <h2
+                  class="font-headline-lg text-lg sm:text-xl lg:text-2xl text-pure-white font-bold leading-tight"
+                >
+                  Desain Ventilator Bertenaga Angin
+                </h2>
+                <p
+                  class="font-body-hero text-body-hero text-sea-foam leading-relaxed"
+                >
+                  Turbin berputar bersama angin untuk menciptakan efek isapan
+                  kuat yang membuang udara panas dan pengap dari dalam bangunan,
+                  menarik udara sejuk dan segar masuk melalui celah bukaan.
+                </p>
+                <div class="space-y-space-md pt-space-xs">
+                  <div
+                    class="flex items-start gap-space-md p-space-md rounded-xl bg-card-start-navy/60"
+                  >
+                    <div
+                      class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-secondary-container shrink-0 mt-0.5"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >thermostat</span
+                      >
+                    </div>
+                    <div>
+                      <h4
+                        class="font-headline-md text-[13px] sm:text-sm text-pure-white font-bold"
+                      >
+                        Efek Termal Stack
+                      </h4>
+                      <p
+                        class="font-body-md text-[10px] sm:text-[11px] text-sea-foam mt-0.5"
+                      >
+                        Udara panas secara alami naik ke puncak atap dan
+                        langsung ditarik keluar sebelum menembus ruang hunian
+                        bawah.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-start gap-space-md p-space-md rounded-xl bg-card-start-navy/60"
+                  >
+                    <div
+                      class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-secondary-container shrink-0 mt-0.5"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >air</span
+                      >
+                    </div>
+                    <div>
+                      <h4
+                        class="font-headline-md text-[13px] sm:text-sm text-pure-white font-bold"
+                      >
+                        Hisapan Tekanan Negatif
+                      </h4>
+                      <p
+                        class="font-body-md text-[10px] sm:text-[11px] text-sea-foam mt-0.5"
+                      >
+                        Rotasi sirip aerodinamis menghasilkan ruang hampa
+                        bertekanan rendah yang terus-menerus menyedot kelembapan
+                        tanpa listrik.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Diagram Graphic Card -->
+              <div class="lg:col-span-6">
+                <div
+                  class="rounded-2xl p-4 sm:p-6 bg-gradient-to-b from-card-start-navy to-primary-container shadow-2xl relative"
+                >
+                  <div
+                    class="relative rounded-xl overflow-hidden bg-surface-container-lowest/5 flex items-center justify-center w-full aspect-video"
+                  >
+                    <img
+                      alt="Diagram aliran udara ventilator turbin atap"
+                      class="w-full h-full object-cover rounded-lg"
+                      src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/ventimaxs18-WsHrRqqgyHs2WSZP.png"
+                    />
+                  </div>
+                  <div
+                    class="mt-space-md flex items-center justify-between text-xs text-sea-foam font-spec-label"
+                  >
+                    <span class="flex items-center gap-1.5">
+                      <span
+                        class="w-2.5 h-2.5 rounded-full bg-secondary-container inline-block"
+                      ></span>
+                      Aliran Udara Sejuk
+                    </span>
+                    <span class="flex items-center gap-1.5">
+                      <span
+                        class="w-2.5 h-2.5 rounded-full bg-error inline-block"
+                      ></span>
+                      Pembuangan Udara Panas
+                    </span>
+                    <span class="flex items-center gap-1.5">
+                      <span
+                        class="w-2.5 h-2.5 rounded-full bg-primary-fixed inline-block"
+                      ></span>
+                      Sirkulasi 24 Jam
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 6. MENGAPA MEMILIH VENTIMAX (3 Kartu)   -->
+        <!-- ====================================== -->
+        <section class="w-full bg-surface-bright py-6 lg:py-10">
+          <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+              <div
+                class="inline-flex items-center gap-space-sm justify-center mb-space-xs"
+              >
+                <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
+                <span
+                  class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]"
+                  >KEUNGGULAN UTAMA</span
+                >
+              </div>
+              <h2
+                class="font-headline-lg text-lg sm:text-xl lg:text-2xl text-on-surface font-bold"
+              >
+                Mengapa Memilih Ventimax Solutions
+              </h2>
+              <p
+                class="font-body-lg text-[11px] sm:text-[12px] text-on-surface-variant mt-space-sm"
+              >
+                Dirancang untuk kinerja tahan lama, efisiensi maksimal, dan
+                investasi tanpa biaya operasional.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+              <!-- Feature 1 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-4 sm:p-5 shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300"
+              >
+                <div>
+                  <div
+                    class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >energy_savings_leaf</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-[13px] sm:text-sm text-on-surface font-bold mb-2"
+                  >
+                    Ventilasi Tanpa Listrik
+                  </h3>
+                  <p
+                    class="font-body-md text-[10px] sm:text-[11px] text-on-surface-variant leading-relaxed"
+                  >
+                    Bekerja secara alami memanfaatkan angin dan perbedaan suhu,
+                    menghasilkan aliran udara berkelanjutan tanpa biaya energi
+                    tambahan.
+                  </p>
+                </div>
+                <div
+                  class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between"
+                >
+                  <span
+                    class="font-spec-label text-spec-label text-on-surface-variant"
+                    >Biaya Listrik</span
+                  >
+                  <span
+                    class="font-spec-value text-spec-value font-bold text-secondary"
+                    >Rp 0,- / Bulan</span
+                  >
+                </div>
+              </div>
+
+              <!-- Feature 2 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-5 sm:p-6 shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300"
+              >
+                <div>
+                  <div
+                    class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md"
+                  >
+                    <span class="material-symbols-outlined text-[28px]"
+                      >savings</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-lg text-on-surface font-bold mb-2"
+                  >
+                    Pengendalian Suhu yang Hemat Biaya
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Mengurangi ketergantungan pada AC dan sistem pendingin
+                    lainnya, sehingga membantu menghemat biaya listrik.
+                  </p>
+                </div>
+                <div
+                  class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between"
+                >
+                  <span
+                    class="font-spec-label text-spec-label text-on-surface-variant"
+                    >Beban Pendingin</span
+                  >
+                  <span
+                    class="font-spec-value text-spec-value font-bold text-secondary"
+                    >Turun s/d 35%</span
+                  >
+                </div>
+              </div>
+
+              <!-- Feature 3 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-5 sm:p-6 shadow-md flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300"
+              >
+                <div>
+                  <div
+                    class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary mb-space-md"
+                  >
+                    <span class="material-symbols-outlined text-[28px]"
+                      >shield_with_heart</span
+                    >
+                  </div>
+                  <h3
+                    class="font-headline-md text-lg text-on-surface font-bold mb-2"
+                  >
+                    Tahan Lama &amp; Tahan Cuaca
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Terbuat dari material antikarat berkualitas tinggi,
+                    dirancang untuk tahan terhadap kondisi cuaca ekstrem dan
+                    memiliki masa pakai yang panjang.
+                  </p>
+                </div>
+                <div
+                  class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between"
+                >
+                  <span
+                    class="font-spec-label text-spec-label text-on-surface-variant"
+                    >Jaminan Pabrik</span
+                  >
+                  <span
+                    class="font-spec-value text-spec-value font-bold text-secondary"
+                    >Garansi s/d 15 Tahun</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 7. KLIEN KAMI                           -->
+        <!-- ====================================== -->
+        <section class="w-full bg-surface-container-low py-10 lg:py-16">
+          <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+            <div class="text-center max-w-3xl mx-auto mb-8">
+              <div
+                class="inline-flex items-center gap-space-sm justify-center mb-space-xs"
+              >
+                <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
+                <span
+                  class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.12em]"
+                  >KLIEN KAMI</span
+                >
+                <span class="w-6 h-0.5 bg-secondary rounded-full"></span>
+              </div>
+              <h2
+                class="font-headline-lg text-2xl sm:text-3xl lg:text-4xl text-on-surface font-bold leading-tight"
+              >
+                Klien Kami Yang Telah Menggunakan<br />
+                <span class="text-secondary">Produk Ventimax Solutions</span>
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-space-sm"
+              >
+                Dipercaya oleh berbagai industri manufaktur, pergudangan,
+                fasilitas komersial, dan hunian di seluruh Indonesia.
+              </p>
+            </div>
+
+            <!-- Authentic Client Banners Showcase (Direct from ventimaxsolutions.co.id) -->
+            <div
+              class="relative bg-surface-container-lowest rounded-2xl p-4 sm:p-6 lg:p-8 shadow-md border border-card-border/20"
+            >
+              <div
+                class="relative overflow-hidden rounded-xl bg-surface-container/20 py-4 flex items-center justify-center"
+              >
+                <div
+                  id="client-slides-container"
+                  class="w-full flex transition-transform duration-500 ease-in-out"
+                >
+                  <!-- Slide 1 -->
+                  <div
+                    class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center"
+                  >
+                    <img
+                      src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-03-YtTHnYCKCoA5AhRY.jpg"
+                      alt="Klien Ventimax Solutions 1"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                    />
+                  </div>
+                  <!-- Slide 2 -->
+                  <div
+                    class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center"
+                  >
+                    <img
+                      src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-06-g8vnI52nRKwY62pp.jpg"
+                      alt="Klien Ventimax Solutions 2"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                    />
+                  </div>
+                  <!-- Slide 3 -->
+                  <div
+                    class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center"
+                  >
+                    <img
+                      src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-32-DNUstoz4J44t4XeV.jpg"
+                      alt="Klien Ventimax Solutions 3"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                    />
+                  </div>
+                  <!-- Slide 4 -->
+                  <div
+                    class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center"
+                  >
+                    <img
+                      src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-38-neXsAeNkjbzrqeWK.jpg"
+                      alt="Klien Ventimax Solutions 4"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                    />
+                  </div>
+                  <!-- Slide 5 -->
+                  <div
+                    class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center"
+                  >
+                    <img
+                      src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-41-q7zf4n08GXKDPx2B.jpg"
+                      alt="Klien Ventimax Solutions 5"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                    />
+                  </div>
+                  <!-- Slide 6 -->
+                  <div
+                    class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center"
+                  >
+                    <img
+                      src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-44-iYGzRzziBHX4HYGA.jpg"
+                      alt="Klien Ventimax Solutions 6"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                    />
+                  </div>
+                  <!-- Slide 7 -->
+                  <div
+                    class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center"
+                  >
+                    <img
+                      src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-51-2PzWx4g1WmSxXR2u.jpg"
+                      alt="Klien Ventimax Solutions 7"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                    />
+                  </div>
+                  <!-- Slide 8 -->
+                  <div
+                    class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center"
+                  >
+                    <img
+                      src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-47-XYGge2sswH9q44wk.jpg"
+                      alt="Klien Ventimax Solutions 8"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                <!-- Prev / Next Controls -->
+                <button
+                  onclick="prevClientSlide()"
+                  aria-label="Slide sebelumnya"
+                  class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary-container/85 text-pure-white hover:bg-secondary flex items-center justify-center shadow-lg transition-all focus:outline-none"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >chevron_left</span
+                  >
+                </button>
+                <button
+                  onclick="nextClientSlide()"
+                  aria-label="Slide berikutnya"
+                  class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary-container/85 text-pure-white hover:bg-secondary flex items-center justify-center shadow-lg transition-all focus:outline-none"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >chevron_right</span
+                  >
+                </button>
+              </div>
+
+              <!-- Dots Indicator -->
+              <div
+                id="client-dots-container"
+                class="flex items-center justify-center gap-2 mt-4"
+              >
+                <!-- Injected by JavaScript -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================================== -->
+        <!-- 8. CTA KONSULTASI                       -->
+        <!-- ====================================== -->
+        <section
+          class="w-full bg-ink text-pure-white py-10 lg:py-16 relative overflow-hidden"
+          id="konsultasi"
+        >
+          <div
+            class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter"
+          >
+            <div
+              class="bg-gradient-to-r from-card-start-navy to-secondary rounded-2xl p-6 lg:p-8 shadow-2xl"
+            >
+              <div
+                class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:p-6 items-center"
+              >
+                <div class="lg:col-span-8 space-y-space-md">
+                  <div class="flex items-center gap-space-sm">
+                    <span
+                      class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"
+                    ></span>
+                    <span
+                      class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-[0.12em]"
+                      >GRATIS KONSULTASI</span
+                    >
+                  </div>
+                  <h2
+                    class="font-headline-lg text-2xl sm:text-3xl lg:text-4xl text-pure-white font-bold leading-tight"
+                  >
+                    Hitung Potensi Penghematan Anda
+                  </h2>
+                  <p
+                    class="font-body-hero text-body-lg lg:text-body-hero text-sea-foam leading-relaxed max-w-2xl"
+                  >
+                    Dapatkan perhitungan akurat mengenai kebutuhan aliran udara
+                    dan isolasi termal untuk area atap bangunan Anda. Ajukan
+                    permintaan konsultasi gratis sekarang.
+                  </p>
+                  <div
+                    class="pt-space-xs flex flex-wrap gap-space-lg text-sea-foam font-spec-label text-spec-label"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span
+                        class="material-symbols-outlined text-secondary-container text-[20px]"
+                        >check_circle</span
+                      >
+                      <span>Analisis Beban Panas Bebas Biaya</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span
+                        class="material-symbols-outlined text-secondary-container text-[20px]"
+                        >check_circle</span
+                      >
+                      <span>Rekomendasi Spesifikasi Tepat Guna</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center"
+                >
+                  <a
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-lg bg-pure-white hover:bg-surface-container-high text-primary font-button-text text-button-text font-bold transition-all shadow-lg hover:scale-105"
+                    href="https://wa.me/6281219453272?text=Ventimax%20Solutions%20Headquarter"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span>Gratis Konsultasi</span>
+                    <span class="material-symbols-outlined text-[20px]"
+                      >send</span
+                    >
+                  </a>
+                  <p
+                    class="mt-space-sm text-[12px] text-sea-foam font-spec-value"
+                  >
+                    Respon cepat tim teknis kami dalam 1x24 jam kerja
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
-      <!-- Copyright — matched from original website -->
-      <div class="pt-space-lg border-t border-pure-white/15 text-center font-body-md text-body-md text-sea-foam">
-        <p>© 2026. Venti Max Solutions - Melayani pengadaan dan pemasangan sistem sirkulasi udara di seluruh Indonesia.</p>
-      </div>
+      <!-- Product Tabs JavaScript -->
+      <script>
+        function selectProductTab(productName) {
+          const tabs = ["hurricane", "venticool", "supavent"];
 
-    </div>
-  </footer>
+          tabs.forEach(function (tab) {
+            const panel = document.getElementById("tab-panel-" + tab);
+            const btn = document.getElementById("tab-btn-" + tab);
 
-
-  <!-- Universal Video Autoplay Enforcer -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var videos = document.querySelectorAll('video');
-      videos.forEach(function (video) {
-        video.muted = true;
-        video.defaultMuted = true;
-        video.setAttribute('playsinline', '');
-        video.setAttribute('webkit-playsinline', '');
-        var promise = video.play();
-        if (promise !== undefined) {
-          promise.catch(function () {
-            // Autoplay blocked by device/browser policy (e.g. Low Power Mode)
-            var startPlay = function () {
-              video.play();
-              window.removeEventListener('touchstart', startPlay);
-              window.removeEventListener('scroll', startPlay);
-              window.removeEventListener('click', startPlay);
-            };
-            window.addEventListener('touchstart', startPlay, { once: true, passive: true });
-            window.addEventListener('scroll', startPlay, { once: true, passive: true });
-            window.addEventListener('click', startPlay, { once: true, passive: true });
+            if (tab === productName) {
+              if (panel) {
+                panel.classList.remove("hidden");
+                panel.classList.add("block");
+              }
+              if (btn) {
+                btn.classList.add(
+                  "bg-secondary",
+                  "text-pure-white",
+                  "border-secondary",
+                );
+                btn.classList.remove(
+                  "bg-surface-container-lowest",
+                  "text-on-surface",
+                  "border-surface-container-high",
+                );
+                btn.setAttribute("aria-selected", "true");
+              }
+            } else {
+              if (panel) {
+                panel.classList.add("hidden");
+                panel.classList.remove("block");
+              }
+              if (btn) {
+                btn.classList.remove(
+                  "bg-secondary",
+                  "text-pure-white",
+                  "border-secondary",
+                );
+                btn.classList.add(
+                  "bg-surface-container-lowest",
+                  "text-on-surface",
+                  "border-surface-container-high",
+                );
+                btn.setAttribute("aria-selected", "false");
+              }
+            }
           });
         }
+
+        // Client Showcase Carousel Logic
+        let currentClientIndex = 0;
+        const totalClientSlides = 8;
+        let clientInterval = null;
+
+        function updateClientSlide() {
+          const container = document.getElementById("client-slides-container");
+          if (container) {
+            container.style.transform = `translateX(-${currentClientIndex * 100}%)`;
+          }
+          const dots = document.querySelectorAll(".client-dot");
+          dots.forEach((dot, idx) => {
+            if (idx === currentClientIndex) {
+              dot.classList.add("bg-secondary", "w-6");
+              dot.classList.remove("bg-surface-tint/30", "w-2.5");
+            } else {
+              dot.classList.remove("bg-secondary", "w-6");
+              dot.classList.add("bg-surface-tint/30", "w-2.5");
+            }
+          });
+        }
+
+        function nextClientSlide() {
+          currentClientIndex = (currentClientIndex + 1) % totalClientSlides;
+          updateClientSlide();
+          resetClientInterval();
+        }
+
+        function prevClientSlide() {
+          currentClientIndex =
+            (currentClientIndex - 1 + totalClientSlides) % totalClientSlides;
+          updateClientSlide();
+          resetClientInterval();
+        }
+
+        function goToClientSlide(idx) {
+          currentClientIndex = idx;
+          updateClientSlide();
+          resetClientInterval();
+        }
+
+        function resetClientInterval() {
+          if (clientInterval) clearInterval(clientInterval);
+          clientInterval = setInterval(nextClientSlide, 4000);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const dotsContainer = document.getElementById(
+            "client-dots-container",
+          );
+          if (dotsContainer) {
+            dotsContainer.innerHTML = "";
+            for (let i = 0; i < totalClientSlides; i++) {
+              const dot = document.createElement("button");
+              dot.className = `client-dot h-2.5 rounded-full transition-all duration-300 ${i === 0 ? "bg-secondary w-6" : "bg-surface-tint/30 w-2.5"}`;
+              dot.setAttribute("aria-label", `Slide klien ${i + 1}`);
+              dot.onclick = () => goToClientSlide(i);
+              dotsContainer.appendChild(dot);
+            }
+          }
+          resetClientInterval();
+        });
+      </script>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- WHATSAPP FLOATING BUTTON                   -->
+    <!-- ========================================== -->
+    <a
+      aria-label="WhatsApp Ventimax Solutions"
+      class="fixed bottom-6 right-6 z-[999] w-10 h-10 rounded-full bg-whatsapp-green flex items-center justify-center text-pure-white shadow-[0_8px_24px_rgba(0,128,96,0.35)] hover:scale-105 transition-transform duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-whatsapp-green"
+      href="https://wa.me/6281219453272?text=Ventimax%20Solutions%20Headquarter"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <span class="material-symbols-outlined text-[30px]">chat</span>
+    </a>
+
+    <!-- ========================================== -->
+    <!-- FOOTER — with Video Background             -->
+    <!-- ========================================== -->
+    <footer
+      class="w-full text-pure-white pt-space-3xl pb-space-2xl relative overflow-hidden"
+    >
+      <!-- Footer Video Background -->
+      <div class="absolute inset-0 z-0">
+        <video
+          webkit-playsinline
+          preload="auto"
+          autoplay
+          muted
+          loop
+          playsinline
+          class="w-full h-full object-cover"
+          poster="https://images.pexels.com/videos/11773014/pexels-photo-11773014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
+        >
+          <source
+            src="https://videos.pexels.com/video-files/11773014/11773014-hd_1280_720_30fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="absolute inset-0 bg-[rgb(15,76,129)]/[0.52]"></div>
+      </div>
+
+      <div
+        class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:p-6 mb-8"
+        >
+          <!-- Footer Col 1: Brand -->
+          <div class="space-y-space-md">
+            <div class="flex items-center gap-space-sm">
+              <span
+                class="font-headline-md text-lg text-pure-white tracking-tight font-bold uppercase"
+                >VENTIMAX SOLUTIONS</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-sea-foam leading-relaxed">
+              Sirkulasi udara optimal selama 24 jam tanpa biaya listrik dan
+              dilengkapi dengan insulasi termal bergaransi hingga 15 tahun.
+            </p>
+            <div class="pt-space-xs">
+              <p
+                class="font-spec-label text-spec-label text-primary-fixed uppercase tracking-wider mb-1"
+              >
+                Cakupan Layanan
+              </p>
+              <p class="font-body-md text-body-md text-pure-white">
+                Jabodetabek, Bali &amp; Seluruh Indonesia
+              </p>
+            </div>
+          </div>
+
+          <!-- Footer Col 2: Navigation -->
+          <div class="space-y-space-md">
+            <h4 class="font-headline-md text-lg text-pure-white font-bold">
+              Navigasi Halaman
+            </h4>
+            <ul class="space-y-space-sm">
+              <li class="h-auto">
+                <a
+                  class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+                  href="Beranda.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="h-auto">
+                <a
+                  class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+                  href="Tentang Kami.html"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li class="h-auto">
+                <a
+                  class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+                  href="Produk.html"
+                  >Produk</a
+                >
+              </li>
+              <li class="h-auto">
+                <a
+                  class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+                  href="Proyek.html"
+                  >Proyek</a
+                >
+              </li>
+              <li class="h-auto"></li>
+            </ul>
+          </div>
+
+          <!-- Footer Col 3: Kategori Produk -->
+          <div class="space-y-space-md">
+            <h4 class="font-headline-md text-lg text-pure-white font-bold">
+              Kategori Produk
+            </h4>
+            <ul class="space-y-space-sm">
+              <li class="h-auto">
+                <a
+                  class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+                  href="Produk/supavent.html"
+                  >Supavent</a
+                >
+              </li>
+              <li class="h-auto">
+                <a
+                  class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+                  href="Produk/turbo-beam.html"
+                  >Turbo Beam</a
+                >
+              </li>
+              <li class="h-auto">
+                <a
+                  class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+                  href="Produk/hurricane.html"
+                  >Hurricane</a
+                >
+              </li>
+              <li class="h-auto">
+                <a
+                  class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+                  href="Produk/venticool.html"
+                  >Venticool</a
+                >
+              </li>
+              <li class="h-auto">
+                <a
+                  class="font-body-md text-body-md text-sea-foam hover:text-pure-white transition-colors"
+                  href="Produk/ventigrille.html"
+                  >Ventigrille</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Footer Col 4: Contact -->
+          <div class="space-y-space-md">
+            <h4 class="font-headline-md text-lg text-pure-white font-bold">
+              Info Kontak
+            </h4>
+            <div
+              class="space-y-space-sm text-sea-foam font-body-md text-body-md"
+            >
+              <p class="flex items-start gap-space-sm">
+                <span
+                  class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5"
+                  >call</span
+                >
+                <span
+                  >Telepon Kantor:
+                  <a
+                    href="tel:+6281110016996"
+                    class="hover:text-pure-white transition-colors"
+                    >0811-1001-6996</a
+                  ></span
+                >
+              </p>
+              <p class="flex items-start gap-space-sm">
+                <span
+                  class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5"
+                  >mail</span
+                >
+                <span
+                  >Email:
+                  <a
+                    href="mailto:hq@ventimaxsolutions.co.id"
+                    class="hover:text-pure-white transition-colors"
+                    >hq@ventimaxsolutions.co.id</a
+                  ></span
+                >
+              </p>
+              <p class="flex items-start gap-space-sm">
+                <span
+                  class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5"
+                  >photo_camera</span
+                >
+                <span
+                  >Instagram:
+                  <a
+                    href="https://www.instagram.com/ventimaxsolutionsofficial/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-pure-white transition-colors"
+                    >@ventimaxsolutionsofficial</a
+                  ></span
+                >
+              </p>
+              <p class="flex items-start gap-space-sm">
+                <span
+                  class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5"
+                  >globe</span
+                >
+                <span
+                  >Website:
+                  <a
+                    href="https://www.ventimaxsolutions.co.id"
+                    class="hover:text-pure-white transition-colors"
+                    >www.ventimaxsolutions.co.id</a
+                  ></span
+                >
+              </p>
+              <p class="flex items-start gap-space-sm">
+                <span
+                  class="material-symbols-outlined text-primary-fixed text-[20px] mt-0.5"
+                  >location_on</span
+                >
+                <span
+                  >Summarecon Serpong, Ruko Golden 8, Jl. Boulevard Raya Gading
+                  Serpong No.18 Blok D, Pakulonan Barat, Kec. Kelapa Dua, Kab.
+                  Tangerang, Banten 15818</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright — matched from original website -->
+        <div
+          class="pt-space-lg border-t border-pure-white/15 text-center font-body-md text-body-md text-sea-foam"
+        >
+          <p>
+            © 2026. Venti Max Solutions - Melayani pengadaan dan pemasangan
+            sistem sirkulasi udara di seluruh Indonesia.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Universal Video Autoplay Enforcer -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var videos = document.querySelectorAll("video");
+        videos.forEach(function (video) {
+          video.muted = true;
+          video.defaultMuted = true;
+          video.setAttribute("playsinline", "");
+          video.setAttribute("webkit-playsinline", "");
+          var promise = video.play();
+          if (promise !== undefined) {
+            promise.catch(function () {
+              // Autoplay blocked by device/browser policy (e.g. Low Power Mode)
+              var startPlay = function () {
+                video.play();
+                window.removeEventListener("touchstart", startPlay);
+                window.removeEventListener("scroll", startPlay);
+                window.removeEventListener("click", startPlay);
+              };
+              window.addEventListener("touchstart", startPlay, {
+                once: true,
+                passive: true,
+              });
+              window.addEventListener("scroll", startPlay, {
+                once: true,
+                passive: true,
+              });
+              window.addEventListener("click", startPlay, {
+                once: true,
+                passive: true,
+              });
+            });
+          }
+        });
       });
-    });
-  </script>
-
-</body>
+    </script>
+  </body>
 </html>
-

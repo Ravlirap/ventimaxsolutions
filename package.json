@@ -1,0 +1,23 @@
+{
+  "name": "ventimaxsolutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ravlirap/ventimaxsolutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ravlirap/ventimaxsolutions/issues"
+  },
+  "homepage": "https://github.com/Ravlirap/ventimaxsolutions#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
