@@ -245,9 +245,70 @@
           <a href="../Kontak.html" class="hidden lg:inline-flex items-center justify-center h-8 px-4 rounded-full bg-secondary hover:bg-[#3b6bbd] text-pure-white text-xs font-bold shadow-md transition-all">
             Kontak
           </a>
+        
+          <!-- Hamburger Button (NEW) -->
+          <button id="mobile-menu-btn" class="lg:hidden text-pure-white focus:outline-none flex items-center justify-center p-2 hover:bg-pure-white/10 rounded ml-2">
+            <span class="material-symbols-outlined text-[24px]">menu</span>
+          </button>
+          </div>
         </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div id="mobile-menu" class="hidden lg:hidden w-full bg-[#071532] border-t border-pure-white/10 flex-col px-gutter-mobile py-4 max-h-[80vh] overflow-y-auto">
+        <!-- JS will populate this -->
       </div>
-    </header>
+      
+      <!-- Mobile Menu Script -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const btn = document.getElementById('mobile-menu-btn');
+          const menu = document.getElementById('mobile-menu');
+          
+          if (btn && menu) {
+            btn.addEventListener('click', () => {
+              menu.classList.toggle('hidden');
+              menu.classList.toggle('flex');
+              
+              if (menu.children.length === 0) {
+                 const desktopNav = document.querySelector('header nav');
+                 if (desktopNav) {
+                   const clonedNav = desktopNav.cloneNode(true);
+                   clonedNav.classList.remove('hidden', 'lg:flex', 'items-center', 'gap-space-lg');
+                   clonedNav.classList.add('flex', 'flex-col', 'gap-4');
+                   
+                   const allLinks = clonedNav.querySelectorAll('a');
+                   allLinks.forEach(link => {
+                     link.classList.remove('border-b-2', 'pb-1');
+                     link.classList.add('block', 'w-full', 'py-2', 'text-base', 'font-bold');
+                   });
+                   
+                   const dropdown = clonedNav.querySelector('.group');
+                   if (dropdown) {
+                     dropdown.classList.remove('group', 'relative');
+                     const dropdownMenu = dropdown.querySelector('div.absolute');
+                     if (dropdownMenu) {
+                       dropdownMenu.classList.remove('absolute', 'hidden', 'group-hover:block', 'w-48', 'top-full', 'left-0');
+                       dropdownMenu.classList.add('block', 'pl-4', 'mt-2', 'border-l', 'border-pure-white/20');
+                       dropdownMenu.style.position = 'static';
+                       dropdownMenu.style.width = '100%';
+                     }
+                   }
+                   menu.appendChild(clonedNav);
+                 }
+                 
+                 const cta = document.querySelector('header a[href*="Kontak"]');
+                 if (cta) {
+                    const clonedCta = cta.cloneNode(true);
+                    clonedCta.classList.remove('hidden', 'lg:inline-flex');
+                    clonedCta.classList.add('inline-flex', 'w-full', 'mt-4', 'py-3');
+                    menu.appendChild(clonedCta);
+                 }
+              }
+            });
+          }
+        });
+      </script>
+      </header>
 
 
   <!-- ========================================== -->
