@@ -466,24 +466,39 @@
                  const desktopNav = document.querySelector('header nav');
                  if (desktopNav) {
                    const clonedNav = desktopNav.cloneNode(true);
-                   clonedNav.classList.remove('hidden', 'lg:flex', 'items-center', 'gap-space-lg');
-                   clonedNav.classList.add('flex', 'flex-col', 'gap-4');
+                   clonedNav.className = 'flex flex-col gap-2';
                    
                    const allLinks = clonedNav.querySelectorAll('a');
                    allLinks.forEach(link => {
-                     link.classList.remove('border-b-2', 'pb-1');
-                     link.classList.add('block', 'w-full', 'py-2', 'text-base', 'font-bold');
+                     link.className = 'block w-full py-2 text-base font-bold text-sea-foam hover:text-pure-white transition-colors';
                    });
                    
                    const dropdown = clonedNav.querySelector('.group');
                    if (dropdown) {
-                     dropdown.classList.remove('group', 'relative');
+                     dropdown.className = '';
+                     const dropdownToggle = dropdown.querySelector('a');
                      const dropdownMenu = dropdown.querySelector('div.absolute');
-                     if (dropdownMenu) {
-                       dropdownMenu.classList.remove('absolute', 'hidden', 'group-hover:block', 'w-48', 'top-full', 'left-0');
-                       dropdownMenu.classList.add('block', 'pl-4', 'mt-2', 'border-l', 'border-pure-white/20');
-                       dropdownMenu.style.position = 'static';
-                       dropdownMenu.style.width = '100%';
+                     
+                     if (dropdownMenu && dropdownToggle) {
+                       dropdownMenu.className = 'hidden flex-col pl-4 mt-1 border-l border-pure-white/20 gap-1';
+                       dropdownMenu.style = '';
+                       
+                       const subLinks = dropdownMenu.querySelectorAll('a');
+                       subLinks.forEach(sub => {
+                         sub.className = 'block py-2 text-sm font-medium text-sea-foam hover:text-pure-white transition-colors';
+                       });
+
+                       dropdownToggle.addEventListener('click', (e) => {
+                         e.preventDefault();
+                         dropdownMenu.classList.toggle('hidden');
+                         dropdownMenu.classList.toggle('flex');
+                         
+                         const icon = dropdownToggle.querySelector('.material-symbols-outlined');
+                         if (icon) {
+                           icon.style.transform = dropdownMenu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+                           icon.style.transition = 'transform 0.3s';
+                         }
+                       });
                      }
                    }
                    menu.appendChild(clonedNav);
@@ -492,8 +507,7 @@
                  const cta = document.querySelector('header a[href*="Kontak"]');
                  if (cta) {
                     const clonedCta = cta.cloneNode(true);
-                    clonedCta.classList.remove('hidden', 'lg:inline-flex');
-                    clonedCta.classList.add('inline-flex', 'w-full', 'mt-4', 'py-3');
+                    clonedCta.className = 'inline-flex items-center justify-center w-full mt-4 h-11 rounded-full bg-secondary hover:bg-[#3b6bbd] text-pure-white text-sm font-bold shadow-md transition-all';
                     menu.appendChild(clonedCta);
                  }
               }
