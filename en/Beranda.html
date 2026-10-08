@@ -485,7 +485,7 @@
                        
                        const subLinks = dropdownMenu.querySelectorAll('a');
                        subLinks.forEach(sub => {
-                         sub.className = 'block py-2 text-sm font-medium text-sea-foam hover:text-pure-white transition-colors';
+                         sub.className = 'block py-2 text-xs lg:text-sm font-medium text-sea-foam hover:text-pure-white transition-colors';
                        });
 
                        dropdownToggle.addEventListener('click', (e) => {
@@ -526,7 +526,7 @@
         <!-- 1. HERO SECTION — Video Background     -->
         <!-- ====================================== -->
         <section style="margin-top: -4rem !important; min-height: 100vh !important;" 
-          class="relative w-full  pt-24 md:pt-32 pb-[8rem] md:pb-[12rem] overflow-hidden bg-ink  flex flex-col justify-center"
+          class="relative w-full  pt-20 pb-space-lg overflow-hidden bg-ink  flex flex-col justify-center"
         >
           <!-- Video Background -->
                                               <!-- Subtle Background Glow -->
@@ -537,7 +537,7 @@
 
             <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
               <!-- Two Column Hero Layout -->
-              <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center pt-8 pb-16 lg:pt-12 lg:pb-20">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center pt-8 pb-12 lg:pt-8 lg:pb-12">
                 
                 <!-- Left: Text Content -->
                 <div class="flex flex-col items-start text-left">
@@ -545,10 +545,10 @@
                     <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
                     <span class="font-eyebrow text-xs sm:text-sm uppercase tracking-[0.14em] text-secondary-container font-semibold">NATURAL VENTILATION SOLUTIONS</span>
                   </div>
-                  <h1 style="line-height: 1.25 !important;" class="font-display-hero text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight text-pure-white leading-[1.15] mb-6">
+                  <h1 style="line-height: 1.25 !important;" class="font-display-hero text-4xl sm:text-5xl lg:text-[44px] font-bold tracking-tight text-pure-white leading-[1.15] mb-6">
                     Cooler Spaces.<br/>Better Performance.
                   </h1>
-                  <p class="font-body-lg text-base sm:text-lg lg:text-[20px] text-sea-foam leading-relaxed mb-8 max-w-xl">
+                  <p class="font-body-lg text-base sm:text-lg lg:text-[16px] text-sea-foam leading-relaxed mb-8 max-w-xl">
                     Ventimax provides innovative and eco-friendly ventilation solutions that enhance comfort, save energy, and create better environments naturally without electricity.
                   </p>
                   <div class="flex flex-wrap items-center gap-4">
@@ -563,17 +563,17 @@
                 </div>
 
                 <!-- Right: Product Grid -->
-                <div class="grid grid-cols-2 gap-4 lg:gap-6 relative w-full max-w-[500px] mx-auto lg:max-w-none">
+                <div class="grid grid-cols-2 gap-4 lg:gap-6 relative w-full max-w-[500px] mx-auto lg:max-w-[420px] lg:ml-auto">
                   
                   <!-- Col 1 (Shifted down for staggered effect) -->
-                  <div class="flex flex-col gap-4 lg:gap-6 pt-12">
+                  <div class="flex flex-col gap-4 lg:gap-6 pt-6 lg:pt-8">
                     <!-- Supavent -->
                     <a href="/en/produk/supavent" class="relative group rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl block border border-pure-white/10">
                       <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/night-sky-copy-mH0EMANThZ5G85z4.jpg" alt="SupaVent" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                       <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
                       <div class="absolute bottom-5 left-5 right-5">
-                        <span class="text-pure-white font-bold text-xl block mb-1">SupaVent&trade;</span>
-                        <span class="text-sea-foam text-sm font-medium">Residential Roof</span>
+                        <span class="text-pure-white font-bold text-base lg:text-lg block mb-1">SupaVent&trade;</span>
+                        <span class="text-sea-foam text-xs lg:text-sm font-medium">Residential Roof</span>
                       </div>
                     </a>
                     <!-- Turbo Beam -->
@@ -581,8 +581,8 @@
                       <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/supavent-turbo-beam-QR2EN6ui1glk2HUd.jpg" alt="Turbo Beam" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                       <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
                       <div class="absolute bottom-5 left-5 right-5">
-                        <span class="text-pure-white font-bold text-xl block mb-1">Turbo Beam</span>
-                        <span class="text-sea-foam text-sm font-medium">Transparent Ventilation</span>
+                        <span class="text-pure-white font-bold text-base lg:text-lg block mb-1">Turbo Beam</span>
+                        <span class="text-sea-foam text-xs lg:text-sm font-medium">Transparent Ventilation</span>
                       </div>
                     </a>
                   </div>
@@ -594,8 +594,8 @@
                       <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg" alt="Hurricane" class="w-full h-full object-cover object-[center_65%] transition-transform duration-700 group-hover:scale-110">
                       <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
                       <div class="absolute bottom-5 left-5 right-5">
-                        <span class="text-pure-white font-bold text-xl block mb-1">Hurricane&reg;</span>
-                        <span class="text-sea-foam text-sm font-medium">Industrial Scale</span>
+                        <span class="text-pure-white font-bold text-base lg:text-lg block mb-1">Hurricane&reg;</span>
+                        <span class="text-sea-foam text-xs lg:text-sm font-medium">Industrial Scale</span>
                       </div>
                     </a>
                     <!-- Ventigrille -->
@@ -603,8 +603,8 @@
                       <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/uQWpCx6RhwPSfkUj/final-edited-vent-grille-black-1tm8BMlbav2ItnvN.jpeg" alt="Ventigrille" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                       <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
                       <div class="absolute bottom-5 left-5 right-5">
-                        <span class="text-pure-white font-bold text-xl block mb-1">Ventigrille</span>
-                        <span class="text-sea-foam text-sm font-medium">Interior Ceiling</span>
+                        <span class="text-pure-white font-bold text-base lg:text-lg block mb-1">Ventigrille</span>
+                        <span class="text-sea-foam text-xs lg:text-sm font-medium">Interior Ceiling</span>
                       </div>
                     </a>
                   </div>
