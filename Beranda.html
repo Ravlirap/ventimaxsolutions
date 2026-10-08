@@ -528,89 +528,16 @@
         <!-- 1. HERO SECTION — Video Background     -->
         <!-- ====================================== -->
         <section style="margin-top: -4rem !important; min-height: 100vh !important;" 
-          class="relative w-full  pt-20 pb-space-lg overflow-hidden bg-ink  flex flex-col justify-center"
+          class="relative w-full  pt-24 md:pt-32 pb-[8rem] md:pb-[12rem] overflow-hidden bg-ink  flex flex-col justify-center"
         >
           <!-- Video Background -->
-                      <!-- Hero Slider Background -->
-            <div id="hero-slider" class="absolute inset-0 z-0 bg-ink">
-              
-              <!-- Slide 1: Supavent -->
-              <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-100">
-                <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/night-sky-copy-mH0EMANThZ5G85z4.jpg" 
-                     alt="SupaVent pada atap hunian" 
-                     class="w-full h-full object-cover object-center">
-                <div class="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/60 to-ink/90"></div>
-              </div>
-
-              <!-- Slide 2: Hurricane -->
-              <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-                <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg" 
-                     alt="Hurricane pada atap pabrik" 
-                     class="w-full h-full object-cover" style="object-position: center 65%;">
-                <div class="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/60 to-ink/90"></div>
-              </div>
-
-              <!-- Slide 3: Turbo Beam -->
-              <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-                <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/supavent-turbo-beam-QR2EN6ui1glk2HUd.jpg" 
-                     alt="Turbo Beam ventilasi transparan" 
-                     class="w-full h-full object-cover object-center">
-                <div class="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/60 to-ink/90"></div>
-              </div>
-
-              <!-- Slide 4: Ventigrille -->
-              <div class="slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/uQWpCx6RhwPSfkUj/final-edited-vent-grille-black-1tm8BMlbav2ItnvN.jpeg" 
-                     alt="Ventigrille plafon" 
-                     class="w-full h-full object-cover object-center">
-                <div class="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/60 to-ink/90"></div>
-              </div>
-
-              
-
+                                  <!-- Static Hero Background -->
+            <div class="absolute inset-0 z-0 bg-ink">
+              <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg" 
+                   alt="Turbin Ventilator Ventimax" 
+                   class="w-full h-full object-cover" style="object-position: center 65%;">
+              <div class="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/60 to-ink/90"></div>
             </div>
-
-            <!-- Slider Logic -->
-            <script>
-              document.addEventListener("DOMContentLoaded", () => {
-                const slides = document.querySelectorAll("#hero-slider .slide");
-                const dots = document.querySelectorAll("#hero-slider .slide-dot");
-                if(slides.length === 0) return;
-                
-                let currentSlide = 0;
-                let slideInterval;
-
-                function showSlide(index) {
-                  slides[currentSlide].classList.remove("opacity-100");
-                  slides[currentSlide].classList.add("opacity-0");
-                  dots[currentSlide].classList.remove("bg-secondary");
-                  dots[currentSlide].classList.add("bg-white/30");
-                  
-                  currentSlide = index;
-                  
-                  slides[currentSlide].classList.remove("opacity-0");
-                  slides[currentSlide].classList.add("opacity-100");
-                  dots[currentSlide].classList.remove("bg-white/30", "hover:bg-white/50");
-                  dots[currentSlide].classList.add("bg-secondary");
-                }
-
-                function nextSlide() {
-                  showSlide((currentSlide + 1) % slides.length);
-                }
-
-                // Initialize interval
-                slideInterval = setInterval(nextSlide, 4000);
-
-                // Add click handlers for dots
-                dots.forEach((dot, index) => {
-                  dot.addEventListener("click", () => {
-                    clearInterval(slideInterval);
-                    showSlide(index);
-                    slideInterval = setInterval(nextSlide, 4000);
-                  });
-                });
-              });
-            </script>
 
           <div
             class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter"
@@ -664,13 +591,7 @@
                   Konsultasi Gratis
                 </a>
               </div>
-              <!-- Slide Indicators -->
-              <div class="mt-8 flex justify-center gap-3">
-                <button class="slide-dot w-3 h-3 rounded-full bg-secondary transition-all" aria-label="Slide 1"></button>
-                <button class="slide-dot w-3 h-3 rounded-full bg-white/30 hover:bg-white/50 transition-all" aria-label="Slide 2"></button>
-                <button class="slide-dot w-3 h-3 rounded-full bg-white/30 hover:bg-white/50 transition-all" aria-label="Slide 3"></button>
-                <button class="slide-dot w-3 h-3 rounded-full bg-white/30 hover:bg-white/50 transition-all" aria-label="Slide 4"></button>
-              </div>
+              
 
             </div>
 
