@@ -531,71 +531,90 @@
           class="relative w-full  pt-24 md:pt-32 pb-[8rem] md:pb-[12rem] overflow-hidden bg-ink  flex flex-col justify-center"
         >
           <!-- Video Background -->
-                                  <!-- Static Hero Background -->
-            <div class="absolute inset-0 z-0 bg-ink">
-              <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg" 
-                   alt="Turbin Ventilator Ventimax" 
-                   class="w-full h-full object-cover" style="object-position: center 65%;">
-              <div class="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/60 to-ink/90"></div>
+                                              <!-- Subtle Background Glow -->
+            <div class="absolute inset-0 z-0 bg-ink overflow-hidden">
+              <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary/10 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/4"></div>
+              <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-pure-white/5 rounded-full blur-[100px] -translate-x-1/3 translate-y-1/3"></div>
             </div>
 
-          <div
-            class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter"
-          >
-            <!-- Hero Text Content -->
-            <div
-              class="max-w-4xl mx-auto pt-space-md pb-space-md text-center flex flex-col items-center justify-center"
-            >
-              <div
-                class="flex items-center justify-center gap-space-sm mb-space-md"
-              >
-                <span
-                  class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"
-                ></span>
-                <span
-                  class="font-eyebrow text-eyebrow text-secondary-container uppercase tracking-[0.12em]"
-                  >SOLUSI VENTILASI ALAMI</span
-                >
-                <span
-                  class="w-6 h-0.5 bg-secondary-container rounded-full inline-block"
-                ></span>
-              </div>
-              <h1 style="line-height: 1.25 !important;"
-                class="font-display-hero text-4xl lg:text-[52px] text-pure-white leading-tight font-bold mb-space-md hero-text-shadow"
-              >
-                Ruangan Lebih Sejuk.<br />Performa Lebih Baik.
-              </h1>
-              <p
-                class="font-body-hero text-body-lg lg:text-body-hero text-sea-foam mb-space-lg leading-relaxed hero-subtext-shadow max-w-2xl mx-auto"
-              >
-                Venti Max menghadirkan solusi ventilasi inovatif dan ramah
-                lingkungan yang meningkatkan kenyamanan, menghemat energi, serta
-                menciptakan lingkungan yang lebih baik secara alami.
-              </p>
-              <div
-                class="flex flex-wrap items-center justify-center gap-space-md"
-              >
-                <a
-                  class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-lg bg-secondary hover:bg-on-secondary-container text-pure-white font-button-text text-button-text transition-colors shadow-md"
-                  href="#produk-overview"
-                >
-                  Jelajahi Produk
-                  <span class="material-symbols-outlined ml-2 text-[20px]"
-                    >arrow_forward</span
-                  >
-                </a>
-                <a
-                  class="inline-flex items-center justify-center px-space-lg py-space-sm rounded-lg bg-transparent hover:bg-pure-white/10 text-pure-white font-button-text text-button-text transition-colors border border-pure-white/30 backdrop-blur-sm"
-                  href="#konsultasi"
-                >
-                  Konsultasi Gratis
-                </a>
-              </div>
-              
+            <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+              <!-- Two Column Hero Layout -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center pt-8 pb-16 lg:pt-12 lg:pb-20">
+                
+                <!-- Left: Text Content -->
+                <div class="flex flex-col items-start text-left">
+                  <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-pure-white/10 border border-pure-white/20 backdrop-blur-md mb-6">
+                    <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                    <span class="font-eyebrow text-xs sm:text-sm uppercase tracking-[0.14em] text-secondary-container font-semibold">SOLUSI VENTILASI ALAMI</span>
+                  </div>
+                  <h1 style="line-height: 1.25 !important;" class="font-display-hero text-4xl sm:text-5xl lg:text-[56px] font-bold tracking-tight text-pure-white leading-[1.15] mb-6">
+                    Ruangan Lebih Sejuk.<br/>Performa Lebih Baik.
+                  </h1>
+                  <p class="font-body-lg text-base sm:text-lg lg:text-[20px] text-sea-foam leading-relaxed mb-8 max-w-xl">
+                    Ventimax menghadirkan solusi ventilasi inovatif dan ramah lingkungan yang meningkatkan kenyamanan, menghemat energi, serta menciptakan lingkungan yang lebih baik secara alami tanpa listrik.
+                  </p>
+                  <div class="flex flex-wrap items-center gap-4">
+                    <a class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-secondary hover:bg-secondary-container text-pure-white font-button-text text-button-text transition-colors shadow-lg shadow-secondary/20" href="/produk">
+                      Jelajahi Produk
+                      <span class="material-symbols-outlined ml-2 text-[20px]">arrow_forward</span>
+                    </a>
+                    <a class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-transparent hover:bg-pure-white/10 text-pure-white font-button-text text-button-text transition-colors border border-pure-white/30 backdrop-blur-sm" href="/kontak">
+                      Konsultasi Gratis
+                    </a>
+                  </div>
+                </div>
 
-            </div>
+                <!-- Right: Product Grid -->
+                <div class="grid grid-cols-2 gap-4 lg:gap-6 relative w-full max-w-[500px] mx-auto lg:max-w-none">
+                  
+                  <!-- Col 1 (Shifted down for staggered effect) -->
+                  <div class="flex flex-col gap-4 lg:gap-6 pt-12">
+                    <!-- Supavent -->
+                    <a href="/produk/supavent" class="relative group rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl block border border-pure-white/10">
+                      <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/night-sky-copy-mH0EMANThZ5G85z4.jpg" alt="SupaVent" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                      <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
+                      <div class="absolute bottom-5 left-5 right-5">
+                        <span class="text-pure-white font-bold text-xl block mb-1">SupaVent&trade;</span>
+                        <span class="text-sea-foam text-sm font-medium">Atap Residensial</span>
+                      </div>
+                    </a>
+                    <!-- Turbo Beam -->
+                    <a href="/produk/turbo-beam" class="relative group rounded-2xl overflow-hidden aspect-square shadow-2xl block border border-pure-white/10">
+                      <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/supavent-turbo-beam-QR2EN6ui1glk2HUd.jpg" alt="Turbo Beam" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                      <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
+                      <div class="absolute bottom-5 left-5 right-5">
+                        <span class="text-pure-white font-bold text-xl block mb-1">Turbo Beam</span>
+                        <span class="text-sea-foam text-sm font-medium">Ventilasi Transparan</span>
+                      </div>
+                    </a>
+                  </div>
 
-            <!-- 4-Column Feature Card -->
+                  <!-- Col 2 -->
+                  <div class="flex flex-col gap-4 lg:gap-6">
+                    <!-- Hurricane -->
+                    <a href="/produk/hurricane" class="relative group rounded-2xl overflow-hidden aspect-square shadow-2xl block border border-pure-white/10">
+                      <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg" alt="Hurricane" class="w-full h-full object-cover object-[center_65%] transition-transform duration-700 group-hover:scale-110">
+                      <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
+                      <div class="absolute bottom-5 left-5 right-5">
+                        <span class="text-pure-white font-bold text-xl block mb-1">Hurricane&reg;</span>
+                        <span class="text-sea-foam text-sm font-medium">Skala Industrial</span>
+                      </div>
+                    </a>
+                    <!-- Ventigrille -->
+                    <a href="/produk/ventigrille" class="relative group rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl block border border-pure-white/10">
+                      <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/uQWpCx6RhwPSfkUj/final-edited-vent-grille-black-1tm8BMlbav2ItnvN.jpeg" alt="Ventigrille" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                      <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
+                      <div class="absolute bottom-5 left-5 right-5">
+                        <span class="text-pure-white font-bold text-xl block mb-1">Ventigrille</span>
+                        <span class="text-sea-foam text-sm font-medium">Plafon Interior</span>
+                      </div>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <!-- 4-Column Feature Card --><!-- 4-Column Feature Card -->
             <div
               class="mt-space-sm rounded-[24px] bg-gradient-to-br from-card-start-navy/80 to-secondary/70 backdrop-blur-md p-space-md lg:p-space-lg shadow-xl border border-pure-white/10"
             >
