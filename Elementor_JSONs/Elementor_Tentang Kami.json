@@ -4,7 +4,7 @@
     "type": "section",
     "content": [
         {
-            "id": "f42f279",
+            "id": "ab81b1f",
             "elType": "section",
             "isInner": false,
             "settings": {
@@ -28,7 +28,7 @@
             },
             "elements": [
                 {
-                    "id": "f38ac6f",
+                    "id": "0309338",
                     "elType": "column",
                     "isInner": false,
                     "settings": {
@@ -44,7 +44,7 @@
                     },
                     "elements": [
                         {
-                            "id": "efab0f7",
+                            "id": "bc48afd",
                             "elType": "widget",
                             "isInner": false,
                             "widgetType": "html",
@@ -58,5 +58,5 @@
             ]
         }
     ],
-    "export_date": "2026-10-08 15:46"
+    "export_date": "2026-10-08 15:54"
 }
