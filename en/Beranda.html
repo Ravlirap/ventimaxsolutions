@@ -787,45 +787,54 @@
     </div>
 
     
-    <!-- 4. KLIEN KAMI (Original Slider) -->
-    <div class="py-20 text-center border-b border-slate-200">
-      <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 block mb-6">Trusted By</span>
-      <div class="max-w-4xl mx-auto">
-        <div class="relative overflow-hidden py-4 flex items-center justify-center">
-            <div id="client-slides-container" class="w-full flex transition-transform duration-500 ease-in-out">
-            <!-- Slide 1 -->
-            <div class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center">
-                <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-03-YtTHnYCKCoA5AhRY.jpg" alt="Ventimax Client 1" class="w-full h-auto max-h-[120px] md:max-h-[160px] object-contain" />
-            </div>
-            <!-- Slide 2 -->
-            <div class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center">
-                <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-06-g8vnI52nRKwY62pp.jpg" alt="Ventimax Client 2" class="w-full h-auto max-h-[120px] md:max-h-[160px] object-contain" />
-            </div>
-            <!-- Slide 3 -->
-            <div class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center">
-                <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-32-DNUstoz4J44t4XeV.jpg" alt="Ventimax Client 3" class="w-full h-auto max-h-[120px] md:max-h-[160px] object-contain" />
-            </div>
-            <!-- Slide 4 -->
-            <div class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center">
-                <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-38-neXsAeNkjbzrqeWK.jpg" alt="Ventimax Client 4" class="w-full h-auto max-h-[120px] md:max-h-[160px] object-contain" />
-            </div>
-            <!-- Slide 5 -->
-            <div class="w-full flex-shrink-0 px-12 sm:px-16 flex items-center justify-center">
-                <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-41-q7zf4n08GXKDPx2B.jpg" alt="Ventimax Client 5" class="w-full h-auto max-h-[120px] md:max-h-[160px] object-contain" />
-            </div>
-            </div>
-            <!-- Navigation -->
-            <button onclick="prevClientSlide()" class="absolute left-0 sm:left-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors" aria-label="Previous">
-            <span class="material-symbols-outlined text-[20px]">chevron_left</span>
-            </button>
-            <button onclick="nextClientSlide()" class="absolute right-0 sm:right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors" aria-label="Next">
-            <span class="material-symbols-outlined text-[20px]">chevron_right</span>
-            </button>
+    
+    <!-- 4. KLIEN KAMI (CSS Marquee) -->
+    <style>
+      @keyframes marquee {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 30s linear infinite;
+      }
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+    </style>
+    <div class="py-20 border-b border-slate-200">
+      <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 block mb-10 text-center">Trusted By Various Industries</span>
+      
+      <div class="relative overflow-hidden w-full max-w-5xl mx-auto">
+        <!-- Fade Edges -->
+        <div class="absolute inset-y-0 left-0 w-16 lg:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-16 lg:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+        
+        <div class="animate-marquee gap-12 lg:gap-16 items-center">
+          <!-- First Set (8 images) -->
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-03-YtTHnYCKCoA5AhRY.jpg" alt="Klien 1" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-06-g8vnI52nRKwY62pp.jpg" alt="Klien 2" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-32-DNUstoz4J44t4XeV.jpg" alt="Klien 3" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-38-neXsAeNkjbzrqeWK.jpg" alt="Klien 4" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-41-q7zf4n08GXKDPx2B.jpg" alt="Klien 5" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-44-iYGzRzziBHX4HYGA.jpg" alt="Klien 6" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-51-2PzWx4g1WmSxXR2u.jpg" alt="Klien 7" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-47-XYGge2sswH9q44wk.jpg" alt="Klien 8" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+
+          <!-- Duplicate Set for Seamless Loop (8 images) -->
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-03-YtTHnYCKCoA5AhRY.jpg" alt="Klien 1" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-06-g8vnI52nRKwY62pp.jpg" alt="Klien 2" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-32-DNUstoz4J44t4XeV.jpg" alt="Klien 3" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-38-neXsAeNkjbzrqeWK.jpg" alt="Klien 4" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-41-q7zf4n08GXKDPx2B.jpg" alt="Klien 5" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-44-iYGzRzziBHX4HYGA.jpg" alt="Klien 6" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-51-2PzWx4g1WmSxXR2u.jpg" alt="Klien 7" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
+          <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-47-XYGge2sswH9q44wk.jpg" alt="Klien 8" class="h-10 lg:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-50 hover:opacity-100" />
         </div>
-        <!-- Dots -->
-        <div id="client-dots-container" class="flex justify-center gap-2 mt-4"></div>
       </div>
     </div>
+
 
 
   </div>
@@ -1126,68 +1135,6 @@
       });
     </script>
   
-  <!-- CUSTOM SCRIPTS -->
-  <script>
-    // Slider Klien
-    let currentClientIndex = 0;
-    const totalClientSlides = 5;
-    let clientInterval;
-
-    function updateClientSlide() {
-      const container = document.getElementById("client-slides-container");
-      if (container) {
-        container.style.transform = 	ranslateX(-%);
-      }
-      const dots = document.querySelectorAll(".client-dot");
-      dots.forEach((dot, idx) => {
-        if (idx === currentClientIndex) {
-          dot.classList.add("bg-blue-600", "w-6");
-          dot.classList.remove("bg-slate-300", "w-2.5");
-        } else {
-          dot.classList.remove("bg-blue-600", "w-6");
-          dot.classList.add("bg-slate-300", "w-2.5");
-        }
-      });
-    }
-
-    function nextClientSlide() {
-      currentClientIndex = (currentClientIndex + 1) % totalClientSlides;
-      updateClientSlide();
-      resetClientInterval();
-    }
-
-    function prevClientSlide() {
-      currentClientIndex =
-        (currentClientIndex - 1 + totalClientSlides) % totalClientSlides;
-      updateClientSlide();
-      resetClientInterval();
-    }
-
-    function goToClientSlide(idx) {
-      currentClientIndex = idx;
-      updateClientSlide();
-      resetClientInterval();
-    }
-
-    function resetClientInterval() {
-      if (clientInterval) clearInterval(clientInterval);
-      clientInterval = setInterval(nextClientSlide, 4000);
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const dotsContainer = document.getElementById("client-dots-container");
-      if (dotsContainer) {
-        dotsContainer.innerHTML = "";
-        for (let i = 0; i < totalClientSlides; i++) {
-          const dot = document.createElement("button");
-          dot.className = client-dot h-2.5 rounded-full transition-all duration-300 ;
-          dot.setAttribute("aria-label", Slide );
-          dot.onclick = () => goToClientSlide(i);
-          dotsContainer.appendChild(dot);
-        }
-        resetClientInterval();
-      }
-    });
-  </script>
+  
 </body>
 </html>
