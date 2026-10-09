@@ -704,90 +704,117 @@
       </div>
     </div>
 
-    <!-- 2. DIAGRAM KERJA -->
-    <div class="py-20 lg:py-24 border-b border-slate-200">
-      <div class="mb-10 lg:mb-12">
-        <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 block mb-2">Working Principle</span>
-        <h2 class="text-2xl font-bold text-slate-900">Wind-Powered Ventilator Design</h2>
-      </div>
-      
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <!-- Text Explanation -->
-        <div class="order-2 lg:order-1">
-          <p class="text-slate-600 text-sm lg:text-base leading-relaxed mb-10">
-            The turbine spins kinetically with the wind to create a strong suction effect that expels hot and stale air, while drawing in cool air through lower openings.
-          </p>
-          
-          <div class="flex flex-col gap-8">
-            <div class="border-l-2 border-slate-900 pl-6">
-              <h4 class="font-bold text-sm lg:text-base text-slate-900 mb-1">Stack Thermal Effect</h4>
-              <p class="text-sm text-slate-500 leading-relaxed">Hot air naturally rises to the roof peak and is immediately extracted before excessively heating the space below.</p>
-            </div>
-            <div class="border-l-2 border-slate-200 pl-6 hover:border-blue-500 transition-colors">
-              <h4 class="font-bold text-sm lg:text-base text-slate-900 mb-1">Negative Pressure Suction</h4>
-              <p class="text-sm text-slate-500 leading-relaxed">Aerodynamic fin rotation generates a low-pressure vacuum that continuously sucks out moisture without stopping.</p>
-            </div>
-          </div>
+    
+    <!-- 2. DIAGRAM KERJA (Premium Dual-Pane Card) -->
+    <div class="py-20 lg:py-24">
+      <div class="max-w-[1100px] mx-auto px-6 lg:px-8">
+        <div class="mb-10 text-center">
+          <span class="text-xs font-bold uppercase tracking-[0.15em] text-blue-600 block mb-3">Working Principle</span>
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900">Wind-Powered Design</h2>
         </div>
-
-        <!-- Diagram Image -->
-        <div class="order-1 lg:order-2 w-full bg-slate-50 p-6 lg:p-8 border border-slate-200 rounded-3xl">
-          <div class="aspect-[4/3] w-full bg-slate-200 overflow-hidden border border-slate-300">
-            <img alt="Diagram Aliran Udara" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/ventimaxs18-WsHrRqqgyHs2WSZP.png" class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3. MENGAPA MEMILIH (Features) -->
-    <div class="py-20 lg:py-24 border-b border-slate-200">
-      <h2 class="text-2xl font-bold text-slate-900 mb-12 lg:mb-16">Key Advantages</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
         
-        <!-- Feature 1 -->
-        <div>
-          <span class="material-symbols-outlined text-4xl text-slate-300 block mb-6">energy_savings_leaf</span>
-          <h3 class="font-bold text-lg text-slate-900 mb-3">Zero Electricity Ventilation</h3>
-          <p class="text-sm text-slate-500 leading-relaxed mb-6">
-            Works purely by harnessing wind power and temperature differences. Produces 24-hour non-stop airflow with no operational costs.
-          </p>
-          <div class="flex justify-between items-center border-t border-slate-200 pt-3">
-            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Electricity Cost</span>
-            <span class="text-sm font-bold text-slate-900"> / Month</span>
+        <div class="bg-white rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col lg:flex-row">
+          <!-- Text Pane -->
+          <div class="lg:w-1/2 p-10 lg:p-12 flex flex-col justify-center">
+            <p class="text-slate-600 text-base leading-relaxed mb-10">
+              The turbine spins kinetically with the wind to create a strong suction effect that expels hot and stale air, while drawing in cool air.
+            </p>
+            <div class="space-y-8">
+              <div class="flex gap-5">
+                <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                  <span class="material-symbols-outlined text-2xl">arrow_upward</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 mb-1 text-lg">Stack Thermal Effect</h4>
+                  <p class="text-sm text-slate-500 leading-relaxed">Hot air rises to the roof peak and is immediately extracted before heating the space below.</p>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                  <span class="material-symbols-outlined text-2xl">cyclone</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 mb-1 text-lg">Negative Pressure</h4>
+                  <p class="text-sm text-slate-500 leading-relaxed">Fin rotation generates a low-pressure vacuum that continuously sucks out moisture.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image Pane -->
+          <div class="lg:w-1/2 bg-slate-100 relative min-h-[300px] lg:min-h-full">
+            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/ventimaxs18-WsHrRqqgyHs2WSZP.png" alt="Diagram" class="absolute inset-0 w-full h-full object-cover">
           </div>
         </div>
-
-        <!-- Feature 2 -->
-        <div>
-          <span class="material-symbols-outlined text-4xl text-slate-300 block mb-6">thermostat</span>
-          <h3 class="font-bold text-lg text-slate-900 mb-3">Drastic Temperature Drop</h3>
-          <p class="text-sm text-slate-500 leading-relaxed mb-6">
-            Extremely reduces radiant heat buildup from the roof, which directly lightens the workload of cooling systems (AC).
-          </p>
-          <div class="flex justify-between items-center border-t border-slate-200 pt-3">
-            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Cooling Load</span>
-            <span class="text-sm font-bold text-slate-900">Down by up to 35%</span>
-          </div>
-        </div>
-
-        <!-- Feature 3 -->
-        <div>
-          <span class="material-symbols-outlined text-4xl text-slate-300 block mb-6">verified</span>
-          <h3 class="font-bold text-lg text-slate-900 mb-3">Extreme Durability</h3>
-          <p class="text-sm text-slate-500 leading-relaxed mb-6">
-            Industrial-grade materials specifically designed to withstand fierce weather for decades without jamming or rusting.
-          </p>
-          <div class="flex justify-between items-center border-t border-slate-200 pt-3">
-            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Factory Warranty</span>
-            <span class="text-sm font-bold text-slate-900">15 Years Warranty</span>
-          </div>
-        </div>
-
       </div>
     </div>
 
-    
-    
+    <!-- 3. MENGAPA MEMILIH (Premium Cards) -->
+    <div class="py-20 lg:py-24 bg-slate-50 border-y border-slate-200">
+      <div class="max-w-[1100px] mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900">Key Advantages</h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col h-full relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity transform group-hover:scale-110 duration-500">
+               <span class="material-symbols-outlined text-9xl">energy_savings_leaf</span>
+            </div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white mb-6 shadow-lg shadow-blue-500/30 relative z-10">
+              <span class="material-symbols-outlined text-2xl">energy_savings_leaf</span>
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mb-3 relative z-10">Zero Electricity</h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-8 flex-grow relative z-10">
+              Works purely by harnessing wind power. Produces 24-hour non-stop airflow with no operational costs.
+            </p>
+            <div class="bg-slate-50 rounded-xl p-4 flex justify-between items-center border border-slate-100 relative z-10">
+              <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Electricity Cost</span>
+              <span class="text-sm font-bold text-blue-700"> / Mo</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col h-full relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity transform group-hover:scale-110 duration-500">
+               <span class="material-symbols-outlined text-9xl">thermostat</span>
+            </div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white mb-6 shadow-lg shadow-blue-500/30 relative z-10">
+              <span class="material-symbols-outlined text-2xl">thermostat</span>
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mb-3 relative z-10">Temperature Drop</h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-8 flex-grow relative z-10">
+              Extremely reduces radiant heat buildup from the roof, directly lightening the workload of cooling systems (AC).
+            </p>
+            <div class="bg-slate-50 rounded-xl p-4 flex justify-between items-center border border-slate-100 relative z-10">
+              <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Cooling Load</span>
+              <span class="text-sm font-bold text-blue-700">Down up to 35%</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col h-full relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity transform group-hover:scale-110 duration-500">
+               <span class="material-symbols-outlined text-9xl">verified</span>
+            </div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white mb-6 shadow-lg shadow-blue-500/30 relative z-10">
+              <span class="material-symbols-outlined text-2xl">verified</span>
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mb-3 relative z-10">Weatherproof</h3>
+            <p class="text-sm text-slate-500 leading-relaxed mb-8 flex-grow relative z-10">
+              Industrial-grade materials designed to withstand fierce weather for decades without jamming.
+            </p>
+            <div class="bg-slate-50 rounded-xl p-4 flex justify-between items-center border border-slate-100 relative z-10">
+              <span class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Factory Warranty</span>
+              <span class="text-sm font-bold text-blue-700">15 Years Warranty</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- 4. KLIEN KAMI (CSS Marquee) -->
     <style>
       @keyframes marquee {
@@ -840,20 +867,32 @@
   </div>
 </div>
 
-<!-- 5. CTA (Full width dark section) -->
-<div class="w-full bg-[#0B192C] text-white py-20 lg:py-24 rounded-[3rem] mt-12 mb-12">
-  <div class="max-w-[1000px] mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
-    <div class="max-w-lg text-center md:text-left">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-4">Calculate Your Savings Potential</h2>
-      <p class="text-white/70 text-sm lg:text-base leading-relaxed">
-        Get a free heat load analysis and targeted turbine specification recommendations for your industrial or residential building.
-      </p>
+
+<!-- 5. CTA (Premium Card) -->
+<div class="py-20 lg:py-24">
+  <div class="max-w-[1100px] mx-auto px-6 lg:px-8">
+    <div class="w-full bg-[#0B192C] text-white rounded-[2.5rem] overflow-hidden relative shadow-xl shadow-blue-900/10 border border-slate-800">
+      
+      <!-- Subtle Glow Background -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/20 blur-[100px] rounded-full pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-sky-500/10 blur-[80px] rounded-full pointer-events-none"></div>
+      
+      <div class="relative z-10 p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-10">
+        <div class="max-w-xl text-center md:text-left">
+          <span class="text-sky-400 font-bold text-xs uppercase tracking-widest mb-3 block">Free Consultation</span>
+          <h2 class="text-3xl lg:text-4xl font-extrabold mb-5 leading-tight text-white">Calculate Your Building's Savings Potential</h2>
+          <p class="text-white/70 text-base leading-relaxed">
+            Get a free heat load analysis and targeted turbine recommendations. No commitment required.
+          </p>
+        </div>
+        <a href="en/Kontak.html" class="shrink-0 px-8 py-4 bg-blue-600 text-white text-sm font-bold uppercase tracking-widest hover:bg-blue-500 transition-colors rounded-xl shadow-lg shadow-blue-600/30 flex items-center gap-2">
+          Consult Now <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
     </div>
-    <a href="en/Kontak.html" class="shrink-0 px-8 py-4 bg-white text-slate-900 text-[11px] font-bold uppercase tracking-widest hover:bg-slate-200 transition-colors rounded-2xl">
-      Consult Now
-    </a>
   </div>
 </div>
+
 <!-- WHATSAPP FLOATING BUTTON -->                   -->
     <!-- ========================================== -->
     <a
