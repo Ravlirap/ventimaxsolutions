@@ -309,16 +309,16 @@
     <!-- HEADER / NAVIGATION                        -->
     <!-- ========================================== -->
     <header
-      class="fixed top-0 left-0 w-full z-50 bg-[#071532]/95 backdrop-blur-sm border-b border-pure-white/10 shadow-lg"
+      class="fixed top-0 left-0 w-full z-50 bg-[#071532]/95 backdrop-blur-sm border-b border-pure-white/10 "
     >
       <div
-        class="h-16 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between"
+        class="h-16 max-w-[1000px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between"
       >
         <!-- Logo -->
         <div class="flex items-center gap-2">
           <a href="/" class="flex flex-col">
             <span
-              class="text-xl text-pure-white tracking-tight font-extrabold uppercase leading-none drop-shadow-sm"
+              class="text-xl text-pure-white tracking-tight font-extrabold uppercase leading-none drop-"
               >VENTIMAX</span
             >
             <span
@@ -358,7 +358,7 @@
               >
             </a>
             <div
-              class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border z-50"
+              class="absolute left-0 top-full hidden group-hover:block w-48 py-space-xs bg-card-start-navy rounded-none shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border z-50"
             >
               <a
                 class="block px-space-md py-space-xs font-body-md text-sm sm:text-base text-sea-foam hover:bg-primary-container hover:text-pure-white transition-colors"
@@ -416,7 +416,7 @@
               >
             </button>
             <div
-              class="absolute right-0 top-full hidden group-hover:block w-32 py-space-xs bg-card-start-navy rounded-lg shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border"
+              class="absolute right-0 top-full hidden group-hover:block w-32 py-space-xs bg-card-start-navy rounded-none shadow-[0_4px_20px_-2px_rgba(7,21,50,0.3)] border border-card-border"
             >
               <a
                 class="flex items-center gap-2 px-space-md py-space-xs font-body-md text-sm sm:text-base text-sea-foam hover:bg-primary-container hover:text-pure-white"
@@ -436,7 +436,7 @@
           <!-- CTA Button (New) -->
           <a
             href="/kontak"
-            class="hidden lg:inline-flex items-center justify-center h-8 px-4 rounded-full bg-secondary hover:bg-[#3b6bbd] text-pure-white text-xs font-bold shadow-md transition-all"
+            class="hidden lg:inline-flex items-center justify-center h-8 px-4 rounded-full bg-secondary hover:bg-[#3b6bbd] text-pure-white text-xs font-bold  transition-all"
           >
             Kontak
           </a>
@@ -509,7 +509,7 @@
                  const cta = document.querySelector('header a[href*="Kontak"]');
                  if (cta) {
                     const clonedCta = cta.cloneNode(true);
-                    clonedCta.className = 'inline-flex items-center justify-center w-full mt-4 h-11 rounded-full bg-secondary hover:bg-[#3b6bbd] text-pure-white text-sm font-bold shadow-md transition-all';
+                    clonedCta.className = 'inline-flex items-center justify-center w-full mt-4 h-11 rounded-full bg-secondary hover:bg-[#3b6bbd] text-pure-white text-sm font-bold  transition-all';
                     menu.appendChild(clonedCta);
                  }
               }
@@ -538,7 +538,7 @@
                 <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_0%,rgba(30,136,229,0.25)_0%,transparent_70%)]"></div>
               </div>
 
-              <div class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+              <div class="relative z-10 max-w-[1000px] mx-auto px-gutter-mobile lg:px-gutter">
               <!-- Two Column Hero Layout -->
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center pt-2 pb-12 lg:pt-2 lg:pb-12">
                 
@@ -552,11 +552,11 @@
                     Ventimax menghadirkan solusi ventilasi inovatif dan ramah lingkungan yang meningkatkan kenyamanan, menghemat energi, serta menciptakan lingkungan yang lebih baik secara alami tanpa listrik.
                   </p>
                   <div class="flex flex-wrap items-center gap-4">
-                    <a class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-secondary hover:bg-secondary-container text-pure-white font-button-text text-button-text transition-colors shadow-lg shadow-secondary/20" href="/produk">
+                    <a class="inline-flex items-center justify-center px-6 py-3 rounded-none bg-secondary hover:bg-secondary-container text-pure-white font-button-text text-button-text transition-colors  shadow-secondary/20" href="/produk">
                       Jelajahi Produk
                       <span class="material-symbols-outlined ml-2 text-[22px]">arrow_forward</span>
                     </a>
-                    <a class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-transparent hover:bg-pure-white/10 text-pure-white font-button-text text-button-text transition-colors border border-pure-white/20" href="/kontak">
+                    <a class="inline-flex items-center justify-center px-6 py-3 rounded-none bg-transparent hover:bg-pure-white/10 text-pure-white font-button-text text-button-text transition-colors border border-pure-white/20" href="/kontak">
                       Konsultasi Gratis
                     </a>
                   </div>
@@ -595,7 +595,7 @@
                   <!-- Col 1 (Shifted down for staggered effect) -->
                   <div class="flex flex-col gap-4 lg:gap-5 pt-6 lg:pt-8">
                     <!-- Supavent -->
-                    <a href="Produk/supavent.html" class="relative group rounded-2xl overflow-hidden aspect-[4/5] shadow-xl block border border-pure-white/10 bg-ink">
+                    <a href="Produk/supavent.html" class="relative group rounded-none overflow-hidden aspect-[4/5]  block border border-pure-white/10 bg-[#0B192C]">
                       <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/supavent-woodland-grey-C101Khmc7nC2tfgN.jpg" alt="SupaVent" class="w-full h-full object-cover object-[right_bottom] transition-transform duration-700 group-hover:scale-110">
                       <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
                       <div class="absolute bottom-5 left-5 right-5 z-10">
@@ -604,7 +604,7 @@
                       </div>
                     </a>
                     <!-- Turbo Beam -->
-                    <a href="Produk/turbo-beam.html" class="relative group rounded-2xl overflow-hidden aspect-square shadow-xl block border border-pure-white/10 bg-ink">
+                    <a href="Produk/turbo-beam.html" class="relative group rounded-none overflow-hidden aspect-square  block border border-pure-white/10 bg-[#0B192C]">
                       <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/supavent-turbo-beam-QR2EN6ui1glk2HUd.jpg" alt="Turbo Beam" class="w-full h-full object-cover object-[right_bottom] transition-transform duration-700 group-hover:scale-110">
                       <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
                       <div class="absolute bottom-5 left-5 right-5 z-10">
@@ -617,7 +617,7 @@
                   <!-- Col 2 -->
                   <div class="flex flex-col gap-4 lg:gap-5">
                     <!-- Hurricane -->
-                    <a href="Produk/hurricane.html" class="relative group rounded-2xl overflow-hidden aspect-square shadow-xl block border border-pure-white/10 bg-ink">
+                    <a href="Produk/hurricane.html" class="relative group rounded-none overflow-hidden aspect-square  block border border-pure-white/10 bg-[#0B192C]">
                       <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg" alt="Hurricane" class="w-full h-full object-cover object-[center_65%] transition-transform duration-700 group-hover:scale-110">
                       <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
                       <div class="absolute bottom-5 left-5 right-5 z-10">
@@ -626,7 +626,7 @@
                       </div>
                     </a>
                     <!-- Ventigrille -->
-                    <a href="Produk/ventigrille.html" class="relative group rounded-2xl overflow-hidden aspect-[4/5] shadow-xl block border border-pure-white/10 bg-ink">
+                    <a href="Produk/ventigrille.html" class="relative group rounded-none overflow-hidden aspect-[4/5]  block border border-pure-white/10 bg-[#0B192C]">
                       <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/uQWpCx6RhwPSfkUj/final-edited-vent-grille-black-1tm8BMlbav2ItnvN.jpeg" alt="Ventigrille" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                       <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
                       <div class="absolute bottom-5 left-5 right-5 z-10">
@@ -647,52 +647,52 @@
           <!-- ====================================== -->
           <!-- BENTO BOX: SEKILAS, LAYANAN, PRODUK     -->
           <!-- ====================================== -->
-          <section class="w-full bg-[#FAFCFF] py-8 lg:py-10" id="produk-overview">
-            <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+          <section class="w-full bg-white py-8 lg:py-10" id="produk-overview">
+            <div class="max-w-[1000px] mx-auto px-gutter-mobile lg:px-gutter">
               
               <div class="mb-10 text-center lg:text-left flex flex-col lg:flex-row justify-between items-end gap-4">
                 <div>
-                  <h2 class="font-headline-lg text-3xl font-bold text-ink mb-2">Solusi & Layanan Kami</h2>
+                  <h2 class="font-headline-lg text-2xl font-bold text-slate-900 mb-1">Solusi & Layanan Kami</h2>
                   <p class="font-body-md text-ink/60">Semua yang Anda butuhkan dalam satu ekosistem ventilasi alami.</p>
                 </div>
               </div>
 
               <!-- THE BENTO GRID -->
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 auto-rows-[150px] lg:auto-rows-[180px]">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 auto-rows-[140px] lg:auto-rows-[160px]">
                 
                 <!-- 1. HURRICANE (2x2) -->
-                <a href="Produk/hurricane.html" class="md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden relative group shadow-sm border border-ink/5 block">
+                <a href="Produk/hurricane.html" class="md:col-span-2 md:row-span-2 rounded-none overflow-hidden relative group  border border-slate-200 block">
                   <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/ventimaxs18-WsHrRqqgyHs2WSZP.png" alt="Hurricane" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                   <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent"></div>
                   
                   <div class="absolute inset-0 p-6 flex flex-col justify-between">
                     <div class="flex justify-between items-start">
-                      <span class="bg-white/90 backdrop-blur px-4 py-2 rounded-full text-xs font-bold text-ink uppercase tracking-widest shadow-sm">Industrial Grade</span>
+                      <span class="bg-blue-600 px-4 py-2 rounded-full text-xs font-bold text-white uppercase tracking-widest ">Industrial Grade</span>
                       <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-white group-hover:bg-white group-hover:text-ink transition-colors">
                         <span class="material-symbols-outlined">arrow_forward_ios</span>
                       </div>
                     </div>
                     <div>
-                      <h3 class="text-2xl font-bold text-white mb-1">Hurricane&reg;</h3>
+                      <h3 class="text-xl font-bold text-white mb-1">Hurricane&reg;</h3>
                       <p class="text-white/80 max-w-md leading-relaxed">Ventilator kelas industri berkinerja tinggi. Dirancang untuk pabrik dan gudang besar dengan kapasitas hingga 3,2 Juta Liter/Jam.</p>
                     </div>
                   </div>
                 </a>
 
                 <!-- 2. SEKILAS (2x1) -->
-                <div class="md:col-span-2 md:row-span-1 rounded-2xl bg-white border border-ink/5 p-6 shadow-sm flex flex-col justify-center">
+                <div class="md:col-span-2 md:row-span-1 rounded-none bg-white border border-slate-200 p-6  flex flex-col justify-center">
                   <span class="text-secondary font-bold text-xs uppercase tracking-widest mb-3">Tentang Ventimax</span>
-                  <h3 class="text-xl font-bold text-ink leading-tight mb-2">Sirkulasi Udara Maksimal<br/><span class="text-blue-600">Tanpa Tagihan Listrik.</span></h3>
+                  <h3 class="text-lg font-bold text-slate-900 leading-tight mb-2">Sirkulasi Udara Maksimal<br/><span class="text-blue-600">Tanpa Tagihan Listrik.</span></h3>
                   <p class="text-ink/60 text-sm leading-relaxed">Kami merancang sistem ventilasi kinetik murni untuk menurunkan suhu ruangan pabrik dan gudang Anda secara permanen.</p>
                 </div>
 
                 <!-- 3. SUPAVENT (1x1) -->
-                <a href="Produk/supavent.html" class="md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden relative group shadow-sm border border-ink/5 block">
+                <a href="Produk/supavent.html" class="md:col-span-1 md:row-span-1 rounded-none overflow-hidden relative group  border border-slate-200 block">
                   <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/supavent-woodland-grey-C101Khmc7nC2tfgN.jpg" alt="SupaVent" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                   <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div>
                   <div class="absolute bottom-0 left-0 p-6 w-full">
                     <span class="text-white/70 text-xs font-bold uppercase tracking-wider mb-1 block">Residential</span>
-                    <h3 class="text-lg font-bold text-white flex justify-between items-center w-full">
+                    <h3 class="text-base font-bold text-white flex justify-between items-center w-full">
                       SupaVent&trade;
                       <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </h3>
@@ -700,12 +700,12 @@
                 </a>
 
                 <!-- 4. VENTICOOL (1x1) -->
-                <a href="Produk/venticool.html" class="md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden relative group shadow-sm border border-ink/5 block">
+                <a href="Produk/venticool.html" class="md:col-span-1 md:row-span-1 rounded-none overflow-hidden relative group  border border-slate-200 block">
                   <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,h=1024,fit=crop/uQWpCx6RhwPSfkUj/venticool1-cJuxPQHIx6FHTQFp.jpeg" alt="Venticool" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                   <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div>
                   <div class="absolute bottom-0 left-0 p-6 w-full">
                     <span class="text-white/70 text-xs font-bold uppercase tracking-wider mb-1 block">Insulation</span>
-                    <h3 class="text-lg font-bold text-white flex justify-between items-center w-full">
+                    <h3 class="text-base font-bold text-white flex justify-between items-center w-full">
                       Venticool
                       <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </h3>
@@ -713,8 +713,8 @@
                 </a>
 
                 <!-- 5. LAYANAN 1 (1x1) -->
-                <div class="md:col-span-1 md:row-span-1 rounded-2xl bg-white border border-ink/5 p-6 shadow-sm flex flex-col">
-                  <div class="w-12 h-12 rounded-xl bg-[#F2F7FD] flex items-center justify-center text-secondary mb-4">
+                <div class="md:col-span-1 md:row-span-1 rounded-none bg-white border border-slate-200 p-6  flex flex-col">
+                  <div class="w-12 h-12 rounded-none bg-[#F2F7FD] flex items-center justify-center text-secondary mb-4">
                     <span class="material-symbols-outlined text-[24px]">air</span>
                   </div>
                   <h3 class="text-base font-bold text-ink mb-1">Kinerja Ekstrem</h3>
@@ -722,8 +722,8 @@
                 </div>
 
                 <!-- 6. LAYANAN 2 (1x1) -->
-                <div class="md:col-span-1 md:row-span-1 rounded-2xl bg-white border border-ink/5 p-6 shadow-sm flex flex-col">
-                  <div class="w-12 h-12 rounded-xl bg-[#F2F7FD] flex items-center justify-center text-secondary mb-4">
+                <div class="md:col-span-1 md:row-span-1 rounded-none bg-white border border-slate-200 p-6  flex flex-col">
+                  <div class="w-12 h-12 rounded-none bg-[#F2F7FD] flex items-center justify-center text-secondary mb-4">
                     <span class="material-symbols-outlined text-[24px]">mode_fan</span>
                   </div>
                   <h3 class="text-base font-bold text-ink mb-1">Aktif 24 Jam</h3>
@@ -731,16 +731,16 @@
                 </div>
 
                 <!-- 7. LAYANAN 3 (2x1) -->
-                <div class="md:col-span-2 md:row-span-1 rounded-2xl bg-ink border border-ink/5 p-6 shadow-sm flex flex-col justify-center relative overflow-hidden group">
+                <div class="md:col-span-2 md:row-span-1 rounded-none bg-[#0B192C] border border-slate-200 p-6  flex flex-col justify-center relative overflow-hidden group">
                   <div class="absolute -right-10 -bottom-10 opacity-10 transform group-hover:scale-110 transition-transform duration-700">
                     <span class="material-symbols-outlined text-[200px] text-white">shield</span>
                   </div>
                   <div class="relative z-10">
                     <div class="flex items-center gap-3 mb-3">
-                      <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white">
+                      <div class="w-10 h-10 rounded-none bg-white/10 flex items-center justify-center text-white">
                         <span class="material-symbols-outlined text-[20px]">wb_sunny</span>
                       </div>
-                      <h3 class="text-lg font-bold text-white">Refleksi Panas >97%</h3>
+                      <h3 class="text-base font-bold text-white">Refleksi Panas >97%</h3>
                     </div>
                     <p class="text-white/70 text-sm leading-relaxed max-w-sm">Insulasi termal modern Venticool mampu memantulkan panas radiasi secara agresif, menjadikan ruangan terasa jauh lebih sejuk.</p>
                   </div>
@@ -753,9 +753,9 @@
           <!-- ====================================== -->
           <!-- 5. DESAIN VENTILATOR (Diagram)          -->
         <!-- ====================================== -->
-        <section class="w-full bg-ink text-pure-white py-8 lg:py-10 overflow-hidden relative"
+        <section class="w-full bg-[#0B192C] text-pure-white py-8 lg:py-10 overflow-hidden relative"
         >
-          <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+          <div class="max-w-[1000px] mx-auto px-gutter-mobile lg:px-gutter">
             <div
               class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:p-5 items-center"
             >
@@ -784,10 +784,10 @@
                 </p>
                 <div class="space-y-3 pt-2">
                   <div
-                    class="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/5"
+                    class="flex items-start gap-3 p-3 rounded-none bg-white/5 border border-white/5"
                   >
                     <div
-                      class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-secondary-container shrink-0 mt-0.5"
+                      class="w-10 h-10 rounded-none bg-pure-white/10 flex items-center justify-center text-secondary-container shrink-0 mt-0.5"
                     >
                       <span class="material-symbols-outlined text-[22px]"
                         >thermostat</span
@@ -809,10 +809,10 @@
                     </div>
                   </div>
                   <div
-                    class="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/5"
+                    class="flex items-start gap-3 p-3 rounded-none bg-white/5 border border-white/5"
                   >
                     <div
-                      class="w-10 h-10 rounded-lg bg-pure-white/10 flex items-center justify-center text-secondary-container shrink-0 mt-0.5"
+                      class="w-10 h-10 rounded-none bg-pure-white/10 flex items-center justify-center text-secondary-container shrink-0 mt-0.5"
                     >
                       <span class="material-symbols-outlined text-[22px]"
                         >air</span
@@ -839,14 +839,14 @@
               <!-- Diagram Graphic Card -->
               <div class="lg:col-span-6">
                 <div
-                  class="rounded-2xl p-4 sm:p-6 bg-[#0B192C] border border-white/10 relative"
+                  class="rounded-none p-4 sm:p-6 bg-[#0B192C] border border-white/20 relative"
                 >
                   <div
-                    class="relative rounded-xl overflow-hidden bg-surface-container-lowest/5 flex items-center justify-center w-full aspect-[21/9]"
+                    class="relative rounded-none overflow-hidden bg-surface-container-lowest/5 flex items-center justify-center w-full aspect-[21/9]"
                   >
                     <img
                       alt="Diagram aliran udara ventilator turbin atap"
-                      class="w-full h-full object-cover rounded-lg"
+                      class="w-full h-full object-cover rounded-none"
                       src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1024,fit=crop/uQWpCx6RhwPSfkUj/ventimaxs18-WsHrRqqgyHs2WSZP.png"
                     />
                   </div>
@@ -881,8 +881,8 @@
         <!-- ====================================== -->
         <!-- 6. MENGAPA MEMILIH VENTIMAX (3 Kartu)   -->
         <!-- ====================================== -->
-        <section class="w-full bg-surface-bright py-8 lg:py-10">
-          <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+        <section class="w-full bg-slate-50 border-t border-slate-200 py-8 lg:py-10">
+          <div class="max-w-[1000px] mx-auto px-gutter-mobile lg:px-gutter">
             <div class="text-center max-w-2xl mx-auto mb-8">
               <div
                 class="inline-flex items-center gap-space-sm justify-center mb-space-xs"
@@ -894,7 +894,7 @@
                 >
               </div>
               <h2 style="line-height: 1.3 !important;"
-                class="font-headline-lg text-xl lg:text-2xl text-ink font-bold mb-3"
+                class="font-headline-lg text-xl font-bold text-slate-900 mb-2"
               >
                 Mengapa Memilih Ventimax Solutions
               </h2>
@@ -909,11 +909,11 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5">
               <!-- Feature 1 -->
               <div
-                class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition-shadow"
+                class="bg-white rounded-none p-4  border border-slate-100 flex flex-col justify-between hover: transition-colors"
               >
                 <div>
                   <div
-                    class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 mb-4"
+                    class="w-10 h-10 rounded-none bg-transparent text-blue-600 border border-blue-200 flex items-center justify-center mb-4"
                   >
                     <span class="material-symbols-outlined text-[22px]"
                       >energy_savings_leaf</span
@@ -933,7 +933,7 @@
                   </p>
                 </div>
                 <div
-                  class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between"
+                  class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-none flex items-center justify-between"
                 >
                   <span
                     class="font-spec-label text-spec-label text-slate-500"
@@ -948,11 +948,11 @@
 
               <!-- Feature 2 -->
               <div
-                class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition-shadow"
+                class="bg-white rounded-none p-4  border border-slate-100 flex flex-col justify-between hover: transition-colors"
               >
                 <div>
                   <div
-                    class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 mb-4"
+                    class="w-10 h-10 rounded-none bg-transparent text-blue-600 border border-blue-200 flex items-center justify-center mb-4"
                   >
                     <span class="material-symbols-outlined text-[22px]"
                       >savings</span
@@ -971,7 +971,7 @@
                   </p>
                 </div>
                 <div
-                  class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between"
+                  class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-none flex items-center justify-between"
                 >
                   <span
                     class="font-spec-label text-spec-label text-slate-500"
@@ -986,11 +986,11 @@
 
               <!-- Feature 3 -->
               <div
-                class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition-shadow"
+                class="bg-white rounded-none p-4  border border-slate-100 flex flex-col justify-between hover: transition-colors"
               >
                 <div>
                   <div
-                    class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 mb-4"
+                    class="w-10 h-10 rounded-none bg-transparent text-blue-600 border border-blue-200 flex items-center justify-center mb-4"
                   >
                     <span class="material-symbols-outlined text-[22px]"
                       >shield_with_heart</span
@@ -1010,7 +1010,7 @@
                   </p>
                 </div>
                 <div
-                  class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between"
+                  class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded-none flex items-center justify-between"
                 >
                   <span
                     class="font-spec-label text-spec-label text-slate-500"
@@ -1030,7 +1030,7 @@
         <!-- 7. KLIEN KAMI                           -->
         <!-- ====================================== -->
         <section class="w-full bg-surface-container-low py-8 lg:py-12">
-          <div class="max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter">
+          <div class="max-w-[1000px] mx-auto px-gutter-mobile lg:px-gutter">
             <div class="text-center max-w-3xl mx-auto mb-8">
               <div
                 class="inline-flex items-center gap-space-sm justify-center mb-space-xs"
@@ -1058,10 +1058,10 @@
 
             <!-- Authentic Client Banners Showcase (Direct from ventimaxsolutions.co.id) -->
             <div
-              class="relative bg-surface-container-lowest rounded-2xl p-4 sm:p-6 shadow-md border border-card-border/20"
+              class="relative bg-surface-container-lowest rounded-none p-4 sm:p-6  border border-card-border/20"
             >
               <div
-                class="relative overflow-hidden rounded-xl bg-surface-container/20 py-4 flex items-center justify-center"
+                class="relative overflow-hidden rounded-none bg-surface-container/20 py-4 flex items-center justify-center"
               >
                 <div
                   id="client-slides-container"
@@ -1074,7 +1074,7 @@
                     <img
                       src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-03-YtTHnYCKCoA5AhRY.jpg"
                       alt="Klien Ventimax Solutions 1"
-                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-none"
                     />
                   </div>
                   <!-- Slide 2 -->
@@ -1084,7 +1084,7 @@
                     <img
                       src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-06-g8vnI52nRKwY62pp.jpg"
                       alt="Klien Ventimax Solutions 2"
-                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-none"
                     />
                   </div>
                   <!-- Slide 3 -->
@@ -1094,7 +1094,7 @@
                     <img
                       src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-32-DNUstoz4J44t4XeV.jpg"
                       alt="Klien Ventimax Solutions 3"
-                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-none"
                     />
                   </div>
                   <!-- Slide 4 -->
@@ -1104,7 +1104,7 @@
                     <img
                       src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-38-neXsAeNkjbzrqeWK.jpg"
                       alt="Klien Ventimax Solutions 4"
-                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-none"
                     />
                   </div>
                   <!-- Slide 5 -->
@@ -1114,7 +1114,7 @@
                     <img
                       src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-41-q7zf4n08GXKDPx2B.jpg"
                       alt="Klien Ventimax Solutions 5"
-                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-none"
                     />
                   </div>
                   <!-- Slide 6 -->
@@ -1124,7 +1124,7 @@
                     <img
                       src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-44-iYGzRzziBHX4HYGA.jpg"
                       alt="Klien Ventimax Solutions 6"
-                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-none"
                     />
                   </div>
                   <!-- Slide 7 -->
@@ -1134,7 +1134,7 @@
                     <img
                       src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-51-2PzWx4g1WmSxXR2u.jpg"
                       alt="Klien Ventimax Solutions 7"
-                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-none"
                     />
                   </div>
                   <!-- Slide 8 -->
@@ -1144,7 +1144,7 @@
                     <img
                       src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/untitled-2-47-XYGge2sswH9q44wk.jpg"
                       alt="Klien Ventimax Solutions 8"
-                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-lg"
+                      class="w-full h-auto max-h-[160px] md:max-h-[200px] object-contain rounded-none"
                     />
                   </div>
                 </div>
@@ -1153,7 +1153,7 @@
                 <button
                   onclick="prevClientSlide()"
                   aria-label="Slide sebelumnya"
-                  class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary-container/85 text-pure-white hover:bg-secondary flex items-center justify-center shadow-lg transition-all focus:outline-none"
+                  class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary-container/85 text-pure-white hover:bg-secondary flex items-center justify-center  transition-all focus:outline-none"
                 >
                   <span class="material-symbols-outlined text-[22px]"
                     >chevron_left</span
@@ -1162,7 +1162,7 @@
                 <button
                   onclick="nextClientSlide()"
                   aria-label="Slide berikutnya"
-                  class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary-container/85 text-pure-white hover:bg-secondary flex items-center justify-center shadow-lg transition-all focus:outline-none"
+                  class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary-container/85 text-pure-white hover:bg-secondary flex items-center justify-center  transition-all focus:outline-none"
                 >
                   <span class="material-symbols-outlined text-[22px]"
                     >chevron_right</span
@@ -1184,17 +1184,17 @@
         <!-- ====================================== -->
         <!-- 8. CTA KONSULTASI                       -->
         <!-- ====================================== -->
-        <section class="w-full bg-ink text-pure-white py-8 lg:py-12 relative overflow-hidden"
+        <section class="w-full bg-[#0B192C] text-pure-white py-8 lg:py-12 relative overflow-hidden"
           id="konsultasi"
         >
           <div
             class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"
           ></div>
           <div
-            class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter"
+            class="relative z-10 max-w-[1000px] mx-auto px-gutter-mobile lg:px-gutter"
           >
             <div
-              class="bg-gradient-to-r from-card-start-navy to-secondary rounded-2xl p-6 shadow-2xl"
+              class="bg-gradient-to-r from-card-start-navy to-secondary rounded-none p-6 "
             >
               <div
                 class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:p-2 items-center"
@@ -1245,7 +1245,7 @@
                   class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center"
                 >
                   <a
-                    class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-lg bg-pure-white hover:bg-surface-container-high text-primary font-button-text text-button-text font-bold transition-all shadow-lg hover:scale-105"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-none bg-pure-white hover:bg-surface-container-high text-primary font-button-text text-button-text font-bold transition-all  hover:scale-105"
                     href="https://wa.me/6281219453272?text=Ventimax%20Solutions%20Headquarter"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -1421,7 +1421,7 @@
       </div>
 
       <div
-        class="relative z-10 max-w-[1200px] mx-auto px-gutter-mobile lg:px-gutter"
+        class="relative z-10 max-w-[1000px] mx-auto px-gutter-mobile lg:px-gutter"
       >
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:p-2 mb-8"
