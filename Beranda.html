@@ -797,57 +797,64 @@
     </div>
 
     
-    <!-- 3. MENGAPA MEMILIH (Minimalist Industrial Cards) -->
-    <div class="py-20 lg:py-24 bg-white border-y border-slate-200">
+    
+    <!-- 3. MENGAPA MEMILIH (Ultra-Refined Grid) -->
+    <div class="py-24 bg-white border-y border-slate-100">
       <div class="max-w-[1100px] mx-auto px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">Keunggulan Utama</h2>
+        <div class="text-center md:text-left mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <span class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-3 block">Keunggulan Utama</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">Mengapa Ventimax?</h2>
+          </div>
+          <p class="text-slate-500 text-sm max-w-sm leading-relaxed">
+            Sistem ventilasi kelas industri yang dirancang untuk efisiensi maksimum dan investasi tanpa biaya operasional.
+          </p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16">
           
-          <!-- Card 1 -->
-          <div class="bg-slate-50 rounded-2xl p-8 lg:p-10 border border-slate-200/60 flex flex-col h-full hover:bg-white hover:shadow-2xl hover:-translate-y-1 hover:border-slate-300 transition-all duration-300">
-            <div class="mb-8">
-              <span class="material-symbols-outlined text-[48px] text-blue-600 font-light">energy_savings_leaf</span>
+          <!-- Feature 1 -->
+          <div class="relative group">
+            <div class="w-14 h-14 bg-slate-50 border border-slate-200 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300 shadow-sm">
+              <span class="material-symbols-outlined text-[24px]">energy_savings_leaf</span>
             </div>
-            <h3 class="font-bold text-2xl text-slate-900 mb-4">Tanpa Listrik</h3>
-            <p class="text-base text-slate-600 leading-relaxed mb-12 flex-grow">
-              Bekerja murni memanfaatkan tenaga angin. Menghasilkan aliran udara 24 jam nonstop tanpa biaya operasional.
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Ventilasi Tanpa Listrik</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-8">
+              Bekerja murni memanfaatkan tenaga angin alam. Menghasilkan aliran udara menyegarkan 24 jam nonstop tanpa menambah beban tagihan listrik Anda.
             </p>
-            <div class="border-t border-slate-200 pt-6 mt-auto">
-              <span class="text-xs text-slate-400 font-bold uppercase tracking-widest block mb-2">Biaya Listrik</span>
-              <span class="text-2xl font-bold text-slate-900">Rp 0,- <span class="text-sm font-normal text-slate-500">/ bln</span></span>
+            <div class="pt-5 border-t border-slate-200">
+              <span class="block text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">Penghematan Listrik</span>
+              <span class="text-slate-900 font-bold text-lg">Rp 0,- / Bulan</span>
             </div>
           </div>
 
-          <!-- Card 2 -->
-          <div class="bg-slate-50 rounded-2xl p-8 lg:p-10 border border-slate-200/60 flex flex-col h-full hover:bg-white hover:shadow-2xl hover:-translate-y-1 hover:border-slate-300 transition-all duration-300">
-            <div class="mb-8">
-              <span class="material-symbols-outlined text-[48px] text-blue-600 font-light">thermostat</span>
+          <!-- Feature 2 -->
+          <div class="relative group">
+            <div class="w-14 h-14 bg-slate-50 border border-slate-200 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300 shadow-sm">
+              <span class="material-symbols-outlined text-[24px]">thermostat</span>
             </div>
-            <h3 class="font-bold text-2xl text-slate-900 mb-4">Penurunan Suhu</h3>
-            <p class="text-base text-slate-600 leading-relaxed mb-12 flex-grow">
-              Mengurangi penumpukan panas radiasi atap secara ekstrem, langsung meringankan beban pendingin (AC).
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Suhu Turun Drastis</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-8">
+              Mengusir tumpukan panas radiasi yang terperangkap di bawah atap secara ekstrem. Lingkungan kerja menjadi jauh lebih sejuk dan produktif.
             </p>
-            <div class="border-t border-slate-200 pt-6 mt-auto">
-              <span class="text-xs text-slate-400 font-bold uppercase tracking-widest block mb-2">Beban Pendingin</span>
-              <span class="text-2xl font-bold text-slate-900">Turun s/d 35%</span>
+            <div class="pt-5 border-t border-slate-200">
+              <span class="block text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">Beban Kerja AC</span>
+              <span class="text-slate-900 font-bold text-lg">Turun s/d 35%</span>
             </div>
           </div>
 
-          <!-- Card 3 -->
-          <div class="bg-slate-50 rounded-2xl p-8 lg:p-10 border border-slate-200/60 flex flex-col h-full hover:bg-white hover:shadow-2xl hover:-translate-y-1 hover:border-slate-300 transition-all duration-300">
-            <div class="mb-8">
-              <span class="material-symbols-outlined text-[48px] text-blue-600 font-light">verified</span>
+          <!-- Feature 3 -->
+          <div class="relative group">
+            <div class="w-14 h-14 bg-slate-50 border border-slate-200 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-all duration-300 shadow-sm">
+              <span class="material-symbols-outlined text-[24px]">verified</span>
             </div>
-            <h3 class="font-bold text-2xl text-slate-900 mb-4">Tahan Cuaca</h3>
-            <p class="text-base text-slate-600 leading-relaxed mb-12 flex-grow">
-              Material kelas industri yang dirancang membelah cuaca ganas selama belasan tahun tanpa macet.
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Ketahanan Ekstrem</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-8">
+              Dibuat dari material aluminium dan <i>fluorocarbon</i> kelas industri. Dirancang khusus untuk membelah cuaca ganas tanpa macet atau berkarat.
             </p>
-            <div class="border-t border-slate-200 pt-6 mt-auto">
-              <span class="text-xs text-slate-400 font-bold uppercase tracking-widest block mb-2">Jaminan Pabrik</span>
-              <span class="text-2xl font-bold text-slate-900">Garansi 15 Thn</span>
+            <div class="pt-5 border-t border-slate-200">
+              <span class="block text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-1">Jaminan Pabrik</span>
+              <span class="text-slate-900 font-bold text-lg">Garansi 15 Tahun</span>
             </div>
           </div>
 
