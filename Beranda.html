@@ -527,100 +527,86 @@
         <!-- ====================================== -->
         
 <!-- ====================================== -->
-<!-- 1. HERO SECTION (Anti-Slop Industrial) -->
+
 <!-- ====================================== -->
-<section class="relative w-full pt-32 lg:pt-40 pb-20 bg-slate-50 border-b border-slate-200 overflow-hidden">
-  <div class="max-w-[1100px] mx-auto px-6 lg:px-8 relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- 1. HERO SECTION (Cinematic Photography) -->
+<!-- ====================================== -->
+<section class="relative w-full min-h-[100vh] pt-32 pb-20 flex flex-col justify-center overflow-hidden" style="margin-top: -4rem !important;">
+  
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/supavent-woodland-grey-C101Khmc7nC2tfgN.jpg" alt="Ventimax Industrial Ventilation" class="w-full h-full object-cover object-center scale-105 animate-[pulse_20s_ease-in-out_infinite_alternate]">
+  </div>
+
+  <!-- Cinematic Overlay (Dark on left, fading to right) -->
+  <div class="absolute inset-0 z-0 bg-gradient-to-r from-[#071532]/95 via-[#071532]/70 to-[#071532]/20"></div>
+  <div class="absolute inset-0 z-0 bg-gradient-to-t from-[#071532] via-transparent to-transparent opacity-80"></div>
+
+  <div class="relative z-10 w-full max-w-[1100px] mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
       <!-- Left: Stark Typography -->
-      <div class="flex flex-col text-left">
-        <span class="text-blue-600 font-bold text-[11px] uppercase tracking-[0.2em] mb-4">Sistem Ventilasi Tanpa Listrik</span>
-        <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight">
+      <div class="lg:col-span-7 flex flex-col text-left pt-10">
+        
+        <div class="flex items-center gap-4 mb-6">
+          <div class="h-px w-8 bg-blue-500"></div>
+          <span class="text-blue-400 font-bold text-[11px] uppercase tracking-[0.2em]">Pionir Sirkulasi Udara Alami</span>
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl lg:text-[4rem] font-extrabold text-white leading-[1.1] mb-8 tracking-tight drop-shadow-lg">
           Kendalikan Panas.<br/>Pangkas Biaya Energi.
         </h1>
-        <p class="text-slate-600 text-lg leading-relaxed mb-10 max-w-lg">
-          Turbin ventilator kelas industri dari Ventimax membelah beban panas ekstrem secara alami. Mengandalkan sirkulasi angin 24 jam penuh tanpa membebani tagihan listrik Anda sepeser pun.
+        
+        <p class="text-white/80 text-lg sm:text-xl leading-relaxed mb-12 max-w-lg font-medium drop-shadow-md">
+          Turbin ventilator kelas industri dari Ventimax membelah beban panas ekstrem secara alami. Bekerja 24 jam penuh tanpa membebani tagihan listrik bangunan Anda sepeser pun.
         </p>
         
-        <div class="flex flex-wrap items-center gap-4 mb-12">
-          <a href="Kontak.html" class="bg-blue-600 text-white font-bold text-sm tracking-widest uppercase px-8 py-4 rounded-xl hover:bg-blue-700 transition-colors shadow-lg">
-            Konsultasi Teknis
+        <div class="flex flex-col sm:flex-row items-center gap-4 mb-16">
+          <a href="Kontak.html" class="w-full sm:w-auto bg-blue-600 text-white font-bold text-sm tracking-widest uppercase px-10 py-5 rounded-full hover:bg-blue-500 hover:-translate-y-1 transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)]">
+            Konsultasi Gratis
           </a>
-          <a href="Produk.html" class="bg-white text-slate-900 border border-slate-300 font-bold text-sm tracking-widest uppercase px-8 py-4 rounded-xl hover:border-slate-500 transition-colors shadow-sm">
-            Jelajahi Produk
+          <a href="Produk.html" class="w-full sm:w-auto bg-white/10 backdrop-blur-md text-white border border-white/20 font-bold text-sm tracking-widest uppercase px-10 py-5 rounded-full hover:bg-white/20 transition-colors">
+            Lihat Spesifikasi
           </a>
         </div>
         
-        <!-- Architectural Spec List -->
-        <div class="flex items-center gap-8 border-t border-slate-200 pt-8">
-          <div>
-            <span class="block text-3xl font-extrabold text-slate-900 mb-1">15<span class="text-blue-600">Th</span></span>
-            <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Garansi Resmi</span>
+        <!-- Trust Indicators -->
+        <div class="flex flex-wrap items-center gap-8 border-t border-white/10 pt-8">
+          <div class="flex flex-col">
+            <span class="text-2xl font-extrabold text-white mb-1">15<span class="text-blue-500 text-lg">Th</span></span>
+            <span class="text-[10px] uppercase tracking-widest text-white/50 font-bold">Garansi Pabrik</span>
           </div>
-          <div class="w-px h-10 bg-slate-200"></div>
-          <div>
-            <span class="block text-3xl font-extrabold text-slate-900 mb-1">0<span class="text-blue-600">Rp</span></span>
-            <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Biaya Listrik</span>
+          <div class="w-px h-8 bg-white/10"></div>
+          <div class="flex flex-col">
+            <span class="text-2xl font-extrabold text-white mb-1">0<span class="text-blue-500 text-lg">Rp</span></span>
+            <span class="text-[10px] uppercase tracking-widest text-white/50 font-bold">Biaya Listrik</span>
           </div>
-          <div class="w-px h-10 bg-slate-200"></div>
-          <div>
-            <span class="block text-3xl font-extrabold text-slate-900 mb-1">100<span class="text-blue-600">%</span></span>
-            <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Material Ekstrem</span>
+          <div class="w-px h-8 bg-white/10"></div>
+          <div class="flex flex-col">
+            <span class="text-2xl font-extrabold text-white mb-1">AU<span class="text-blue-500 text-lg"></span></span>
+            <span class="text-[10px] uppercase tracking-widest text-white/50 font-bold">Desain Australia</span>
           </div>
         </div>
+
       </div>
 
-      <!-- Right: Product Grid -->
-      <div class="grid grid-cols-2 gap-4 lg:gap-5 relative w-full max-w-[420px] mx-auto lg:ml-auto">
-        <!-- Col 1 -->
-        <div class="flex flex-col gap-4 lg:gap-5 pt-6 lg:pt-12">
-          <!-- Supavent -->
-          <a href="Produk/supavent.html" class="relative group rounded-3xl overflow-hidden aspect-[4/5] block bg-slate-200 shadow-md">
-            <img src="https://assets.zyrosite.com/uQWpCx6RhwPSfkUj/supavent-woodland-grey-C101Khmc7nC2tfgN.jpg" alt="SupaVent" class="w-full h-full object-cover object-[right_bottom] transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
-            <div class="absolute bottom-5 left-5 right-5 z-10">
-              <span class="text-white font-bold text-lg block mb-1">SupaVent&trade;</span>
-              <span class="text-white/80 text-xs font-medium">Atap Residensial</span>
+      <!-- Right: Empty space to let the photography breathe, or a subtle floating badge -->
+      <div class="lg:col-span-5 hidden lg:flex justify-end items-end h-full pb-8">
+        <div class="bg-[#071532]/60 backdrop-blur-md border border-white/10 p-6 rounded-2xl max-w-[280px]">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-blue-400 text-3xl">workspace_premium</span>
+            <div>
+              <h4 class="text-white font-bold text-sm mb-1">Material Ekstrem</h4>
+              <p class="text-white/60 text-xs leading-relaxed">Dirancang dari aluminium kelas industri yang tahan karat dan cuaca ganas.</p>
             </div>
-          </a>
-          <!-- Turbo Beam -->
-          <a href="Produk/turbo-beam.html" class="relative group rounded-3xl overflow-hidden aspect-square block bg-slate-200 shadow-md">
-            <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/supavent-turbo-beam-QR2EN6ui1glk2HUd.jpg" alt="Turbo Beam" class="w-full h-full object-cover object-[right_bottom] transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
-            <div class="absolute bottom-5 left-5 right-5 z-10">
-              <span class="text-white font-bold text-lg block mb-1">Turbo Beam</span>
-              <span class="text-white/80 text-xs font-medium">Ventilasi Transparan</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Col 2 -->
-        <div class="flex flex-col gap-4 lg:gap-5">
-          <!-- Hurricane -->
-          <a href="Produk/hurricane.html" class="relative group rounded-3xl overflow-hidden aspect-square block bg-slate-200 shadow-md">
-            <img src="https://assets.zyrosite.com/a8q6wPgu691Sb1bU/img_20250624_124224-KMn6WnrcptkQfaNN.jpg" alt="Hurricane" class="w-full h-full object-cover object-[center_65%] transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
-            <div class="absolute bottom-5 left-5 right-5 z-10">
-              <span class="text-white font-bold text-lg block mb-1">Hurricane&reg;</span>
-              <span class="text-white/80 text-xs font-medium">Skala Industrial</span>
-            </div>
-          </a>
-          <!-- Ventigrille -->
-          <a href="Produk/ventigrille.html" class="relative group rounded-3xl overflow-hidden aspect-[4/5] block bg-slate-200 shadow-md">
-            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/uQWpCx6RhwPSfkUj/final-edited-vent-grille-black-1tm8BMlbav2ItnvN.jpeg" alt="Ventigrille" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
-            <div class="absolute bottom-5 left-5 right-5 z-10">
-              <span class="text-white font-bold text-lg block mb-1">Ventigrille</span>
-              <span class="text-white/80 text-xs font-medium">Plafon Interior</span>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
           <!-- ====================================== -->
